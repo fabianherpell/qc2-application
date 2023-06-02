@@ -1,0 +1,11 @@
+! RHF def2-TZVP TightSCF Conv
+
+%casscf
+  nel 1
+  norb 1
+  switchstep nr
+end
+
+* xyz 0 2
+H 0 0 0
+*

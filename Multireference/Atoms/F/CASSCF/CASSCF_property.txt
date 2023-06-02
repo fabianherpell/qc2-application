@@ -1,0 +1,50 @@
+-------------------------------------------------------------
+----------------------- !PROPERTIES! ------------------------
+-------------------------------------------------------------
+# -----------------------------------------------------------
+$ CASSCF_Energies
+   description: The CASSCF energies
+   geom. index: 1
+   prop. index: 1
+       Number of Multiplicities          : 1 
+       FINAL CASSCF Energy               :    -99.4501647964 
+ RESULTS FOR MULTIPLICITY                 2  AND IRREP  0
+       NUMBER OF ROOTS                    1 
+ROOT   0 Energy    -99.4501647964
+# -----------------------------------------------------------
+$ CASSCF_Dipole
+   description: The CASSCF dipole moments 
+   geom. index: 1
+   prop. index: 1
+        Number of states:  0
+        The CASSCF Dipole moments :
+                  0          1          2          3    
+      0      -0.000835  -0.001305  -0.030435   0.030474
+        Info about the states:
+                  0          1    
+      0         0          0     
+# -----------------------------------------------------------
+$ Calculation_Info
+   description: Details of the calculation
+   geom. index: 1
+   prop. index: 1
+     Multiplicity:                          2
+     Charge:                                0
+     number of atoms:                       1
+     number of electrons:                   0
+     number of frozen core electrons:       1
+     number of correlated electrons:        0
+     number of basis functions:             31
+     number of aux C basis functions:       0
+     number of aux J basis functions:       0
+     number of aux JK basis functions:      0
+     number of aux CABS basis functions:    0
+     Total Energy                           -99.450165
+# -------------------------------------------------------------
+----------------------- !GEOMETRIES! ------------------------
+# -------------------------------------------------------------
+------------------------ !GEOMETRY! -------------------------
+    Number of atoms:    1 
+    Geometry Index:     1 
+    Coordinates:
+               0 F      0.000000000000    0.000000000000    0.000000000000
