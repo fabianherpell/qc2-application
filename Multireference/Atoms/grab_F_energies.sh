@@ -3,7 +3,7 @@
  for m in "F"; do
     pushd $m >/dev/null
     echo $m 
-            for n in "CASSCF" "CCSD_T" "MP2" "rhf" "uhf"; do
+            for n in "CASSCF" "CCSD_T" "MP2" "rhf" "uhf" "CASSCF_6"; do
             pushd $n >/dev/null
             echo $n
             #grab FINAL SINGLE POINT ENERGY 
