@@ -162,7 +162,7 @@ INFO   : the flag for use of the SHARK integral package has been found!
 ================================================================================
                                        INPUT FILE
 ================================================================================
-NAME = CCSD_T.in
+NAME = CCSD_T.inp
 |  1> ! RHF CCSD(T) def2-TZVP TightSCF
 |  2> 
 |  3> %scf BrokenSym 1,1 end
@@ -253,8 +253,8 @@ Integral threshold                          ...     2.500000e-11
 Primitive cut-off                           ...     2.500000e-12
 Primitive pair pre-selection threshold      ...     2.500000e-12
 
-Calculating pre-screening integrals         ... done (  0.1 sec) Dimension = 11
-Organizing shell pair data                  ... done (  0.2 sec)
+Calculating pre-screening integrals         ... done (  0.0 sec) Dimension = 11
+Organizing shell pair data                  ... done (  0.1 sec)
 Shell pair information
 Total number of shell pairs                 ...        66
 Shell pairs after pre-screening             ...        66
@@ -272,9 +272,9 @@ Primitive shell pairs kept                  ...       232
           la=3 lb=3:      1 shell pairs
 
 Calculating one electron integrals          ... done (  0.0 sec)
-Calculating Nuclear repulsion               ... done (  0.1 sec) ENN=      0.000000000000 Eh
+Calculating Nuclear repulsion               ... done (  0.0 sec) ENN=      0.000000000000 Eh
 
-SHARK setup successfully completed in   0.9 seconds
+SHARK setup successfully completed in   0.6 seconds
 
 Maximum memory used throughout the entire GTOINT-calculation: 12.4 MB
 -------------------------------------------------------------------------------
@@ -360,13 +360,13 @@ and then try to converge to the broken symmetry state with Ms=  0.0
 
 Diagonalization of the overlap matrix:
 Smallest eigenvalue                        ... 3.088e-02
-Time for diagonalization                   ...    0.000 sec
+Time for diagonalization                   ...    0.001 sec
 Threshold for overlap eigenvalues          ... 1.000e-08
 Number of eigenvalues below threshold      ... 0
-Time for construction of square roots      ...    0.082 sec
-Total time needed                          ...    0.085 sec
+Time for construction of square roots      ...    0.134 sec
+Total time needed                          ...    0.151 sec
 
-Time for model grid setup =    0.062 sec
+Time for model grid setup =    0.135 sec
 
 ------------------------------
 INITIAL GUESS: MODEL POTENTIAL
@@ -384,7 +384,7 @@ Diagonalizing the Hamiltonian                      ... done (   0.0 sec)
 Back transforming the eigenvectors                 ... done (   0.0 sec)
 Now organizing SCF variables                       ... done
                       ------------------
-                      INITIAL GUESS DONE (   0.3 sec)
+                      INITIAL GUESS DONE (   0.4 sec)
                       ------------------
 --------------
 SCF ITERATIONS
@@ -1031,17 +1031,17 @@ TIMINGS
 
 Total SCF time: 0 days 0 hours 0 min 4 sec 
 
-Total time                  ....       4.440 sec
-Sum of individual times     ....       4.838 sec  (109.0%)
+Total time                  ....       4.884 sec
+Sum of individual times     ....       5.555 sec  (113.7%)
 
-Fock matrix formation       ....       3.668 sec  ( 82.6%)
+Fock matrix formation       ....       4.334 sec  ( 88.7%)
 Diagonalization             ....       0.019 sec  (  0.4%)
 Density matrix formation    ....       0.001 sec  (  0.0%)
-Population analysis         ....       0.367 sec  (  8.3%)
-Initial guess               ....       0.249 sec  (  5.6%)
+Population analysis         ....       0.317 sec  (  6.5%)
+Initial guess               ....       0.298 sec  (  6.1%)
 Orbital Transformation      ....       0.000 sec  (  0.0%)
 Orbital Orthonormalization  ....       0.000 sec  (  0.0%)
-DIIS solution               ....       0.471 sec  ( 10.6%)
+DIIS solution               ....       0.452 sec  (  9.2%)
 --------------------------
 UHF CORRESPONDING ORBITALS
 --------------------------
@@ -1100,15 +1100,15 @@ E(High-Spin)-E(BrokenSym)= -1.2764 eV -10294.056 cm**-1 (FERROMAGNETIC coupling)
 TIMINGS
 -------
 
-Total SCF time: 0 days 0 hours 0 min 9 sec 
+Total SCF time: 0 days 0 hours 0 min 10 sec 
 
-Total time                  ....       9.944 sec
-Sum of individual times     ....       5.966 sec  ( 60.0%)
+Total time                  ....      10.261 sec
+Sum of individual times     ....       6.084 sec  ( 59.3%)
 
 Fock matrix formation       ....       0.000 sec  (  0.0%)
 Diagonalization             ....       0.000 sec  (  0.0%)
 Density matrix formation    ....       0.000 sec  (  0.0%)
-Population analysis         ....       5.966 sec  ( 60.0%)
+Population analysis         ....       6.084 sec  ( 59.3%)
 Initial guess               ....       0.000 sec  (  0.0%)
 Orbital Transformation      ....       0.000 sec  (  0.0%)
 Orbital Orthonormalization  ....       0.000 sec  (  0.0%)
@@ -1194,7 +1194,7 @@ UNRESTRICTED FOCK OPERATOR
 Restoring SHARK [2] ... ok
 Recanonicalizing the internal orbitals
 Recanonicalizing the virtual orbitals
-Time needed for Fock operator              ...            0.342 sec
+Time needed for Fock operator              ...            0.349 sec
 Reference energy                           ...    -98.789564766
 Warning: for UHF the TrafoType has to be JK
 Warning: for UHF the K(C)-option but must be AOX
@@ -1286,10 +1286,10 @@ Closing buffer IPAQ[ba]( 0.00 GB; CompressionRatio= 1.00)
 N(AO-Batches) Done                         ...      7986 
 N(AO-Batches) Skipped                      ...         0 
 N(IJ)-pairs Skipped                        ...         0 
-TOTAL TIME for half transformation         ...   127.186 sec
-AO-integral generation                     ...     0.062 sec
-Half transformation                        ...   110.190 sec
-K-integral sorting                         ...     1.166 sec
+TOTAL TIME for half transformation         ...   148.968 sec
+AO-integral generation                     ...     0.061 sec
+Half transformation                        ...   129.085 sec
+K-integral sorting                         ...     1.493 sec
 
 ------------------------------
 PARTIAL COULOMB TRANSFORMATION
@@ -1310,16 +1310,16 @@ AO-integral source                         ... DIRECT
 Integral package used                      ... LIBINT
 
 Starting integral evaluation:
-<ss|**>:          990 b        0 skpd     0.882 s (  0.891 ms/b)
-<sp|**>:          990 b        0 skpd     1.559 s (  1.575 ms/b)
-<sd|**>:          660 b        0 skpd     1.703 s (  2.580 ms/b)
-<sf|**>:          330 b        0 skpd     1.219 s (  3.693 ms/b)
-<pp|**>:          396 b        0 skpd     1.414 s (  3.570 ms/b)
-<pd|**>:          396 b        0 skpd     2.927 s (  7.392 ms/b)
-<pf|**>:          198 b        0 skpd     2.141 s ( 10.814 ms/b)
-<dd|**>:          198 b        0 skpd     1.728 s (  8.728 ms/b)
-<df|**>:          132 b        0 skpd     2.190 s ( 16.589 ms/b)
-<ff|**>:           66 b        0 skpd     1.022 s ( 15.490 ms/b)
+<ss|**>:          990 b        0 skpd     0.708 s (  0.715 ms/b)
+<sp|**>:          990 b        0 skpd     1.396 s (  1.411 ms/b)
+<sd|**>:          660 b        0 skpd     1.687 s (  2.556 ms/b)
+<sf|**>:          330 b        0 skpd     1.360 s (  4.120 ms/b)
+<pp|**>:          396 b        0 skpd     1.358 s (  3.430 ms/b)
+<pd|**>:          396 b        0 skpd     3.050 s (  7.702 ms/b)
+<pf|**>:          198 b        0 skpd     1.853 s (  9.360 ms/b)
+<dd|**>:          198 b        0 skpd     1.986 s ( 10.030 ms/b)
+<df|**>:          132 b        0 skpd     2.191 s ( 16.595 ms/b)
+<ff|**>:           66 b        0 skpd     0.992 s ( 15.028 ms/b)
 Closing buffer AOJ[aa] ( 0.00 GB; CompressionRatio= 0.80)
 Closing buffer AOJ[bb] ( 0.00 GB; CompressionRatio= 0.80)
 Collecting buffer AOJ 
@@ -1334,14 +1334,14 @@ SORTING BETA/BETA PAIRS
 IBATCH = 1 of  1
 Closing buffer JAO[bb] ( 0.00 GB; CompressionRatio= 1.00)
 Collecting buffer JAO 
-TOTAL TIME for half transformation         ...    17.617 sec
-AO-integral generation                     ...     0.038 sec
-Half transformation                        ...    16.749 sec
-J-integral sorting                         ...     0.443 sec
+TOTAL TIME for half transformation         ...    17.235 sec
+AO-integral generation                     ...     0.039 sec
+Half transformation                        ...    16.542 sec
+J-integral sorting                         ...     0.393 sec
 
 -------------------------- SECOND HALF TRANSFORMATION --------------------------
-Formation of (ij|kl),(ij|ka), (ij|ab)      ... ok (     0.118 sec)
-Formation of (ik|jl),(ik|ja), (ia|jb)      ... ok (     0.095 sec)
+Formation of (ij|kl),(ij|ka), (ij|ab)      ... ok (     0.051 sec)
+Formation of (ik|jl),(ik|ja), (ia|jb)      ... ok (     0.112 sec)
 
 
 -----------------------
@@ -1353,7 +1353,7 @@ EMP2(aa)=     -0.014018128
 EMP2(bb)=     -0.014018128
 EMP2(ab)=     -0.111018482
 
-Initial guess performed in     0.018 sec
+Initial guess performed in     0.001 sec
 E(0)                                       ...    -98.789564766
 E(MP2)                                     ...     -0.139054738
 Initial E(tot)                             ...    -98.928619504
@@ -1367,14 +1367,14 @@ Number of pairs included                   ... 15
 Number of amplitudes to be optimized       ...         8825
 
 Iter       E(tot)           E(Corr)          Delta-E          Residual     Time      <S|S>**1/2
-  0    -98.928619504     -0.139054738      0.000000000      0.039448362    0.05      0.000000017
+  0    -98.928619504     -0.139054738      0.000000000      0.039448362    0.07      0.000000017
                            *** Turning on DIIS ***
   1    -98.942674948     -0.153110182     -0.014055444      0.037547208    0.03      0.006887554
-  2    -98.947251153     -0.157686386     -0.004576205      0.035481937    0.02      0.009741229
+  2    -98.947251153     -0.157686386     -0.004576205      0.035481937    0.04      0.009741229
   3    -98.949348221     -0.159783454     -0.002097068      0.032485063    0.03      0.010544043
-  4    -98.956267903     -0.166703137     -0.006919682      0.017642092    0.02      0.010325020
+  4    -98.956267903     -0.166703137     -0.006919682      0.017642092    0.04      0.010325020
   5    -98.961620417     -0.172055651     -0.005352515      0.003201403    0.02      0.009927629
-  6    -98.962336811     -0.172772045     -0.000716394      0.000744385    0.04      0.009904534
+  6    -98.962336811     -0.172772045     -0.000716394      0.000744385    0.02      0.009904534
   7    -98.962616304     -0.173051537     -0.000279493      0.000099602    0.02      0.009916982
   8    -98.962568547     -0.173003781      0.000047757      0.000023927    0.02      0.009912337
   9    -98.962582151     -0.173017384     -0.000013604      0.000011546    0.02      0.009910905
@@ -1574,23 +1574,25 @@ SPIN
 --------------------------------------------------------------------------------
 
 
-Total execution time                   ...      147.494 sec
+Total execution time                   ...      169.051 sec
 
-Fock Matrix Formation                  ...        0.342 sec (  0.2%)
-Initial Guess                          ...        0.018 sec (  0.0%)
+Fock Matrix Formation                  ...        0.349 sec (  0.2%)
+Initial Guess                          ...        0.001 sec (  0.0%)
 DIIS Solver                            ...        0.004 sec (  0.0%)
 State Vector Update                    ...        0.000 sec (  0.0%)
-Sigma-vector construction              ...        0.266 sec (  0.2%)
-  <D|H|D>(2-ext)                       ...        0.011 sec (  4.2% of sigma)
-  <D|H|D>(4-ext)                       ...        0.101 sec ( 37.9% of sigma)
-  <D|H|S>(1-ext)                       ...        0.001 sec (  0.5% of sigma)
-  Fock-dressing                        ...        0.118 sec ( 44.4% of sigma)
-  (ij|ab),(ia|jb)-dressing             ...        0.020 sec (  7.6% of sigma)
-Total Time for computing (T)           ...        0.446 sec (  0.3% of ALL)
+Sigma-vector construction              ...        0.309 sec (  0.2%)
+  <D|H|D>(2-ext Fock)                  ...        0.001 sec (  0.4% of sigma)
+  <D|H|D>(2-ext)                       ...        0.015 sec (  4.7% of sigma)
+  <D|H|D>(4-ext)                       ...        0.114 sec ( 36.7% of sigma)
+  <D|H|S>(1-ext)                       ...        0.002 sec (  0.6% of sigma)
+  Fock-dressing                        ...        0.138 sec ( 44.5% of sigma)
+  (ik|jl)-dressing                     ...        0.001 sec (  0.3% of sigma)
+  (ij|ab),(ia|jb)-dressing             ...        0.026 sec (  8.4% of sigma)
+Total Time for computing (T)           ...        0.492 sec (  0.3% of ALL)
   I/O of integral and amplitudes       ...        0.006 sec (  1.3% of (T))
-  External N**7 contributions          ...        0.012 sec (  2.8% of (T))
-  Internal N**7 contributions          ...        0.002 sec (  0.5% of (T))
-  N**6 triples energy contributions    ...        0.013 sec (  2.8% of (T))
+  External N**7 contributions          ...        0.013 sec (  2.7% of (T))
+  Internal N**7 contributions          ...        0.003 sec (  0.5% of (T))
+  N**6 triples energy contributions    ...        0.014 sec (  2.9% of (T))
 
 
 Maximum memory used throughout the entire MDCI-calculation: 64.1 MB
@@ -1690,9 +1692,9 @@ x,y,z [Debye]:    -0.000000     0.000000    -0.000000
 
 Timings for individual modules:
 
-Sum of individual times         ...      159.328 sec (=   2.655 min)
-GTO integral calculation        ...        0.972 sec (=   0.016 min)   0.6 %
-SCF iterations                  ...       10.646 sec (=   0.177 min)   6.7 %
-MDCI module                     ...      147.709 sec (=   2.462 min)  92.7 %
+Sum of individual times         ...      181.187 sec (=   3.020 min)
+GTO integral calculation        ...        0.646 sec (=   0.011 min)   0.4 %
+SCF iterations                  ...       11.201 sec (=   0.187 min)   6.2 %
+MDCI module                     ...      169.340 sec (=   2.822 min)  93.5 %
                              ****ORCA TERMINATED NORMALLY****
-TOTAL RUN TIME: 0 days 0 hours 2 minutes 40 seconds 762 msec
+TOTAL RUN TIME: 0 days 0 hours 3 minutes 2 seconds 898 msec
