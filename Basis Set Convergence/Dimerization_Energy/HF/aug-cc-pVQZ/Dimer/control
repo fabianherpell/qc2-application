@@ -5,10 +5,21 @@ $atoms
     basis =aug-cc-pVQZ
     jbas  =aug-cc-pVQZ
 $rij
-$actual step      ridft
+$last step     ridft
 $basis file=basis
 $jbas file=auxbasis
 $closed shells
  a       1-24                                   ( 2 )
 $scfmo    file=mos
+$orbital_max_rnorm 0.20407922577025E-04
+$energy      SCF               SCFKIN            SCFPOT
+     1 -377.7253783596      377.0712970673     -754.7966754269
+$last SCF energy change = -377.72538
+$subenergy  Etot         E1                  Ej                Ex                 En
+-377.7253783596    -988.2733660866     0.000000000000     0.000000000000     236.4901757909
+$charge from ridft
+         -0.000 (not to be modified here)
+$dipole from ridft
+  x    -0.00674075519450    y    -0.00160890832028    z    -0.00548573587869    a.u.
+   | dipole | =    0.0224654797  debye
 $end
