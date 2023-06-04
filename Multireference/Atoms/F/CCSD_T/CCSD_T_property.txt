@@ -6,33 +6,27 @@ $ SCF_Energy
    description: The SCF energy
    geom. index: 1
    prop. index: 1
-        SCF Energy:      -98.8364724300
-# -----------------------------------------------------------
-$ SCF_Energy
-   description: The SCF energy
-   geom. index: 1
-   prop. index: 2
-        SCF Energy:      -98.7895649133
+        SCF Energy:      -99.4117984898
 # -----------------------------------------------------------
 $ MDCI_Energies
    description: The MDCI energies
    geom. index: 1
    prop. index: 1
         Total number of Electrons                                                      9
-        Number of correlated Electrons                                                 6
-        Number of alpha correlated Electrons                                           3
+        Number of correlated Electrons                                                 7
+        Number of alpha correlated Electrons                                           4
         Number of beta correlated Electrons                                            3
-        Reference Energy:                                                 -98.7895647663
-        Total Correlation Energy:                                          -0.1871113609
-        Alpha-Alpha Pairs Correlation Energy (No (T))                      -0.0149498471
-        Beta-Beta Pairs Correlation Energy (No (T))                        -0.0149498471
-        Alpha-Beta Pairs Correlation Energy (No (T))                       -0.1431136810
+        Reference Energy:                                                 -99.4117985003
+        Total Correlation Energy:                                          -0.2132584782
+        Alpha-Alpha Pairs Correlation Energy (No (T))                      -0.0313914025
+        Beta-Beta Pairs Correlation Energy (No (T))                        -0.0146073687
+        Alpha-Beta Pairs Correlation Energy (No (T))                       -0.1638252270
         Singlet pairs energy of double amplitudes (No (T))                  0.0000000000
         Triplet pairs energy of double amplitudes (No (T))                  0.0000000000
         Singlet pairs energy of quadratic single amplitudes (No (T))        0.0000000000
         Triplet pairs energy of quadratic single amplitudes (No (T))        0.0000000000
-        Triples Correction Energy:                                         -0.0140979854
-        Total MDCI Energy:                                                -98.9766761271
+        Triples Correction Energy:                                         -0.0034344810
+        Total MDCI Energy:                                                -99.6250569785
 # -----------------------------------------------------------
 $ Calculation_Info
    description: Details of the calculation
@@ -49,39 +43,13 @@ $ Calculation_Info
      number of aux J basis functions:       0
      number of aux JK basis functions:      0
      number of aux CABS basis functions:    0
-     Total Energy                           -98.976676
+     Total Energy                           -99.625057
 # -----------------------------------------------------------
 $ SCF_Electric_Properties
    description: The SCF Calculated Electric Properties
    geom. index: 1
    prop. index: 1
        Filename                          : CCSD_T.scfp 
-       Do Dipole Moment Calculation      : true 
-       Do Quadrupole Moment Calculation  : false 
-       Do Polarizability Calculation     : false 
-** Dipole moment part of electric properties **
-        Magnitude of dipole moment (Debye) :        0.0000000000
-        Electronic Contribution:
-                  0    
-      0      -0.000000
-      1      -0.000000
-      2       0.000000
-        Nuclear Contribution:
-                  0    
-      0       0.000000
-      1       0.000000
-      2       0.000000
-        Total Dipole moment:
-                  0    
-      0      -0.000000
-      1      -0.000000
-      2       0.000000
-# -----------------------------------------------------------
-$ MDCI_Electric_Properties
-   description: The MDCI Calculated Electric Properties
-   geom. index: 1
-   prop. index: 1
-       Filename                          : CCSD_T.mdcip 
        Do Dipole Moment Calculation      : true 
        Do Quadrupole Moment Calculation  : false 
        Do Polarizability Calculation     : false 
@@ -100,6 +68,32 @@ $ MDCI_Electric_Properties
         Total Dipole moment:
                   0    
       0      -0.000000
+      1       0.000000
+      2      -0.000000
+# -----------------------------------------------------------
+$ MDCI_Electric_Properties
+   description: The MDCI Calculated Electric Properties
+   geom. index: 1
+   prop. index: 1
+       Filename                          : CCSD_T.mdcip 
+       Do Dipole Moment Calculation      : true 
+       Do Quadrupole Moment Calculation  : false 
+       Do Polarizability Calculation     : false 
+** Dipole moment part of electric properties **
+        Magnitude of dipole moment (Debye) :        0.0000000000
+        Electronic Contribution:
+                  0    
+      0       0.000000
+      1       0.000000
+      2      -0.000000
+        Nuclear Contribution:
+                  0    
+      0       0.000000
+      1       0.000000
+      2       0.000000
+        Total Dipole moment:
+                  0    
+      0       0.000000
       1       0.000000
       2      -0.000000
 # -------------------------------------------------------------

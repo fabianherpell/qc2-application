@@ -2,11 +2,27 @@
 ----------------------- !PROPERTIES! ------------------------
 -------------------------------------------------------------
 # -----------------------------------------------------------
-$ SCF_Energy
-   description: The SCF energy
+$ CASSCF_Energies
+   description: The CASSCF energies
    geom. index: 1
    prop. index: 1
-        SCF Energy:       -0.4998098322
+       Number of Multiplicities          : 1 
+       FINAL CASSCF Energy               :    -99.4501647964 
+ RESULTS FOR MULTIPLICITY                 2  AND IRREP  0
+       NUMBER OF ROOTS                    1 
+ROOT   0 Energy    -99.4501647964
+# -----------------------------------------------------------
+$ CASSCF_Dipole
+   description: The CASSCF dipole moments 
+   geom. index: 1
+   prop. index: 1
+        Number of states:  0
+        The CASSCF Dipole moments :
+                  0          1          2          3    
+      0      -0.000835  -0.001305  -0.030435   0.030474
+        Info about the states:
+                  0          1    
+      0         0          0     
 # -----------------------------------------------------------
 $ Calculation_Info
    description: Details of the calculation
@@ -18,38 +34,12 @@ $ Calculation_Info
      number of electrons:                   0
      number of frozen core electrons:       1
      number of correlated electrons:        0
-     number of basis functions:             6
+     number of basis functions:             31
      number of aux C basis functions:       0
      number of aux J basis functions:       0
      number of aux JK basis functions:      0
      number of aux CABS basis functions:    0
-     Total Energy                           -0.499810
-# -----------------------------------------------------------
-$ SCF_Electric_Properties
-   description: The SCF Calculated Electric Properties
-   geom. index: 1
-   prop. index: 1
-       Filename                          : h.in.scfp 
-       Do Dipole Moment Calculation      : true 
-       Do Quadrupole Moment Calculation  : false 
-       Do Polarizability Calculation     : false 
-** Dipole moment part of electric properties **
-        Magnitude of dipole moment (Debye) :        0.0000000000
-        Electronic Contribution:
-                  0    
-      0      -0.000000
-      1      -0.000000
-      2      -0.000000
-        Nuclear Contribution:
-                  0    
-      0       0.000000
-      1       0.000000
-      2       0.000000
-        Total Dipole moment:
-                  0    
-      0      -0.000000
-      1      -0.000000
-      2      -0.000000
+     Total Energy                           -99.450165
 # -------------------------------------------------------------
 ----------------------- !GEOMETRIES! ------------------------
 # -------------------------------------------------------------
@@ -57,4 +47,4 @@ $ SCF_Electric_Properties
     Number of atoms:    1 
     Geometry Index:     1 
     Coordinates:
-               0 H      0.000000000000    0.000000000000    0.000000000000
+               0 F      0.000000000000    0.000000000000    0.000000000000

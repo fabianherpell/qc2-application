@@ -7,10 +7,10 @@ $ CASSCF_Energies
    geom. index: 1
    prop. index: 1
        Number of Multiplicities          : 1 
-       FINAL CASSCF Energy               :    -99.4501647964 
+       FINAL CASSCF Energy               :    -99.4071674661 
  RESULTS FOR MULTIPLICITY                 2  AND IRREP  0
        NUMBER OF ROOTS                    1 
-ROOT   0 Energy    -99.4501647964
+ROOT   0 Energy    -99.4071674661
 # -----------------------------------------------------------
 $ CASSCF_Dipole
    description: The CASSCF dipole moments 
@@ -19,7 +19,7 @@ $ CASSCF_Dipole
         Number of states:  0
         The CASSCF Dipole moments :
                   0          1          2          3    
-      0      -0.000835  -0.001305  -0.030435   0.030474
+      0      -0.000000   0.000000  -0.000000   0.000000
         Info about the states:
                   0          1    
       0         0          0     
@@ -39,7 +39,7 @@ $ Calculation_Info
      number of aux J basis functions:       0
      number of aux JK basis functions:      0
      number of aux CABS basis functions:    0
-     Total Energy                           -99.450165
+     Total Energy                           -99.407167
 # -------------------------------------------------------------
 ----------------------- !GEOMETRIES! ------------------------
 # -------------------------------------------------------------

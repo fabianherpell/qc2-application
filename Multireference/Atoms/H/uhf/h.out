@@ -145,11 +145,6 @@ Your calculation utilizes the basis: def2-TZVP
 ================================================================================
 
 
-WARNING: Broken symmetry calculations need fully converged wavefunctions
-  ===> : Setting SCFConvForced true
-         You can overwrite this default with %scf ConvForced false 
-
-
 INFO   : the flag for use of the SHARK integral package has been found!
 
 ================================================================================
@@ -158,11 +153,10 @@ INFO   : the flag for use of the SHARK integral package has been found!
 NAME = h.in
 |  1> ! UHF def2-TZVP TightSCF
 |  2> 
-|  3> %scf BrokenSym 1,1 end
-|  4> 
-|  5> * xyz 0 2
-|  6> H 0 0 0
-|  7> **                         ****END OF INPUT****
+|  3> 
+|  4> * xyz 0 2
+|  5> H 0 0 0
+|  6> **                         ****END OF INPUT****
 ================================================================================
 
                        ****************************
@@ -258,7 +252,7 @@ Primitive shell pairs kept                  ...        24
           la=1 lb=1:      1 shell pairs
 
 Calculating one electron integrals          ... done (  0.0 sec)
-Calculating Nuclear repulsion               ... done (  0.0 sec) ENN=      0.000000000000 Eh
+Calculating Nuclear repulsion               ... done (  0.1 sec) ENN=      0.000000000000 Eh
 
 SHARK setup successfully completed in   0.6 seconds
 
@@ -331,17 +325,10 @@ SCF Procedure:
 
 Convergence Tolerance:
  Convergence Check Mode ConvCheckMode   .... Total+1el-Energy
- Convergence forced     ConvForced      .... 1
+ Convergence forced     ConvForced      .... 0
  Energy Change          TolE            ....  1.000e-08 Eh
  1-El. energy change                    ....  1.000e-05 Eh
  DIIS Error             TolErr          ....  5.000e-07
-
-
-The Broken Symmetry feature is operative
-   Number of electrons in the 'A' domain  ... 1
-   Number of electrons in the 'B' domain  ... 1
-We will first do a calculation with S=  1.0
-and then try to converge to the broken symmetry state with Ms=  0.0
 
 
 Diagonalization of the overlap matrix:
@@ -349,10 +336,10 @@ Smallest eigenvalue                        ... 1.094e-01
 Time for diagonalization                   ...    0.000 sec
 Threshold for overlap eigenvalues          ... 1.000e-08
 Number of eigenvalues below threshold      ... 0
-Time for construction of square roots      ...    0.069 sec
-Total time needed                          ...    0.077 sec
+Time for construction of square roots      ...    0.102 sec
+Total time needed                          ...    0.119 sec
 
-Time for model grid setup =    0.060 sec
+Time for model grid setup =    0.096 sec
 
 ------------------------------
 INITIAL GUESS: MODEL POTENTIAL
@@ -377,19 +364,20 @@ SCF ITERATIONS
 --------------
 ITER       Energy         Delta-E        Max-DP      RMS-DP      [F,P]     Damp
                ***  Starting incremental Fock matrix formation  ***
-  0     -0.1481948784   0.000000000000 0.01579221  0.00279432  0.0287479 0.7000
-  1     -0.1485206747  -0.000325796310 0.01288974  0.00228175  0.0219075 0.7000
+  0     -0.4951036604   0.000000000000 0.01896118  0.00258939  0.0436791 0.7000
+  1     -0.4959863883  -0.000882727938 0.01893520  0.00264269  0.0373139 0.7000
                                ***Turning on DIIS***
-  2     -0.1487669591  -0.000246284371 0.03174309  0.00561207  0.0163152 0.0000
-  3     -0.1495227457  -0.000755786650 0.00334349  0.00058325  0.0023591 0.0000
-  4     -0.1494188687   0.000103877053 0.00030402  0.00004114  0.0002626 0.0000
-  5     -0.1494084831   0.000010385556 0.00009547  0.00001395  0.0000179 0.0000
-  6     -0.1494084992  -0.000000016120 0.00001259  0.00000186  0.0000020 0.0000
-                            ***DIIS convergence achieved***
+  2     -0.4967904832  -0.000804094933 0.05349138  0.00756185  0.0310333 0.0000
+  3     -0.4996340060  -0.002843522785 0.02473515  0.00382498  0.0130770 0.0000
+  4     -0.4998366088  -0.000202602824 0.00633260  0.00102506  0.0030571 0.0000
+  5     -0.4998175067   0.000019102180 0.00232820  0.00036234  0.0007062 0.0000
+  6     -0.4998095361   0.000007970596 0.00019242  0.00002847  0.0000475 0.0000
+  7     -0.4998098226  -0.000000286515 0.00002182  0.00000319  0.0000048 0.0000
+                 **** Energy Check signals convergence ****
 
                *****************************************************
                *                     SUCCESS                       *
-               *           SCF CONVERGED AFTER   7 CYCLES          *
+               *           SCF CONVERGED AFTER   8 CYCLES          *
                *****************************************************
 
 
@@ -397,28 +385,28 @@ ITER       Energy         Delta-E        Max-DP      RMS-DP      [F,P]     Damp
 TOTAL SCF ENERGY
 ----------------
 
-Total Energy       :           -0.14940860 Eh              -4.06561 eV
+Total Energy       :           -0.49980983 Eh             -13.60052 eV
 
 Components:
 Nuclear Repulsion  :            0.00000000 Eh               0.00000 eV
-Electronic Energy  :           -0.14940860 Eh              -4.06561 eV
-One Electron Energy:           -0.47046199 Eh             -12.80192 eV
-Two Electron Energy:            0.32105340 Eh               8.73631 eV
+Electronic Energy  :           -0.49980983 Eh             -13.60052 eV
+One Electron Energy:           -0.49980983 Eh             -13.60052 eV
+Two Electron Energy:            0.00000000 Eh               0.00000 eV
 
 Virial components:
-Potential Energy   :           -1.25744327 Eh             -34.21677 eV
-Kinetic Energy     :            1.10803468 Eh              30.15116 eV
-Virial Ratio       :            1.13484108
+Potential Energy   :           -0.99961966 Eh             -27.20103 eV
+Kinetic Energy     :            0.49980983 Eh              13.60052 eV
+Virial Ratio       :            2.00000001
 
 
 ---------------
 SCF CONVERGENCE
 ---------------
 
-  Last Energy change         ...   -9.5904e-08  Tolerance :   1.0000e-08
-  Last MAX-Density change    ...    2.6323e-07  Tolerance :   1.0000e-07
-  Last RMS-Density change    ...    3.9001e-08  Tolerance :   5.0000e-09
-  Last DIIS Error            ...    4.0403e-08  Tolerance :   5.0000e-07
+  Last Energy change         ...   -9.6114e-09  Tolerance :   1.0000e-08
+  Last MAX-Density change    ...    6.7204e-07  Tolerance :   1.0000e-07
+  Last RMS-Density change    ...    9.7823e-08  Tolerance :   5.0000e-09
+  Last DIIS Error            ...    1.4472e-07  Tolerance :   5.0000e-07
 
              **** THE GBW FILE WAS UPDATED (h.in.gbw) ****
              **** DENSITY h.in.scfp WAS UPDATED ****
@@ -427,8 +415,8 @@ SCF CONVERGENCE
 UHF SPIN CONTAMINATION
 ----------------------
 
-Expectation value of <S**2>     :     2.000000
-Ideal value S*(S+1) for S=1.0   :     2.000000
+Expectation value of <S**2>     :     0.750000
+Ideal value S*(S+1) for S=0.5   :     0.750000
 Deviation                       :     0.000000
 
              **** THE GBW FILE WAS UPDATED (h.in.gbw) ****
@@ -438,45 +426,44 @@ ORBITAL ENERGIES
 ----------------
                  SPIN UP ORBITALS
   NO   OCC          E(Eh)            E(eV) 
-   0   1.0000      -0.178522        -4.8578 
-   1   1.0000       0.350167         9.5285 
-   2   0.0000       1.985483        54.0277 
-   3   0.0000       1.985483        54.0277 
-   4   0.0000       1.985483        54.0277 
-   5   0.0000       2.850938        77.5780 
+   0   1.0000      -0.499810       -13.6005 
+   1   0.0000       0.350640         9.5414 
+   2   0.0000       1.594997        43.4021 
+   3   0.0000       1.594997        43.4021 
+   4   0.0000       1.594997        43.4021 
+   5   0.0000       2.482424        67.5502 
 
                  SPIN DOWN ORBITALS
   NO   OCC          E(Eh)            E(eV) 
-   0   0.0000       0.389641        10.6027 
-   1   0.0000       0.869535        23.6613 
-   2   0.0000       2.151074        58.5337 
-   3   0.0000       2.151074        58.5337 
-   4   0.0000       2.151074        58.5337 
-   5   0.0000       3.069410        83.5229 
+   0   0.0000       0.056440         1.5358 
+   1   0.0000       0.494332        13.4515 
+   2   0.0000       1.727577        47.0098 
+   3   0.0000       1.727577        47.0098 
+   4   0.0000       1.727577        47.0098 
+   5   0.0000       2.613788        71.1248 
 
                     ********************************
                     * MULLIKEN POPULATION ANALYSIS *
                     ********************************
 
-      **** WARNING: MULLIKEN FINDS    2.0000000 ELECTRONS INSTEAD OF 1 ****
 --------------------------------------------
 MULLIKEN ATOMIC CHARGES AND SPIN POPULATIONS
 --------------------------------------------
-   0 H :   -1.000000    2.000000
-Sum of atomic charges         :   -1.0000000
-Sum of atomic spin populations:    2.0000000
+   0 H :   -0.000000    1.000000
+Sum of atomic charges         :   -0.0000000
+Sum of atomic spin populations:    1.0000000
 
 -----------------------------------------------------
 MULLIKEN REDUCED ORBITAL CHARGES AND SPIN POPULATIONS
 -----------------------------------------------------
 CHARGE
-  0 H s       :     2.000000  s :     2.000000
+  0 H s       :     1.000000  s :     1.000000
       pz      :     0.000000  p :     0.000000
       px      :     0.000000
       py      :     0.000000
 
 SPIN
-  0 H s       :     2.000000  s :     2.000000
+  0 H s       :     1.000000  s :     1.000000
       pz      :     0.000000  p :     0.000000
       px      :     0.000000
       py      :     0.000000
@@ -486,23 +473,22 @@ SPIN
                      * LOEWDIN POPULATION ANALYSIS *
                      *******************************
 
-      **** WARNING: LOEWDIN FINDS    2.0000000 ELECTRONS INSTEAD OF 1 ****
 -------------------------------------------
 LOEWDIN ATOMIC CHARGES AND SPIN POPULATIONS
 -------------------------------------------
-   0 H :   -1.000000    2.000000
+   0 H :   -0.000000    1.000000
 
 ----------------------------------------------------
 LOEWDIN REDUCED ORBITAL CHARGES AND SPIN POPULATIONS
 ----------------------------------------------------
 CHARGE
-  0 H s       :     2.000000  s :     2.000000
+  0 H s       :     1.000000  s :     1.000000
       pz      :     0.000000  p :     0.000000
       px      :     0.000000
       py      :     0.000000
 
 SPIN
-  0 H s       :     2.000000  s :     2.000000
+  0 H s       :     1.000000  s :     1.000000
       pz      :     0.000000  p :     0.000000
       px      :     0.000000
       py      :     0.000000
@@ -520,255 +506,13 @@ SPIN
   FA   - Mayer's free valence
 
   ATOM       NA         ZA         QA         VA         BVA        FA
-  0 H      2.0000     1.0000    -1.0000     2.0000     0.0000     2.0000
+  0 H      1.0000     1.0000    -0.0000     1.0000     0.0000     1.0000
 
   Mayer bond orders larger than 0.100000
 
 
 Local spin analysis not attempted because no beta electrons available
 
-                ***UHF Natural Orbitals were saved in h.in.unso***
-
-
-                ***UHF Natural Orbitals were saved in h.in.uno***
-
-QR-MO GENERATION
- Dim     =    6
- Mult    =    3
- NEl     =    1
- N(DOMO) =    0
- N(SOMO) =    2
- N(VMO)  =    4
-
-
-                ***Quasi-Restricted Orbitals were saved in h.in.qro***
-
-Orbital Energies of Quasi-Restricted MO's
-   0( 1) :     0.146471 a.u.     3.986 eV alpha=   -3.815 beta=   11.786
-   1( 1) :     0.579332 a.u.    15.764 eV alpha=    8.486 beta=   23.043
-   2( 0) :     1.985483 a.u.    54.028 eV
-   3( 0) :     1.985483 a.u.    54.028 eV
-   4( 0) :     1.985483 a.u.    54.028 eV
-   5( 0) :     2.850938 a.u.    77.578 eV
-------------------------------------------------------------------------------
-                           ORCA ORBITAL LOCALIZATION
-------------------------------------------------------------------------------
-
-Input orbitals are from                  ... h.in.uno
-Output orbitals are to                   ... h.in.unoloc
-Max. number of iterations                ... 64
-Localizations seeded randomly            ... on
-Convergence tolerance                    ... 1.000e-05
-Using relative localization threshhold   ... 1.000e-05
-Treshold for strong local MOs            ... 0.000e+00
-Treshold for bond MOs                    ... 1.000e-01
-Operator                                 ... 0
-Orbital range for localization           ... 0 to 1
-Localization criterion                   ... PIPEK-MEZEY
-Entering Jacobi type localization:
-Using Cholesky decomposition as initial guess.
-Initial value of the localization sum :     2.000000
-ITERATION   0 : L=    2.0000000000 DL=  0.00e+00 (MAX-T)=   0.000 
-ITERATION   1 : L=    2.0000000000 DL=  0.00e+00 (MAX-T)=   0.000 
-ITERATION   2 : L=    2.0000000000 DL=  0.00e+00 (MAX-T)=   0.000 
-LOCALIZATION SUM CONVERGED
-
-
---------------------------------------------------------------------------------
-                    LOCALIZED MOLECULAR ORBITAL COMPOSITIONS
---------------------------------------------------------------------------------
-
-The Mulliken populations for each LMO on each atom are computed
-The LMO`s will be ordered according to atom index and type
-  (A) Strongly localized MO`s have populations of >=0.000 on one atom
-  (B) Two center bond orbitals have populations of >=0.100 on two atoms
-  (C) Other MO`s are considered to be `delocalized`
-
-FOUND  -   2 strongly local MO`s
-       -   0 two center bond MO`s
-       -   0 significantly delocalized MO`s
-
-Rather strongly localized orbitals:
-MO   1:   0H  -   1.000000
-MO   0:   0H  -   1.000000
-Localized MO's were stored in: h.in.unoloc
-
-----------------------------
- BROKEN SYMMETRY INFORMATION
-----------------------------
-
-first open orbital = 0
-last open orbital  = 1
-HOMO(alpha)        = 0
-HOMO(beta)         = 0
-The new occupation numbers
-   0:    1.000    1.000
-   1:    0.000    0.000
-   2:    0.000    0.000
-   3:    0.000    0.000
-   4:    0.000    0.000
-   5:    0.000    0.000
-
---------------
-SCF ITERATIONS
---------------
-ITER       Energy         Delta-E        Max-DP      RMS-DP      [F,P]     Damp
-               ***  Starting incremental Fock matrix formation  ***
-  0     -0.1184605483   0.000000000000 0.21342908  0.03545465  0.0762428 0.7000
-  1     -0.1663400314  -0.047879483028 0.24839637  0.04238943  0.0786707 0.7000
-                               ***Turning on DIIS***
-  2     -0.2151171894  -0.048777158080 0.78586225  0.13303901  0.0737465 0.0000
-  3     -0.4227271962  -0.207610006733 0.66578342  0.09827226  0.0504721 0.0000
-  4     -0.4501674628  -0.027440266608 0.12324650  0.01746684  0.0059378 0.0000
-  5     -0.4543630624  -0.004195599642 0.11665135  0.01714568  0.0024649 0.0000
-  6     -0.4616045423  -0.007241479875 0.09242336  0.01419883  0.0006786 0.0000
-  7     -0.4647863894  -0.003181847108 0.04856477  0.00776133  0.0004298 0.0000
-  8     -0.4656884539  -0.000902064528 0.04250189  0.00692717  0.0001889 0.0000
-  9     -0.4663134732  -0.000625019306 0.01827485  0.00302995  0.0000391 0.0000
- 10     -0.4664435400  -0.000130066775 0.01066656  0.00178197  0.0000138 0.0000
- 11     -0.4664802888  -0.000036748761 0.00561099  0.00094229  0.0000036 0.0000
- 12     -0.4664918472  -0.000011558403 0.00358056  0.00060295  0.0000015 0.0000
-                            ***DIIS convergence achieved***
-
-               *****************************************************
-               *                     SUCCESS                       *
-               *           SCF CONVERGED AFTER  13 CYCLES          *
-               *****************************************************
-
-
-----------------
-TOTAL SCF ENERGY
-----------------
-
-Total Energy       :           -0.46649582 Eh             -12.69400 eV
-
-Components:
-Nuclear Repulsion  :            0.00000000 Eh               0.00000 eV
-Electronic Energy  :           -0.46649582 Eh             -12.69400 eV
-One Electron Energy:           -0.92608717 Eh             -25.20011 eV
-Two Electron Energy:            0.45959136 Eh              12.50612 eV
-
-Virial components:
-Potential Energy   :           -1.04115272 Eh             -28.33121 eV
-Kinetic Energy     :            0.57465691 Eh              15.63721 eV
-Virial Ratio       :            1.81178145
-
-
----------------
-SCF CONVERGENCE
----------------
-
-  Last Energy change         ...   -3.9695e-06  Tolerance :   1.0000e-08
-  Last MAX-Density change    ...    1.9699e-03  Tolerance :   1.0000e-07
-  Last RMS-Density change    ...    3.3234e-04  Tolerance :   5.0000e-09
-  Last DIIS Error            ...    4.0841e-07  Tolerance :   5.0000e-07
-
-             **** THE GBW FILE WAS UPDATED (h.in.gbw) ****
-             **** DENSITY h.in.scfp WAS UPDATED ****
-             **** ENERGY FILE WAS UPDATED (h.in.en.tmp) ****
-----------------------
-UHF SPIN CONTAMINATION
-----------------------
-
-Expectation value of <S**2>     :     0.000008
-Ideal value S*(S+1) for S=0.0   :     0.000000
-Deviation                       :     0.000008
-
-             **** THE GBW FILE WAS UPDATED (h.in.gbw) ****
-             **** DENSITY h.in.scfp WAS UPDATED ****
-----------------
-ORBITAL ENERGIES
-----------------
-                 SPIN UP ORBITALS
-  NO   OCC          E(Eh)            E(eV) 
-   0   1.0000      -0.002934        -0.0799 
-   1   0.0000       0.742030        20.1917 
-   2   0.0000       2.087744        56.8104 
-   3   0.0000       2.087744        56.8104 
-   4   0.0000       2.087744        56.8104 
-   5   0.0000       2.981050        81.1185 
-
-                 SPIN DOWN ORBITALS
-  NO   OCC          E(Eh)            E(eV) 
-   0   1.0000      -0.003975        -0.1082 
-   1   0.0000       0.741037        20.1646 
-   2   0.0000       2.087131        56.7937 
-   3   0.0000       2.087131        56.7937 
-   4   0.0000       2.087131        56.7937 
-   5   0.0000       2.980281        81.0976 
-
-                    ********************************
-                    * MULLIKEN POPULATION ANALYSIS *
-                    ********************************
-
-      **** WARNING: MULLIKEN FINDS    2.0000000 ELECTRONS INSTEAD OF 1 ****
---------------------------------------------
-MULLIKEN ATOMIC CHARGES AND SPIN POPULATIONS
---------------------------------------------
-   0 H :   -1.000000    0.000000
-Sum of atomic charges         :   -1.0000000
-Sum of atomic spin populations:    0.0000000
-
------------------------------------------------------
-MULLIKEN REDUCED ORBITAL CHARGES AND SPIN POPULATIONS
------------------------------------------------------
-CHARGE
-  0 H s       :     2.000000  s :     2.000000
-      pz      :     0.000000  p :     0.000000
-      px      :     0.000000
-      py      :     0.000000
-
-SPIN
-  0 H s       :     0.000000  s :     0.000000
-      pz      :    -0.000000  p :    -0.000000
-      px      :     0.000000
-      py      :     0.000000
-
-
-                     *******************************
-                     * LOEWDIN POPULATION ANALYSIS *
-                     *******************************
-
-      **** WARNING: LOEWDIN FINDS    2.0000000 ELECTRONS INSTEAD OF 1 ****
--------------------------------------------
-LOEWDIN ATOMIC CHARGES AND SPIN POPULATIONS
--------------------------------------------
-   0 H :   -1.000000    0.000000
-
-----------------------------------------------------
-LOEWDIN REDUCED ORBITAL CHARGES AND SPIN POPULATIONS
-----------------------------------------------------
-CHARGE
-  0 H s       :     2.000000  s :     2.000000
-      pz      :     0.000000  p :     0.000000
-      px      :     0.000000
-      py      :     0.000000
-
-SPIN
-  0 H s       :     0.000000  s :     0.000000
-      pz      :    -0.000000  p :    -0.000000
-      px      :     0.000000
-      py      :     0.000000
-
-
-                      *****************************
-                      * MAYER POPULATION ANALYSIS *
-                      *****************************
-
-  NA   - Mulliken gross atomic population
-  ZA   - Total nuclear charge
-  QA   - Mulliken gross atomic charge
-  VA   - Mayer's total valence
-  BVA  - Mayer's bonded valence
-  FA   - Mayer's free valence
-
-  ATOM       NA         ZA         QA         VA         BVA        FA
-  0 H      2.0000     1.0000    -1.0000     0.0000     0.0000     0.0000
-
-  Mayer bond orders larger than 0.100000
-
-
-
 Warning: MO coefficients are modified such that the real solid harmonic m components
 have the correct order within each shell (0, +1, -1, +2, -2, ...) and all s orbitals
 come before all p orbitals etc. (with increasing orbital energy within each block of given angular momentum).
@@ -778,32 +522,32 @@ ATOM BASIS FOR ELEMENT H
 --------------------------
  NewGTO H 
  S 5
-    1         34.061341000000         0.004424795542
-    2          5.123574600000         0.033062671571
-    3          1.164662600000         0.148269671066
-    4          0.327230410000         0.172578681628
-    5          0.103072410000         0.767462388792
+    1         34.061341000000         0.006025197845
+    2          5.123574600000         0.045021094339
+    3          1.164662600000         0.201897261522
+    4          0.327230410000         0.503041113193
+    5          0.103072410000         0.385457294976
  S 5
-    1         34.061341000000         0.002154491811
-    2          5.123574600000         0.016098654609
-    3          1.164662600000         0.072194475223
-    4          0.327230410000         1.488219366540
-    5          0.103072410000        -1.434917974129
+    1         34.061341000000         0.002421585678
+    2          5.123574600000         0.018094416160
+    3          1.164662600000         0.081144475166
+    4          0.327230410000         1.318913031457
+    5          0.103072410000        -1.556495972972
  S 5
-    1         34.061341000000         0.039324815250
-    2          5.123574600000         0.293840345610
-    3          1.164662600000         1.317728099992
-    4          0.327230410000        -1.811302159716
-    5          0.103072410000         0.755042865773
+    1         34.061341000000         0.039095967295
+    2          5.123574600000         0.292130362695
+    3          1.164662600000         1.310059675381
+    4          0.327230410000        -1.879578104784
+    5          0.103072410000         0.804251701716
  P 1
     1          0.800000000000         1.000000000000
  end
 -------------------------------------------
 RADIAL EXPECTATION VALUES <R**-3> TO <R**3>
 -------------------------------------------
-   0 :     0.000000     1.198531     0.749071     2.017763     5.248987    16.209094
-   1 :     0.000000     1.300162     0.741270     2.486905     8.386649    32.229572
-   2 :     0.000000     9.480755     1.997730     1.189343     2.667283     8.439034
+   0 :     0.000000     1.986730     0.999620     1.499034     2.990527     7.426503
+   1 :     0.000000     0.887271     0.565654     2.933427    10.376030    39.985285
+   2 :     0.000000     9.105447     1.922798     1.261549     2.936362     9.465912
    3 :     1.522453     1.066667     0.951533     1.189416     1.562500     2.230155
    4 :     1.522453     1.066667     0.951533     1.189416     1.562500     2.230155
    5 :     1.522453     1.066667     0.951533     1.189416     1.562500     2.230155
@@ -811,132 +555,24 @@ RADIAL EXPECTATION VALUES <R**-3> TO <R**3>
 TIMINGS
 -------
 
-Total SCF time: 0 days 0 hours 0 min 5 sec 
+Total SCF time: 0 days 0 hours 0 min 3 sec 
 
-Total time                  ....       5.399 sec
-Sum of individual times     ....       5.071 sec  ( 93.9%)
+Total time                  ....       3.876 sec
+Sum of individual times     ....       2.189 sec  ( 56.5%)
 
-Fock matrix formation       ....       3.872 sec  ( 71.7%)
-Diagonalization             ....       0.004 sec  (  0.1%)
+Fock matrix formation       ....       1.604 sec  ( 41.4%)
+Diagonalization             ....       0.001 sec  (  0.0%)
 Density matrix formation    ....       0.000 sec  (  0.0%)
-Population analysis         ....       0.429 sec  (  7.9%)
-Initial guess               ....       0.243 sec  (  4.5%)
+Population analysis         ....       0.270 sec  (  7.0%)
+Initial guess               ....       0.165 sec  (  4.3%)
 Orbital Transformation      ....       0.000 sec  (  0.0%)
 Orbital Orthonormalization  ....       0.000 sec  (  0.0%)
-DIIS solution               ....       0.464 sec  (  8.6%)
---------------------------
-UHF CORRESPONDING ORBITALS
---------------------------
-Transforming orbitals                         ... done
-Choosing virtual orbitals in the orth. comp.  ... done
-
-                ***UHF Corresponding Orbitals were saved in h.in.uco***
-
-
-Now the overlap between the corresponding orbitals will be plotted
-Since there are an equal number of alpha and beta orbitals each orbital in the
-alpha set is matched by an orbital in the beta set. If all overlaps are close to
-one you have a normal UHF solution with some spin polarization
-If you have a broken symmetry solution there will be overlaps that are
-significantly smaller than one. These orbitals are the non-orthogonal magnetic
-orbitals of the broken symmetry UHF solution.
-
-----------------------
- Orbital    Overlap(*)
-----------------------
-   0:      1.00000
-(*)  the overlap is weighted by the product of occupation numbers
-     NOTE: the whole analysis is not valid for fractional occupations
-
-------------------------------------------
-BROKEN SYMMETRY MAGNETIC COUPLING ANALYSIS
-------------------------------------------
-
-S(High-Spin)      =   1.0    
-<S**2>(High-Spin) =   2.0000    
-<S**2>(BrokenSym) =   0.0000    
-E(High-Spin)      =    -0.149409 Eh
-E(BrokenSym)      =    -0.466496 Eh
-E(High-Spin)-E(BrokenSym)= 8.6282 eV  69586.153 cm**-1 (ANTIFERROMAGNETIC coupling)
-
-          ---------------------------------------------------------
-          | Spin-Hamiltonian Analysis based on H(HDvV)= -2J*SA*SB |
-    -------                                                       -----------
-    | J(1) =  -69586.15 cm**-1    (from -(E[HS]-E[BS])/Smax**2)             |
-    | J(2) =  -34793.08 cm**-1    (from -(E[HS]-E[BS])/(Smax*(Smax+1))      |
-    | J(3) =  -34793.21 cm**-1    (from -(E[HS]-E[BS])/(<S**2>HS-<S**2>BS)) |
-    -------------------------------------------------------------------------
-
-  J(1): (a) A.P. Ginsberg J. Am. Chem. Soc. 102 (1980), 111
-        (b) L. Noodleman J. Chem. Phys. 74 (1981), 5737
-        (c) L. Noodleman E.R. Davidson Chem. Phys. 109 (1986), 131
-  J(2)  (d) A. Bencini D. Gatteschi J. Am. Chem. Soc. 108 (1980), 5763
-  J(3)  (e) K. Yamaguchi Y. Takahara T. Fueno in: V.H. Smith (Ed.)
-            Applied Quantum Chemistry. Reidel, Dordrecht (1986), pp 155
-        (f) T.Soda et al. Chem. Phys. Lett., 319, (2000), 223
-
-
-Warning: MO coefficients are modified such that the real solid harmonic m components
-have the correct order within each shell (0, +1, -1, +2, -2, ...) and all s orbitals
-come before all p orbitals etc. (with increasing orbital energy within each block of given angular momentum).
-
-CleanUpVectors: The p-vectors have cracked symmetry
---------------------------
-ATOM BASIS FOR ELEMENT H 
---------------------------
- NewGTO H 
- S 5
-    1         34.061341000000         0.004424795542
-    2          5.123574600000         0.033062671571
-    3          1.164662600000         0.148269671066
-    4          0.327230410000         0.172578681628
-    5          0.103072410000         0.767462388792
- S 5
-    1         34.061341000000         0.002154491811
-    2          5.123574600000         0.016098654609
-    3          1.164662600000         0.072194475223
-    4          0.327230410000         1.488219366540
-    5          0.103072410000        -1.434917974129
- S 5
-    1         34.061341000000         0.039324815250
-    2          5.123574600000         0.293840345610
-    3          1.164662600000         1.317728099992
-    4          0.327230410000        -1.811302159716
-    5          0.103072410000         0.755042865773
- P 1
-    1          0.800000000000         1.000000000000
- end
--------------------------------------------
-RADIAL EXPECTATION VALUES <R**-3> TO <R**3>
--------------------------------------------
-   0 :     0.000000     1.198531     0.749071     2.017763     5.248987    16.209094
-   1 :     0.000000     1.300162     0.741270     2.486905     8.386649    32.229572
-   2 :     0.000000     9.480755     1.997730     1.189343     2.667283     8.439034
-   3 :     1.522453     1.066667     0.951533     1.189416     1.562500     2.230155
-   4 :     1.522453     1.066667     0.951533     1.189416     1.562500     2.230155
-   5 :     1.522453     1.066667     0.951533     1.189416     1.562500     2.230155
--------
-TIMINGS
--------
-
-Total SCF time: 0 days 0 hours 0 min 9 sec 
-
-Total time                  ....       9.346 sec
-Sum of individual times     ....       6.403 sec  ( 68.5%)
-
-Fock matrix formation       ....       0.000 sec  (  0.0%)
-Diagonalization             ....       0.000 sec  (  0.0%)
-Density matrix formation    ....       0.000 sec  (  0.0%)
-Population analysis         ....       6.403 sec  ( 68.5%)
-Initial guess               ....       0.000 sec  (  0.0%)
-Orbital Transformation      ....       0.000 sec  (  0.0%)
-Orbital Orthonormalization  ....       0.000 sec  (  0.0%)
-DIIS solution               ....       0.000 sec  (  0.0%)
+DIIS solution               ....       0.053 sec  (  1.4%)
 
 Maximum memory used throughout the entire SCF-calculation: 223.4 MB
 
 -------------------------   --------------------
-FINAL SINGLE POINT ENERGY        -0.466495816660
+FINAL SINGLE POINT ENERGY        -0.499809832183
 -------------------------   --------------------
 
 
@@ -965,10 +601,10 @@ The origin for moment calculation is the CENTER OF MASS  = ( 0.000000,  0.000000
 DIPOLE MOMENT
 -------------
                                 X             Y             Z
-Electronic contribution:      0.00000       0.00000       0.00000
+Electronic contribution:     -0.00000      -0.00000      -0.00000
 Nuclear contribution   :      0.00000       0.00000       0.00000
                         -----------------------------------------
-Total Dipole Moment    :      0.00000       0.00000       0.00000
+Total Dipole Moment    :     -0.00000      -0.00000      -0.00000
                         -----------------------------------------
 Magnitude (a.u.)       :      0.00000
 Magnitude (Debye)      :      0.00000
@@ -983,15 +619,15 @@ Rotational constants in cm-1:     0.000000     0.000000     0.000000
 Rotational constants in MHz :     0.000000     0.000000     0.000000 
 
  Dipole components along the rotational axes: 
-x,y,z [a.u.] :     0.000000     0.000000     0.000000 
-x,y,z [Debye]:     0.000000     0.000000     0.000000 
+x,y,z [a.u.] :    -0.000000    -0.000000    -0.000000 
+x,y,z [Debye]:    -0.000000    -0.000000    -0.000000 
 
  
 
 Timings for individual modules:
 
-Sum of individual times         ...       10.769 sec (=   0.179 min)
-GTO integral calculation        ...        0.644 sec (=   0.011 min)   6.0 %
-SCF iterations                  ...       10.125 sec (=   0.169 min)  94.0 %
+Sum of individual times         ...        4.609 sec (=   0.077 min)
+GTO integral calculation        ...        0.671 sec (=   0.011 min)  14.6 %
+SCF iterations                  ...        3.938 sec (=   0.066 min)  85.4 %
                              ****ORCA TERMINATED NORMALLY****
-TOTAL RUN TIME: 0 days 0 hours 0 minutes 11 seconds 881 msec
+TOTAL RUN TIME: 0 days 0 hours 0 minutes 5 seconds 690 msec
