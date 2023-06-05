@@ -13,7 +13,7 @@
  Copyright (C) 2021 TURBOMOLE GmbH, Karlsruhe
 
 
-    2023-06-04 16:40:44.342 
+    2023-06-05 19:36:45.673 
 
 
 
@@ -367,7 +367,7 @@
           max. resid. fock norm         =  3.648D-04 for orbital     23a         
 
  ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
-  10  -377.60805840850    -987.83430977     373.73607557    0.107D-04 0.583D-11
+  10  -377.60805840851    -987.83430977     373.73607557    0.107D-04 0.583D-11
                             current damping = 0.350
  
           Norm of current diis error: 0.78818E-03
@@ -403,7 +403,7 @@
 
 
  ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
-  14  -377.60805860571    -987.83437226     373.73613786    0.245D-06 0.511D-11
+  14  -377.60805860572    -987.83437226     373.73613786    0.245D-06 0.511D-11
                             current damping = 0.350
  
           Norm of current diis error: 0.21014E-04
@@ -416,16 +416,19 @@
 
 
                   ------------------------------------------ 
-                 |  total energy      =   -377.60805860571  |
+                 |  total energy      =   -377.60805860572  |
                   ------------------------------------------ 
-                 :  kinetic energy    =    376.87465033987  :
-                 :  potential energy  =   -754.48270894559  :
+                 :  kinetic energy    =    376.87465033986  :
+                 :  potential energy  =   -754.48270894558  :
                  :  virial theorem    =      1.99805775261  :
                  :  wavefunction norm =      1.00000000000  :
                   .......................................... 
 
 
  <geterg> : there is no data group $energy 
+
+
+ <skperg> : $end is missing 
 
 
  orbitals $scfmo  will be written to file mos
@@ -488,12 +491,13 @@ HOMO-LUMO Separation
 
 
     ------------------------------------------------------------------------
-         total  cpu-time :  1 minutes and  8 seconds
-         total wall-time :  3 minutes and 36 seconds
+         total  cpu-time :  44.50 seconds
+         total wall-time :  31.16 seconds
     ------------------------------------------------------------------------
 
    ****  ridft : all done  ****
 
 
-    2023-06-04 16:44:17.419 
+    2023-06-05 19:37:16.655 
 
+ ridft ended normally
