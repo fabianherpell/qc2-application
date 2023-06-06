@@ -1,0 +1,53 @@
+ 
+        ______________________________________
+       |                                      |
+       |             T H E R M O              |
+       |              S.Grimme                |
+       |          Universitaet Bonn           |
+       |______________________________________|
+ 
+ read from ~/.thermorc:
+ scale factor   1.00000000000000     
+ T              298.150000000000     
+ Sthr          0.000000000000000E+000
+ 
+ reading coord ...
+ # atoms            2
+
+          molecular weight =   28.01
+
+          (10-47 kg m^2)  a =      0.000000   b =     14.071575   c =     14.071575
+          (Mhz         )  a =      0.000000   b =  59637.824090   c =  59637.824083
+          (cm-1        )  a =      0.000000   b =      1.989304   c =      1.989304
+ lin? T
+ 
+ reading frequencies ...
+ -----------AOFORCE OUTPUT------------
+ 
+ Nvib=           1
+  2372.84
+ symmetry:$symmetry c1
+ RotN=   1.00000000000000     
+ 
+ low-lying modes and their entropy (T*S, in kcal/mol)
+
+                    CALCULATED THERMODYNAMIC PROPERTIES
+   TEMP. (K)   PARTITION FUNCTION             ENTHALPY   HEAT CAPACITY  ENTROPY
+                                    KCAL/MOL   CAL/MOLE    CAL/K/MOL   CAL/K/MOL
+
+ 298.15  VIB.         1.000                     0.07223    0.00277    0.00026
+         ROT.     104.                        592.502      1.987     11.220
+         INT.     104.                        592.574      1.990     11.220
+         TRA.    0.143E+27                   1481.254      4.968     35.909
+         TOT.                                2073.8277     6.9582    47.1291   197.1874
+ 
+                    [au]       [kcal/mol]        [kJ/mol]
+
+ZPVE            0.540573E-02     3.39215         14.1927    
+H(0)-H(T)+PV    0.330485E-02     2.07383         8.67686    
+ ------------------------------------------------------
+H(T)            0.871058E-02     5.46597         22.8695    
+T*S             0.223926E-01     14.0515         58.7914    
+G(T)           -0.136820E-01    -8.58557        -35.9219    
+ ------------------------------------------------------
+ writing .H298 and .G298

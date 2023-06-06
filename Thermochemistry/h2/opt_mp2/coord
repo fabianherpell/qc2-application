@@ -1,4 +1,14 @@
 $coord
-   -9.02574771096010      4.42596535100851      0.00000000000000       h
-   -7.69078848474071      4.51497145147838      0.00000000000000       h
+   -9.05345744141064      4.42411785259504      0.00000000000000  h
+   -7.66307875429017      4.51681894989185      0.00000000000000  h
+$redundant
+     number_of_atoms             2
+     degrees_of_freedom          1
+     internal_coordinates        1
+     frozen_coordinates          0
+# definitions of redundant internals
+   1 k  1.0000000000000 stre   1    2           val=   1.39347
+         1 non zero eigenvalues  of BmBt
+           1           2.000000000    1    0
+         1
 $end
