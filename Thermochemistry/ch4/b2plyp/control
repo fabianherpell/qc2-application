@@ -8,7 +8,7 @@ $dft
   functional b2-plyp
 $rij
 $disp3 -bj
-$last step     ridft
+$actual step      ricc2
 $basis file=basis
 $jbas file=auxbasis
 $closed shells
