@@ -13,7 +13,7 @@
  Copyright (C) 2021 TURBOMOLE GmbH, Karlsruhe
 
 
-    2023-06-06 11:58:10.084 
+    2023-06-06 12:05:06.197 
 
 
 
@@ -132,6 +132,10 @@
               +--------------------------------------------------+
 
  
+
+ DENSITY CONVERGENCE CHECK SWITCHED ON !
+ SCF CONVERGENCE IF RMS(delta[D]) <     0.1000000000E-06
+
  Hybrid part of B2-PLYP double hybrid functional
  exchange:    0.47(LDA + Becke (B88)) + 0.53 HF
  correlation: 0.73 LYP + 0.27 PT2 (MP2 program)
@@ -364,7 +368,7 @@ molecular C6(AA) [au] =        12.58
 
           Overall gridpoints after grid construction =          1700
 
- ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
    1  -1.1157263099315    -2.3691648419    0.54177232773    0.000D+00 0.476D-10
                             Exc =-0.290892974842     Coul =  1.13288105691    
                             exK =-0.300215754334    
@@ -374,8 +378,8 @@ molecular C6(AA) [au] =        12.58
           max. resid. norm for Fia-block=  2.138D-01 for orbital      1a         
           max. resid. fock norm         =  4.898D+00 for orbital     53a         
 
- ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
-   2  -1.1458552636922    -2.4294551849    0.57193371701    0.598D-01 0.322D-10
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
+   2  -1.1458552636922    -2.4294551849    0.57193371701    0.137D-02 0.322D-10
                             Exc =-0.307734917527      Eck = 0.879668634534    
                               N = 2.0000041418    
                             current damping = 0.650
@@ -384,8 +388,8 @@ molecular C6(AA) [au] =        12.58
           max. resid. norm for Fia-block=  9.695D-02 for orbital      1a         
           max. resid. fock norm         =  9.695D-02 for orbital      1a         
 
- ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
-   3  -1.1566936808982    -2.4671770230    0.59881713788    0.243D-01 0.228D-10
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
+   3  -1.1566936808982    -2.4671770230    0.59881713788    0.918D-03 0.228D-10
                             Exc =-0.321348167111      Eck = 0.920165304994    
                               N = 1.9999988819    
                             current damping = 0.500
@@ -394,8 +398,8 @@ molecular C6(AA) [au] =        12.58
           max. resid. norm for Fia-block=  4.372D-02 for orbital      1a         
           max. resid. fock norm         =  4.372D-02 for orbital      1a         
 
- ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
-   4  -1.1599304134655    -2.4890600125    0.61746339475    0.101D-01 0.190D-10
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
+   4  -1.1599304134655    -2.4890600125    0.61746339475    0.575D-03 0.190D-10
                             Exc =-0.330303670097      Eck = 0.947767064847    
                               N = 1.9999937609    
                             current damping = 0.350
@@ -404,8 +408,8 @@ molecular C6(AA) [au] =        12.58
           max. resid. norm for Fia-block=  1.612D-02 for orbital      1a         
           max. resid. fock norm         =  1.612D-02 for orbital      1a         
 
- ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
-   5  -1.1605083681057    -2.4986861068    0.62651153445    0.117D-02 0.170D-10
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
+   5  -1.1605083681057    -2.4986861068    0.62651153445    0.320D-03 0.170D-10
                             Exc =-0.334504890286      Eck = 0.961016424734    
                               N = 1.9999907538    
                             current damping = 0.200
@@ -415,8 +419,8 @@ molecular C6(AA) [au] =        12.58
           max. resid. fock norm         =  4.664D-03 for orbital     28a         
           mo-orthogonalization: Cholesky decomposition
 
- ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
-   6  -1.1605641352285    -2.5017949429    0.62956460342    0.126D-03 0.160D-10
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
+   6  -1.1605641352285    -2.5017949429    0.62956460342    0.140D-03 0.160D-10
                             Exc =-0.335885888861      Eck = 0.965450492282    
                               N = 1.9999895316    
                             current damping = 0.050
@@ -425,8 +429,8 @@ molecular C6(AA) [au] =        12.58
           max. resid. norm for Fia-block=  9.334D-04 for orbital      1a         
           max. resid. fock norm         =  1.177D-03 for orbital     28a         
 
- ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
-   7  -1.1605665405324    -2.5024527029    0.63021995809    0.218D-04 0.154D-10
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
+   7  -1.1605665405324    -2.5024527029    0.63021995809    0.423D-04 0.154D-10
                             Exc =-0.336173270229      Eck = 0.966393228323    
                               N = 1.9999892008    
                             current damping = 0.050
@@ -435,31 +439,41 @@ molecular C6(AA) [au] =        12.58
           max. resid. norm for Fia-block=  1.126D-04 for orbital      1a         
           max. resid. fock norm         =  1.488D-04 for orbital     25a         
 
- ENERGY CONVERGED !
-
-          Overall gridpoints after grid construction =          7418
-
- ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
-   8  -1.1605685683998    -2.5024983738    0.63026360114    0.651D-06 0.152D-10
-                            Exc =-0.336193387669      Eck = 0.966456988805    
-                              N = 1.9999981655    
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
+   8  -1.1605665670781    -2.5024983738    0.63026560246    0.618D-05 0.152D-10
+                            Exc =-0.336191386347      Eck = 0.966456988805    
+                              N = 1.9999891628    
                             current damping = 0.050
  
           Norm of current diis error: 0.62729E-04
           max. resid. norm for Fia-block=  1.709D-05 for orbital      1a         
           max. resid. fock norm         =  1.757D-05 for orbital     25a         
 
+ ENERGY & DENSITY CONVERGED !
+
+          Overall gridpoints after grid construction =          7418
+
+ ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
+   9  -1.1605685693739    -2.5025028295    0.63026805592    0.973D-06 0.149D-10
+                            Exc =-0.336194978699      Eck = 0.966463034623    
+                              N = 1.9999981664    
+                            current damping = 0.050
+ 
+          Norm of current diis error: 0.50423E-05
+          max. resid. norm for Fia-block=  1.440D-06 for orbital      1a         
+          max. resid. fock norm         =  1.440D-06 for orbital      1a         
+
  End of SCF iterations
 
-   convergence criteria satisfied after     8 iterations
+   convergence criteria satisfied after     9 iterations
 
 
                   ------------------------------------------ 
-                 |  total energy      =     -1.16056856840  |
+                 |  total energy      =     -1.16056856937  |
                   ------------------------------------------ 
-                 :  kinetic energy    =      1.13500884804  :
-                 :  potential energy  =     -2.29557741644  :
-                 :  virial theorem    =      1.97797655300  :
+                 :  kinetic energy    =      1.13501472445  :
+                 :  potential energy  =     -2.29558329382  :
+                 :  virial theorem    =      1.97798161556  :
                  :  wavefunction norm =      1.00000000000  :
                   .......................................... 
 
@@ -471,12 +485,12 @@ molecular C6(AA) [au] =        12.58
 
     irrep                  1a          2a          3a          4a          5a   
  eigenvalues H         -0.50044     0.07944     0.14427     0.36324     0.41981
-            eV         -13.6179      2.1616      3.9259      9.8844     11.4236
+            eV         -13.6179      2.1616      3.9259      9.8844     11.4237
  occupation              2.0000
 
     irrep                  6a          7a          8a          9a         10a   
  eigenvalues H          0.41984     0.70965     0.72799     0.72820     0.93201
-            eV          11.4244     19.3108     19.8098     19.8155     25.3614
+            eV          11.4245     19.3108     19.8098     19.8155     25.3614
  
  
  
@@ -506,33 +520,33 @@ molecular C6(AA) [au] =        12.58
  ------------------------------------------------------------------------------
                      quadrupole moment
  ------------------------------------------------------------------------------
-  xx     140.703996    -141.813405      -1.109409
-  yy      39.974544     -41.532567      -1.558023
-  zz       0.000000      -1.559923      -1.559923
+  xx     140.703996    -141.813349      -1.109353
+  yy      39.974544     -41.532513      -1.557969
+  zz       0.000000      -1.559868      -1.559868
   xy     -74.665227      74.695200       0.029973
   xz       0.000000      -0.000000      -0.000000
   yz       0.000000       0.000000       0.000000
  
-     1/3  trace=      -1.409118
-     anisotropy=       0.452554
+     1/3  trace=      -1.409063
+     anisotropy=       0.452556
  
  ==============================================================================
  
 HOMO-LUMO Separation
- HOMO         :   -0.50044450 H =    -13.61780 eV
- LUMO         :    0.07943684 H =     +2.16159 eV
- HOMO-LUMO gap:    0.57988134 H =    +15.77938 eV
+ HOMO         :   -0.50044401 H =    -13.61778 eV
+ LUMO         :    0.07943728 H =     +2.16160 eV
+ HOMO-LUMO gap:    0.57988129 H =    +15.77938 eV
  
  ==============================================================================
 
 
     ------------------------------------------------------------------------
-         total  cpu-time :   4.69 seconds
-         total wall-time :  13.63 seconds
+         total  cpu-time :   5.40 seconds
+         total wall-time :  14.78 seconds
     ------------------------------------------------------------------------
 
    ****  ridft : all done  ****
 
 
-    2023-06-06 11:58:23.095 
+    2023-06-06 12:05:20.555 
 

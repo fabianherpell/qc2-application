@@ -6,5 +6,9 @@ $atoms
 $dft
   functional b2-plyp
 $rij
+$scfconv 7
+$denconv 1.0d-7
+$ricc2
+  mp2
 $disp3 -bj
 $end
