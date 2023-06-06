@@ -1,0 +1,10 @@
+$coord file=coord
+$eht charge=0 unpaired=0
+$symmetry c1
+$atoms
+  basis=def2-QZVP
+$dft
+  functional b2-plyp
+$rij
+$disp3 -bj
+$end
