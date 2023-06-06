@@ -8,13 +8,13 @@ $dft
   functional b2-plyp
 $rij
 $disp3 -bj
-$actual step      ricc2
+$last step     ridft
 $basis file=basis
 $jbas file=auxbasis
 $closed shells
  a       1-7                                    ( 2 )
 $scfmo    file=mos
-$orbital_max_rnorm 0.14189162519341E-03
+$orbital_max_rnorm 0.14189162517337E-03
 $energy      SCF               SCFKIN            SCFPOT
      1 -113.1762514764      112.8077282479     -225.9839797243
 $last SCF energy change = -113.17625
@@ -23,6 +23,6 @@ $subenergy  Etot         E1                  Ej                Ex               
 $charge from ridft
          -0.000 (not to be modified here)
 $dipole from ridft
-  x     0.03698908045568    y     0.00188833238676    z    -0.00000000000004    a.u.
+  x     0.03698908045571    y     0.00188833238678    z    -0.00000000000002    a.u.
    | dipole | =    0.0941400104  debye
 $end
