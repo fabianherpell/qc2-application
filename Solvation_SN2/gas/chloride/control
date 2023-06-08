@@ -5,7 +5,7 @@ $atoms
     basis =def2-TZVP
     jbas  =def2-TZVP
 $dft
-  functional pw6b95
+  functional 
 $energy file=energy
 $grad file=gradient
 $disp3 -bj
