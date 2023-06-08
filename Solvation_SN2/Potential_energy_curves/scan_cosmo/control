@@ -1,0 +1,14 @@
+$coord file=coord
+$eht charge=-1 unpaired=0
+$symmetry c1
+$atoms
+  basis=def2-TZVP
+$dft
+  functional pw6b95
+$rij
+$disp3 -bj
+$cosmo
+epsilon=32.0
+$energy file=energy
+$grad file=gradient
+$end
