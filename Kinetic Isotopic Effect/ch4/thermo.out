@@ -1,0 +1,61 @@
+ 
+        ______________________________________
+       |                                      |
+       |             T H E R M O              |
+       |              S.Grimme                |
+       |          Universitaet Bonn           |
+       |______________________________________|
+ 
+ read from ~/.thermorc:
+ scale factor   1.00000000000000     
+ T              298.150000000000     
+ Sthr          0.000000000000000E+000
+ 
+ reading coord ...
+ # atoms            7
+
+          molecular weight =   33.05
+
+          (10-47 kg m^2)  a =      6.977928   b =     92.039607   c =     93.498186
+          (Mhz         )  a = 120264.659454   b =   9117.793523   c =   8975.555230
+          (cm-1        )  a =      4.011597   b =      0.304137   c =      0.299392
+ lin? F
+ 
+ reading frequencies ...
+ -----------AOFORCE OUTPUT------------
+ 
+ Nvib=          14
+    27.03   353.04   361.06   728.26   882.10  1146.63  1269.13  1376.69  1443.75  1447.92
+  3062.25  3181.08  3183.54  3728.24
+ symmetry:$symmetry c1
+ RotN=   1.00000000000000     
+ 
+ low-lying modes and their entropy (T*S, in kcal/mol)
+omega= 27.03     Svib=     1.800     Srot=     1.234     Sused=     1.800
+
+                    CALCULATED THERMODYNAMIC PROPERTIES
+   TEMP. (K)   PARTITION FUNCTION             ENTHALPY   HEAT CAPACITY  ENTROPY
+                                    KCAL/MOL   CAL/MOLE    CAL/K/MOL   CAL/K/MOL
+
+ 298.15  VIB.         12.79                  1132.44586    7.10933    8.86304
+         ROT.    0.875E+04                    888.752      2.981     21.019
+         INT.    0.112E+06                   2021.198     10.090     29.882
+         TRA.    0.184E+27                   1481.254      4.968     36.401
+         TOT.                                3502.4521    15.0584    66.2829   277.3265
+ 
+                    [au]       [kcal/mol]        [kJ/mol]
+
+ZPVE            0.505542E-01     31.7232         132.729    
+H(0)-H(T)+PV    0.558151E-02     3.50245         14.6542    
+ ------------------------------------------------------
+H(T)            0.561357E-01     35.2257         147.384    
+T*S             0.314931E-01     19.7622         82.6849    
+G(T)            0.246426E-01     15.4634         64.6988    
+ ------------------------------------------------------
+ writing .H298 and .G298
+ 
+ ######################################################
+ WARNING! number of read and expected number
+ WARNING! of real vibrations differ          14          15
+ ######################################################
+ 

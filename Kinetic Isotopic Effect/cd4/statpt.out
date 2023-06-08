@@ -1,0 +1,1016 @@
+
+ statpt (c04) : TURBOMOLE rev. V7-6 27 Oct 2021 at 10:11:12 compiled Oct 27th 2021
+ Copyright (C) 2021 TURBOMOLE GmbH, Karlsruhe
+
+
+    2023-06-08 11:40:32.277 
+
+
+
+                           this is S T A T P T   
+
+
+                     hessian and coordinate update for
+                          stationary point search 
+
+                     by barbara unterreiner, marek sierka,
+                           and reinhart ahlrichs
+
+                          quantum chemistry group
+                          universitaet  karlsruhe
+                                  germany
+
+
+
+
+              +--------------------------------------------------+
+              | Atomic coordinate, charge and isotop information |
+              +--------------------------------------------------+
+
+                    atomic coordinates            atom    charge  isotop
+         -9.17804074    1.38273150   -2.01820860    c      6.000     0
+         -7.51748170    2.91684897   -2.19531374    h      1.000     1
+        -10.56215174    1.66928957   -3.56649901    h      1.000     1
+        -10.14121525    1.60583257   -0.16952733    h      1.000     1
+         -8.36560968   -0.54503481   -2.15487360    h      1.000     1
+         -5.72101356    4.47020384   -2.82374216    o      8.000     0
+         -4.43203137    3.13620837   -3.07080495    h      1.000     0
+ 
+       center of nuclear mass  :   -7.55030922    2.76909609   -2.39517869
+       center of nuclear charge:   -7.46604435    2.78111392   -2.41348461
+ 
+        ***************  Stationary point options ******************
+        ************************************************************
+           Maximum allowed trust radius:           3.000000E-01
+           Minimum allowed trust radius:           1.000000E-03
+           Initial trust radius:                   1.500000E-01
+           GDIIS used if gradient norm <           1.000000E-02
+           Number of previous steps for GDIIS:       5
+           Hessian update method:                  Powell
+           Initial index of transition vector:       1
+                        *** Convergence criteria ***                
+           Threshold for energy change:            1.000000E-06
+           Threshold for max displacement element: 1.000000E-03
+           Threshold for max gradient element :    1.000000E-03
+           Threshold for RMS of displacement:      5.000000E-04
+           Threshold for RMS of gradient:          5.000000E-04
+        ************************************************************
+ 
+
+  *************************************************************************
+     Generate redundant internal coordinates...
+
+     geoired.f after prepare_subunits.f
+        final subunits_late   F
+      nsub    1
+        final exact_ortho   F
+     START LOOP OVER SUBUNITS
+     time in mkbmet+rdiag  cpu:  0.02 sec    wall:  0.02 sec    ratio:  1.0
+     time in Decoupling    cpu:  0.00 sec    wall:  0.00 sec    ratio:  1.0
+     time in Preparation   cpu:  0.01 sec    wall:  0.01 sec    ratio:  1.0
+     time in Loop Subunit  cpu:  0.02 sec    wall:  0.02 sec    ratio:  1.0
+     time in Unpack        cpu:  0.00 sec    wall:  0.00 sec    ratio:  1.0
+     time in Total Time    cpu:  0.03 sec    wall:  0.03 sec    ratio:  1.0
+     Number of symmetry restricted degrees of freedom:    21
+     Constituted by:     3 translational degrees of freedom
+                         3 rotational degrees of freedom
+                        15 internal degrees of freedom
+
+
+  Keyword $optinfo  missing in file <control>
+
+  *************************************************************************
+   ATOM                      CARTESIAN COORDINATES
+    1 c      -9.17804073934369      1.38273150264992     -2.01820860383908
+    2 h      -7.51748170185128      2.91684896514362     -2.19531373623900
+    3 h     -10.56215174206459      1.66928957218817     -3.56649901226746
+    4 h     -10.14121524780420      1.60583256892324     -0.16952733064018
+    5 h      -8.36560968384458     -0.54503480886456     -2.15487359717201
+    6 o      -5.72101356147579      4.47020383958600     -2.82374215898330
+    7 h      -4.43203137186856      3.13620837369017     -3.07080495251688
+  *************************************************************************
+   ATOM                      CARTESIAN GRADIENTS  
+    1 c       0.02224323883627      0.02315066289198     -0.00241135469185
+    2 h       0.00787223238845     -0.00145605139453     -0.00046094009064
+    3 h      -0.01242172961602     -0.00264168117842     -0.00763026830826
+    4 h      -0.01005767215534     -0.00333426055866      0.00945764561750
+    5 h       0.00084126863612     -0.01292966726834     -0.00033826545810
+    6 o      -0.01677533869744      0.01038387546969      0.00241294696436
+    7 h       0.00831383204878     -0.01317648857699     -0.00101498022551
+  *************************************************************************
+
+  norm of actual CARTESIAN gradient:  4.82585E-02
+  norm of actual INTERNAL  gradient:  3.28040E-02
+
+  ENERGY =    -116.2328441148 a.u.; # of cycle =    1
+
+
+  Keyword $hessapprox missing in file <control>
+
+
+  Found initial Hessian matrix in $hessian section
+  Number of zero Hessian eigenvalues:   0
+
+   5 first eigenvalues: 
+ -0.02014530  0.00395300  0.01785410  0.01869490  0.07680798
+
+  Eigenvalue of transition vector: -0.02014530
+
+  Results of the TRO shift search
+  Final shift: -6.08716E-02 residual -2.52229E-15
+  Final step radius: 1.50000E-01
+
+  Transforming internal coordinate displacements to Cartesian space
+      Iteration   1 residual norm     1.500000E-01
+      Iteration   2 residual norm     5.248055E-03
+      Iteration   3 residual norm     4.205354E-06
+      Iteration   4 residual norm     5.443860E-12
+      Transformation converged
+      Residual norm:    5.443860E-12 after    4 iterations
+
+      ****************************************************************** 
+                          CONVERGENCE INFORMATION
+
+                               Converged?     Value      Criterion
+             Energy change         no     116.2328441   0.0000010
+             RMS of displacement   no       0.0387298   0.0005000
+             RMS of gradient       no       0.0084700   0.0005000
+             MAX displacement      no       0.1048296   0.0010000
+             MAX gradient          no       0.0152138   0.0010000
+      ****************************************************************** 
+
+
+    ------------------------------------------------------------------------
+         total  cpu-time :   0.05 seconds
+         total wall-time :   0.05 seconds
+    ------------------------------------------------------------------------
+
+   ****  statpt : all done  ****
+
+
+    2023-06-08 11:40:32.322 
+
+
+ statpt (c04) : TURBOMOLE rev. V7-6 27 Oct 2021 at 10:11:12 compiled Oct 27th 2021
+ Copyright (C) 2021 TURBOMOLE GmbH, Karlsruhe
+
+
+    2023-06-08 11:40:34.448 
+
+
+
+                           this is S T A T P T   
+
+
+                     hessian and coordinate update for
+                          stationary point search 
+
+                     by barbara unterreiner, marek sierka,
+                           and reinhart ahlrichs
+
+                          quantum chemistry group
+                          universitaet  karlsruhe
+                                  germany
+
+
+
+
+              +--------------------------------------------------+
+              | Atomic coordinate, charge and isotop information |
+              +--------------------------------------------------+
+
+                    atomic coordinates            atom    charge  isotop
+         -9.22689076    1.34467439   -2.01984829    c      6.000     0
+         -7.58625452    2.91803515   -2.22902867    h      1.000     1
+        -10.55423138    1.67025925   -3.55904233    h      1.000     1
+        -10.08553637    1.63059925   -0.16902442    h      1.000     1
+         -8.33601180   -0.50766914   -2.16468234    h      1.000     1
+         -5.70250176    4.44159828   -2.80502774    o      8.000     0
+         -4.42611745    3.13858284   -3.05231561    h      1.000     0
+ 
+       center of nuclear mass  :   -7.55665902    2.74797885   -2.38906301
+       center of nuclear charge:   -7.47207948    2.76056000   -2.40702132
+ 
+        ***************  Stationary point options ******************
+        ************************************************************
+           Maximum allowed trust radius:           3.000000E-01
+           Minimum allowed trust radius:           1.000000E-03
+           Initial trust radius:                   1.500000E-01
+           GDIIS used if gradient norm <           1.000000E-02
+           Number of previous steps for GDIIS:       5
+           Hessian update method:                  Powell
+           Initial index of transition vector:       1
+                        *** Convergence criteria ***                
+           Threshold for energy change:            1.000000E-06
+           Threshold for max displacement element: 1.000000E-03
+           Threshold for max gradient element :    1.000000E-03
+           Threshold for RMS of displacement:      5.000000E-04
+           Threshold for RMS of gradient:          5.000000E-04
+        ************************************************************
+ 
+     Number of symmetry restricted degrees of freedom:    21
+     Constituted by:     3 translational degrees of freedom
+                         3 rotational degrees of freedom
+                        15 internal degrees of freedom
+
+  *************************************************************************
+   ATOM                      CARTESIAN COORDINATES
+    1 c      -9.22689076016035      1.34467439029072     -2.01984828872804
+    2 h      -7.58625451756044      2.91803514946030     -2.22902866787840
+    3 h     -10.55423138180560      1.67025924574059     -3.55904232604292
+    4 h     -10.08553637135684      1.63059924907773     -0.16902442058317
+    5 h      -8.33601180112878     -0.50766914156845     -2.16468234137692
+    6 o      -5.70250176351411      4.44159828484772     -2.80502773698514
+    7 h      -4.42611745272656      3.13858283546795     -3.05231561006332
+  *************************************************************************
+   ATOM                      CARTESIAN GRADIENTS  
+    1 c       0.00362505917123      0.00672379118272     -0.00102369839742
+    2 h       0.00440047622989     -0.00089464079777      0.00037304680549
+    3 h      -0.00207705942321     -0.00141891686579     -0.00085520753061
+    4 h      -0.00196367853264     -0.00161086750087      0.00129082147439
+    5 h      -0.00010218261757     -0.00182250193859     -0.00002201252273
+    6 o      -0.00377748149237      0.00120979864197     -0.00002209843899
+    7 h      -0.00009813150894     -0.00219299646879      0.00026901976581
+  *************************************************************************
+
+  norm of actual CARTESIAN gradient:  1.09012E-02
+  norm of actual INTERNAL  gradient:  8.09739E-03
+
+  ENERGY =    -116.2355291036 a.u.; # of cycle =    2
+
+  Approximate Hessian read from $hessapprox data section
+
+  Hessian updated according to Powell formula
+  Number of zero Hessian eigenvalues:   0
+
+   5 first eigenvalues: 
+ -0.02000141  0.00382927  0.01741152  0.02525452  0.07678175
+
+  Eigenvalue of transition vector: -0.02000141
+
+  Largest and next-largest overlaps:   0.99962784  0.02259201
+
+  Old transition vector    1 has overlap 0.99962784 with the new    1
+
+        ***************  Trust radius update info  *****************
+                Actual energy change:       -2.68499E-03
+                Predicted energy change:    -2.79011E-03
+                Actual step radius:          1.50000E-01
+                Actual trust radius:         0.150000
+                Energy change ratio:         0.962323
+                New trust radius:            0.300000
+        ************************************************************
+
+  Final step radius: 2.30172E-01
+
+  Transforming internal coordinate displacements to Cartesian space
+      Iteration   1 residual norm     2.301723E-01
+      Iteration   2 residual norm     3.203261E-02
+      Iteration   3 residual norm     4.215695E-04
+      Iteration   4 residual norm     1.344439E-08
+      Iteration   5 residual norm     2.117534E-15
+      Transformation converged
+      Residual norm:    2.117534E-15 after    5 iterations
+
+      ****************************************************************** 
+                          CONVERGENCE INFORMATION
+
+                               Converged?     Value      Criterion
+             Energy change         no       0.0026850   0.0000010
+             RMS of displacement   no       0.0594302   0.0005000
+             RMS of gradient       no       0.0020907   0.0005000
+             MAX displacement      no       0.1578640   0.0010000
+             MAX gradient          no       0.0044513   0.0010000
+      ****************************************************************** 
+
+
+    ------------------------------------------------------------------------
+         total  cpu-time :   0.02 seconds
+         total wall-time :   0.02 seconds
+    ------------------------------------------------------------------------
+
+   ****  statpt : all done  ****
+
+
+    2023-06-08 11:40:34.457 
+
+
+ statpt (c04) : TURBOMOLE rev. V7-6 27 Oct 2021 at 10:11:12 compiled Oct 27th 2021
+ Copyright (C) 2021 TURBOMOLE GmbH, Karlsruhe
+
+
+    2023-06-08 11:40:36.757 
+
+
+
+                           this is S T A T P T   
+
+
+                     hessian and coordinate update for
+                          stationary point search 
+
+                     by barbara unterreiner, marek sierka,
+                           and reinhart ahlrichs
+
+                          quantum chemistry group
+                          universitaet  karlsruhe
+                                  germany
+
+
+
+
+              +--------------------------------------------------+
+              | Atomic coordinate, charge and isotop information |
+              +--------------------------------------------------+
+
+                    atomic coordinates            atom    charge  isotop
+         -9.25293656    1.30340541   -2.03374258    c      6.000     0
+         -7.62721666    2.87681314   -2.42395971    h      1.000     1
+        -10.63801868    1.66090949   -3.51006250    h      1.000     1
+         -9.95315669    1.70423079   -0.14673249    h      1.000     1
+         -8.38963048   -0.55217658   -2.19094439    h      1.000     1
+         -5.71295162    4.42980767   -2.76750578    o      8.000     0
+         -4.34363336    3.21309009   -2.92602193    h      1.000     0
+ 
+       center of nuclear mass  :   -7.56986244    2.73038118   -2.38208245
+       center of nuclear charge:   -7.48278359    2.74535583   -2.39685383
+ 
+        ***************  Stationary point options ******************
+        ************************************************************
+           Maximum allowed trust radius:           3.000000E-01
+           Minimum allowed trust radius:           1.000000E-03
+           Initial trust radius:                   1.500000E-01
+           GDIIS used if gradient norm <           1.000000E-02
+           Number of previous steps for GDIIS:       5
+           Hessian update method:                  Powell
+           Initial index of transition vector:       1
+                        *** Convergence criteria ***                
+           Threshold for energy change:            1.000000E-06
+           Threshold for max displacement element: 1.000000E-03
+           Threshold for max gradient element :    1.000000E-03
+           Threshold for RMS of displacement:      5.000000E-04
+           Threshold for RMS of gradient:          5.000000E-04
+        ************************************************************
+ 
+     Number of symmetry restricted degrees of freedom:    21
+     Constituted by:     3 translational degrees of freedom
+                         3 rotational degrees of freedom
+                        15 internal degrees of freedom
+
+  *************************************************************************
+   ATOM                      CARTESIAN COORDINATES
+    1 c      -9.25293655956674      1.30340541404849     -2.03374257595086
+    2 h      -7.62721666407514      2.87681313862752     -2.42395971375538
+    3 h     -10.63801868208863      1.66090948628721     -3.51006250434595
+    4 h      -9.95315668775470      1.70423079104726     -0.14673248854097
+    5 h      -8.38963048120990     -0.55217657822484     -2.19094439105244
+    6 o      -5.71295161789026      4.42980766735689     -2.76750578495336
+    7 h      -4.34363335566730      3.21309009417403     -2.92602193305895
+  *************************************************************************
+   ATOM                      CARTESIAN GRADIENTS  
+    1 c       0.00053368969290      0.00006109323015      0.00183626000906
+    2 h       0.00017415781373     -0.00025599013775     -0.00122212612312
+    3 h       0.00022545749606      0.00047241862173     -0.00071605207536
+    4 h       0.00000867757004     -0.00010299241139     -0.00016617890460
+    5 h      -0.00029339947410      0.00020330894121     -0.00015229191121
+    6 o      -0.00165759858699     -0.00026430101093      0.00067326099836
+    7 h       0.00099225374102     -0.00010901983803     -0.00025341618950
+  *************************************************************************
+
+  norm of actual CARTESIAN gradient:  3.24915E-03
+  norm of actual INTERNAL  gradient:  2.89875E-03
+
+  ENERGY =    -116.2358269668 a.u.; # of cycle =    3
+
+  Approximate Hessian read from $hessapprox data section
+
+  Hessian updated according to Powell formula
+  Number of zero Hessian eigenvalues:   0
+
+   5 first eigenvalues: 
+ -0.01913614  0.00355658  0.02104329  0.02384081  0.07900516
+
+  Eigenvalue of transition vector: -0.01913614
+
+  Largest and next-largest overlaps:   0.99529319  0.07291197
+
+  Old transition vector    1 has overlap 0.99529319 with the new    1
+
+        ***************  Trust radius update info  *****************
+                Actual energy change:       -2.97863E-04
+                Predicted energy change:    -4.30236E-04
+                Actual step radius:          2.30172E-01
+                Actual trust radius:         0.300000
+                Energy change ratio:         0.692325
+                New trust radius:            0.300000
+        ************************************************************
+
+  Final step radius: 9.07631E-02
+
+  Transforming internal coordinate displacements to Cartesian space
+      Iteration   1 residual norm     9.076313E-02
+      Iteration   2 residual norm     4.704369E-03
+      Iteration   3 residual norm     5.769034E-06
+      Iteration   4 residual norm     9.928027E-12
+      Transformation converged
+      Residual norm:    9.928027E-12 after    4 iterations
+
+      ****************************************************************** 
+                          CONVERGENCE INFORMATION
+
+                               Converged?     Value      Criterion
+             Energy change         no       0.0002979   0.0000010
+             RMS of displacement   no       0.0234349   0.0005000
+             RMS of gradient       no       0.0007485   0.0005000
+             MAX displacement      no       0.0643451   0.0010000
+             MAX gradient          no       0.0014047   0.0010000
+      ****************************************************************** 
+
+
+    ------------------------------------------------------------------------
+         total  cpu-time :   0.02 seconds
+         total wall-time :   0.02 seconds
+    ------------------------------------------------------------------------
+
+   ****  statpt : all done  ****
+
+
+    2023-06-08 11:40:36.766 
+
+
+ statpt (c04) : TURBOMOLE rev. V7-6 27 Oct 2021 at 10:11:12 compiled Oct 27th 2021
+ Copyright (C) 2021 TURBOMOLE GmbH, Karlsruhe
+
+
+    2023-06-08 11:40:38.846 
+
+
+
+                           this is S T A T P T   
+
+
+                     hessian and coordinate update for
+                          stationary point search 
+
+                     by barbara unterreiner, marek sierka,
+                           and reinhart ahlrichs
+
+                          quantum chemistry group
+                          universitaet  karlsruhe
+                                  germany
+
+
+
+
+              +--------------------------------------------------+
+              | Atomic coordinate, charge and isotop information |
+              +--------------------------------------------------+
+
+                    atomic coordinates            atom    charge  isotop
+         -9.25157904    1.31632488   -2.03720111    c      6.000     0
+         -7.64413645    2.95339366   -2.37713047    h      1.000     1
+        -10.63490700    1.64054422   -3.51937963    h      1.000     1
+         -9.97654070    1.68092602   -0.15063278    h      1.000     1
+         -8.31850297   -0.50613946   -2.19761259    h      1.000     1
+         -5.70079017    4.41300043   -2.77442567    o      8.000     0
+         -4.39108772    3.13803026   -2.94258715    h      1.000     0
+ 
+       center of nuclear mass  :   -7.56362111    2.72956160   -2.38517589
+       center of nuclear charge:   -7.47794581    2.74256355   -2.40031340
+ 
+        ***************  Stationary point options ******************
+        ************************************************************
+           Maximum allowed trust radius:           3.000000E-01
+           Minimum allowed trust radius:           1.000000E-03
+           Initial trust radius:                   1.500000E-01
+           GDIIS used if gradient norm <           1.000000E-02
+           Number of previous steps for GDIIS:       5
+           Hessian update method:                  Powell
+           Initial index of transition vector:       1
+                        *** Convergence criteria ***                
+           Threshold for energy change:            1.000000E-06
+           Threshold for max displacement element: 1.000000E-03
+           Threshold for max gradient element :    1.000000E-03
+           Threshold for RMS of displacement:      5.000000E-04
+           Threshold for RMS of gradient:          5.000000E-04
+        ************************************************************
+ 
+     Number of symmetry restricted degrees of freedom:    21
+     Constituted by:     3 translational degrees of freedom
+                         3 rotational degrees of freedom
+                        15 internal degrees of freedom
+
+  *************************************************************************
+   ATOM                      CARTESIAN COORDINATES
+    1 c      -9.25157903778501      1.31632488198929     -2.03720111432129
+    2 h      -7.64413645159050      2.95339366106364     -2.37713046708495
+    3 h     -10.63490700171798      1.64054421608677     -3.51937962548731
+    4 h      -9.97654070293144      1.68092602234100     -0.15063277947415
+    5 h      -8.31850296624142     -0.50613945585376     -2.19761258975624
+    6 o      -5.70079016966801      4.41300043027417     -2.77442566677218
+    7 h      -4.39108771831832      3.13803025741545     -2.94258714876179
+  *************************************************************************
+   ATOM                      CARTESIAN GRADIENTS  
+    1 c      -0.00026261603143      0.00003777174785     -0.00011493378766
+    2 h      -0.00029414491275     -0.00003486703062      0.00002583697429
+    3 h       0.00005790159158      0.00003030391277      0.00007539683346
+    4 h      -0.00007194125631      0.00000496206184      0.00009101446562
+    5 h       0.00022776819585     -0.00014654839709     -0.00002507481130
+    6 o       0.00061352611821     -0.00009114245837     -0.00006423535791
+    7 h      -0.00028272396829      0.00021669482633      0.00001435757542
+  *************************************************************************
+
+  norm of actual CARTESIAN gradient:  8.86213E-04
+  norm of actual INTERNAL  gradient:  7.10893E-04
+
+  ENERGY =    -116.2358977957 a.u.; # of cycle =    4
+
+  Approximate Hessian read from $hessapprox data section
+
+  Hessian updated according to Powell formula
+  Number of zero Hessian eigenvalues:   0
+
+   5 first eigenvalues: 
+ -0.02135067  0.00354699  0.02037209  0.02788715  0.07998378
+
+  Eigenvalue of transition vector: -0.02135067
+
+  Largest and next-largest overlaps:   0.99798330  0.04828920
+
+  Old transition vector    1 has overlap 0.99798330 with the new    1
+
+        ***************  Trust radius update info  *****************
+                Actual energy change:       -7.08289E-05
+                Predicted energy change:    -7.59715E-05
+                Actual step radius:          9.07631E-02
+                Actual trust radius:         0.300000
+                Energy change ratio:         0.932308
+                New trust radius:            0.300000
+        ************************************************************
+
+  Final step radius: 1.88253E-02
+
+  Transforming internal coordinate displacements to Cartesian space
+      Iteration   1 residual norm     1.882527E-02
+      Iteration   2 residual norm     1.355538E-04
+      Iteration   3 residual norm     3.347604E-09
+      Transformation converged
+      Residual norm:    3.347604E-09 after    3 iterations
+
+      ****************************************************************** 
+                          CONVERGENCE INFORMATION
+
+                               Converged?     Value      Criterion
+             Energy change         no       0.0000708   0.0000010
+             RMS of displacement   no       0.0048607   0.0005000
+             RMS of gradient       yes      0.0001836   0.0005000
+             MAX displacement      no       0.0123279   0.0010000
+             MAX gradient          yes      0.0003510   0.0010000
+      ****************************************************************** 
+
+
+    ------------------------------------------------------------------------
+         total  cpu-time :   0.02 seconds
+         total wall-time :   0.02 seconds
+    ------------------------------------------------------------------------
+
+   ****  statpt : all done  ****
+
+
+    2023-06-08 11:40:38.856 
+
+
+ statpt (c04) : TURBOMOLE rev. V7-6 27 Oct 2021 at 10:11:12 compiled Oct 27th 2021
+ Copyright (C) 2021 TURBOMOLE GmbH, Karlsruhe
+
+
+    2023-06-08 11:40:40.692 
+
+
+
+                           this is S T A T P T   
+
+
+                     hessian and coordinate update for
+                          stationary point search 
+
+                     by barbara unterreiner, marek sierka,
+                           and reinhart ahlrichs
+
+                          quantum chemistry group
+                          universitaet  karlsruhe
+                                  germany
+
+
+
+
+              +--------------------------------------------------+
+              | Atomic coordinate, charge and isotop information |
+              +--------------------------------------------------+
+
+                    atomic coordinates            atom    charge  isotop
+         -9.25109900    1.31443927   -2.03737457    c      6.000     0
+         -7.64019220    2.93928725   -2.37920631    h      1.000     1
+        -10.63549824    1.64383108   -3.51787539    h      1.000     1
+         -9.97334680    1.68402741   -0.15098389    h      1.000     1
+         -8.33306050   -0.51498810   -2.19667113    h      1.000     1
+         -5.70238250    4.41782067   -2.77774174    o      8.000     0
+         -4.38196481    3.15166244   -2.93911636    h      1.000     0
+ 
+       center of nuclear mass  :   -7.56433988    2.73050154   -2.38656775
+       center of nuclear charge:   -7.47840614    2.74384321   -2.40158076
+ 
+        ***************  Stationary point options ******************
+        ************************************************************
+           Maximum allowed trust radius:           3.000000E-01
+           Minimum allowed trust radius:           1.000000E-03
+           Initial trust radius:                   1.500000E-01
+           GDIIS used if gradient norm <           1.000000E-02
+           Number of previous steps for GDIIS:       5
+           Hessian update method:                  Powell
+           Initial index of transition vector:       1
+                        *** Convergence criteria ***                
+           Threshold for energy change:            1.000000E-06
+           Threshold for max displacement element: 1.000000E-03
+           Threshold for max gradient element :    1.000000E-03
+           Threshold for RMS of displacement:      5.000000E-04
+           Threshold for RMS of gradient:          5.000000E-04
+        ************************************************************
+ 
+     Number of symmetry restricted degrees of freedom:    21
+     Constituted by:     3 translational degrees of freedom
+                         3 rotational degrees of freedom
+                        15 internal degrees of freedom
+
+  *************************************************************************
+   ATOM                      CARTESIAN COORDINATES
+    1 c      -9.25109900417284      1.31443926610558     -2.03737457140821
+    2 h      -7.64019219785001      2.93928725414382     -2.37920630542344
+    3 h     -10.63549824036792      1.64383108329742     -3.51787539259815
+    4 h      -9.97334680253474      1.68402741008528     -0.15098389497752
+    5 h      -8.33306049604302     -0.51498810356851     -2.19667113100440
+    6 o      -5.70238250082291      4.41782066617177     -2.77774174035106
+    7 h      -4.38196480646125      3.15166243708119     -2.93911635589512
+  *************************************************************************
+   ATOM                      CARTESIAN GRADIENTS  
+    1 c       0.00005623050428     -0.00002940674122      0.00000193966035
+    2 h      -0.00007082679563     -0.00006413448921      0.00001652162194
+    3 h       0.00000471371584      0.00000879749450      0.00000455082077
+    4 h      -0.00001595456747     -0.00000099938347     -0.00000758531889
+    5 h      -0.00005755730309      0.00002439840913     -0.00000102495690
+    6 o      -0.00001417035451      0.00003764003435      0.00001526776207
+    7 h       0.00008273314986      0.00003926624212     -0.00002673479433
+  *************************************************************************
+
+  norm of actual CARTESIAN gradient:  1.69492E-04
+  norm of actual INTERNAL  gradient:  2.62201E-04
+
+  ENERGY =    -116.2358979209 a.u.; # of cycle =    5
+
+  Approximate Hessian read from $hessapprox data section
+
+  Hessian updated according to Powell formula
+  Number of zero Hessian eigenvalues:   0
+
+   5 first eigenvalues: 
+ -0.02012838  0.00061366  0.02069824  0.03289710  0.08416511
+
+  Eigenvalue of transition vector: -0.02012838
+
+  Largest and next-largest overlaps:   0.99553880  0.05388355
+
+  Old transition vector    1 has overlap 0.99553880 with the new    1
+
+        ***************  Trust radius update info  *****************
+                Actual energy change:       -1.25200E-07
+                Predicted energy change:    -1.88261E-06
+                Actual step radius:          1.88253E-02
+                Actual trust radius:         0.300000
+                Energy change ratio:         0.066503
+                New trust radius:            0.007844
+        ************************************************************
+
+
+  Results of the TRO shift search
+  Final shift: -4.22657E-03 residual -2.90675E-16
+  Final step radius: 7.84386E-03
+
+  Transforming internal coordinate displacements to Cartesian space
+      Iteration   1 residual norm     7.843864E-03
+      Iteration   2 residual norm     2.955569E-05
+      Iteration   3 residual norm     1.797886E-10
+      Transformation converged
+      Residual norm:    1.797886E-10 after    3 iterations
+
+      ****************************************************************** 
+                          CONVERGENCE INFORMATION
+
+                               Converged?     Value      Criterion
+             Energy change         yes      0.0000001   0.0000010
+             RMS of displacement   no       0.0020253   0.0005000
+             RMS of gradient       yes      0.0000677   0.0005000
+             MAX displacement      no       0.0064131   0.0010000
+             MAX gradient          yes      0.0001529   0.0010000
+      ****************************************************************** 
+
+
+    ------------------------------------------------------------------------
+         total  cpu-time :   0.02 seconds
+         total wall-time :   0.02 seconds
+    ------------------------------------------------------------------------
+
+   ****  statpt : all done  ****
+
+
+    2023-06-08 11:40:40.704 
+
+
+ statpt (c04) : TURBOMOLE rev. V7-6 27 Oct 2021 at 10:11:12 compiled Oct 27th 2021
+ Copyright (C) 2021 TURBOMOLE GmbH, Karlsruhe
+
+
+    2023-06-08 11:40:42.466 
+
+
+
+                           this is S T A T P T   
+
+
+                     hessian and coordinate update for
+                          stationary point search 
+
+                     by barbara unterreiner, marek sierka,
+                           and reinhart ahlrichs
+
+                          quantum chemistry group
+                          universitaet  karlsruhe
+                                  germany
+
+
+
+
+              +--------------------------------------------------+
+              | Atomic coordinate, charge and isotop information |
+              +--------------------------------------------------+
+
+                    atomic coordinates            atom    charge  isotop
+         -9.25082905    1.31568552   -2.03813765    c      6.000     0
+         -7.64291526    2.94246654   -2.38248241    h      1.000     1
+        -10.63840161    1.64187162   -3.51640810    h      1.000     1
+         -9.97049424    1.68362303   -0.15040255    h      1.000     1
+         -8.32877703   -0.51190774   -2.19875103    h      1.000     1
+         -5.70118301    4.41769222   -2.77891168    o      8.000     0
+         -4.38494385    3.14664883   -2.93387598    h      1.000     0
+ 
+       center of nuclear mass  :   -7.56373378    2.73092518   -2.38735704
+       center of nuclear charge:   -7.47789318    2.74412385   -2.40221260
+ 
+        ***************  Stationary point options ******************
+        ************************************************************
+           Maximum allowed trust radius:           3.000000E-01
+           Minimum allowed trust radius:           1.000000E-03
+           Initial trust radius:                   1.500000E-01
+           GDIIS used if gradient norm <           1.000000E-02
+           Number of previous steps for GDIIS:       5
+           Hessian update method:                  Powell
+           Initial index of transition vector:       1
+                        *** Convergence criteria ***                
+           Threshold for energy change:            1.000000E-06
+           Threshold for max displacement element: 1.000000E-03
+           Threshold for max gradient element :    1.000000E-03
+           Threshold for RMS of displacement:      5.000000E-04
+           Threshold for RMS of gradient:          5.000000E-04
+        ************************************************************
+ 
+     Number of symmetry restricted degrees of freedom:    21
+     Constituted by:     3 translational degrees of freedom
+                         3 rotational degrees of freedom
+                        15 internal degrees of freedom
+
+  *************************************************************************
+   ATOM                      CARTESIAN COORDINATES
+    1 c      -9.25082905426809      1.31568552075605     -2.03813764720353
+    2 h      -7.64291525589988      2.94246653921446     -2.38248241204823
+    3 h     -10.63840160780193      1.64187161981322     -3.51640809720053
+    4 h      -9.97049423994569      1.68362302641496     -0.15040255109706
+    5 h      -8.32877703220385     -0.51190774310466     -2.19875102615787
+    6 o      -5.70118300838485      4.41769221888427     -2.77891168007671
+    7 h      -4.38494384974839      3.14664883133824     -2.93387597787397
+  *************************************************************************
+   ATOM                      CARTESIAN GRADIENTS  
+    1 c      -0.00008700536335      0.00000302791009     -0.00001030421877
+    2 h       0.00003881742403     -0.00001443545085     -0.00001535439025
+    3 h      -0.00000816852505     -0.00000362238662      0.00000163341311
+    4 h       0.00000220224675     -0.00000036080122      0.00001504855298
+    5 h       0.00004651235350     -0.00002109249331     -0.00000739599085
+    6 o       0.00008788631728      0.00005152756507      0.00001306350867
+    7 h      -0.00009605114855      0.00000237017718      0.00000626789993
+  *************************************************************************
+
+  norm of actual CARTESIAN gradient:  1.80093E-04
+  norm of actual INTERNAL  gradient:  1.76539E-04
+
+  ENERGY =    -116.2358980816 a.u.; # of cycle =    6
+
+  Approximate Hessian read from $hessapprox data section
+
+  Hessian updated according to Powell formula
+  Number of zero Hessian eigenvalues:   0
+
+   5 first eigenvalues: 
+ -0.02046868 -0.00357360  0.02183895  0.03351903  0.09520588
+
+  Eigenvalue of transition vector: -0.02046868
+
+  Largest and next-largest overlaps:   0.99665201  0.06901336
+
+  Old transition vector    1 has overlap 0.99665201 with the new    1
+
+        ***************  Trust radius update info  *****************
+                Actual energy change:       -1.60700E-07
+                Predicted energy change:    -5.89695E-07
+                Actual step radius:          7.84386E-03
+                Actual trust radius:         0.007844
+                Energy change ratio:         0.272514
+                New trust radius:            0.003268
+        ************************************************************
+
+
+  Results of the TRO shift search
+  Final shift: -1.24905E-02 residual -1.76183E-19
+  Final step radius: 3.26828E-03
+
+  Transforming internal coordinate displacements to Cartesian space
+      Iteration   1 residual norm     3.268277E-03
+      Iteration   2 residual norm     4.440411E-06
+      Iteration   3 residual norm     2.648881E-12
+      Transformation converged
+      Residual norm:    2.648881E-12 after    3 iterations
+
+      ****************************************************************** 
+                          CONVERGENCE INFORMATION
+
+                               Converged?     Value      Criterion
+             Energy change         yes      0.0000002   0.0000010
+             RMS of displacement   no       0.0008439   0.0005000
+             RMS of gradient       yes      0.0000456   0.0005000
+             MAX displacement      no       0.0027416   0.0010000
+             MAX gradient          yes      0.0001229   0.0010000
+      ****************************************************************** 
+
+
+    ------------------------------------------------------------------------
+         total  cpu-time :   0.02 seconds
+         total wall-time :   0.02 seconds
+    ------------------------------------------------------------------------
+
+   ****  statpt : all done  ****
+
+
+    2023-06-08 11:40:42.476 
+
+
+ statpt (c04) : TURBOMOLE rev. V7-6 27 Oct 2021 at 10:11:12 compiled Oct 27th 2021
+ Copyright (C) 2021 TURBOMOLE GmbH, Karlsruhe
+
+
+    2023-06-08 11:40:43.948 
+
+
+
+                           this is S T A T P T   
+
+
+                     hessian and coordinate update for
+                          stationary point search 
+
+                     by barbara unterreiner, marek sierka,
+                           and reinhart ahlrichs
+
+                          quantum chemistry group
+                          universitaet  karlsruhe
+                                  germany
+
+
+
+
+              +--------------------------------------------------+
+              | Atomic coordinate, charge and isotop information |
+              +--------------------------------------------------+
+
+                    atomic coordinates            atom    charge  isotop
+         -9.25075777    1.31539053   -2.03804141    c      6.000     0
+         -7.64283869    2.94175434   -2.38226678    h      1.000     1
+        -10.63823654    1.64254356   -3.51618197    h      1.000     1
+         -9.97038331    1.68353261   -0.15035171    h      1.000     1
+         -8.33028035   -0.51280456   -2.19882171    h      1.000     1
+         -5.70186346    4.41732562   -2.78020185    o      8.000     0
+         -4.38318393    3.14833792   -2.93310396    h      1.000     0
+ 
+       center of nuclear mass  :   -7.56401899    2.73066151   -2.38783872
+       center of nuclear charge:   -7.47812511    2.74391116   -2.40266260
+ 
+        ***************  Stationary point options ******************
+        ************************************************************
+           Maximum allowed trust radius:           3.000000E-01
+           Minimum allowed trust radius:           1.000000E-03
+           Initial trust radius:                   1.500000E-01
+           GDIIS used if gradient norm <           1.000000E-02
+           Number of previous steps for GDIIS:       5
+           Hessian update method:                  Powell
+           Initial index of transition vector:       1
+                        *** Convergence criteria ***                
+           Threshold for energy change:            1.000000E-06
+           Threshold for max displacement element: 1.000000E-03
+           Threshold for max gradient element :    1.000000E-03
+           Threshold for RMS of displacement:      5.000000E-04
+           Threshold for RMS of gradient:          5.000000E-04
+        ************************************************************
+ 
+     Number of symmetry restricted degrees of freedom:    21
+     Constituted by:     3 translational degrees of freedom
+                         3 rotational degrees of freedom
+                        15 internal degrees of freedom
+
+  *************************************************************************
+   ATOM                      CARTESIAN COORDINATES
+    1 c      -9.25075776703401      1.31539052721671     -2.03804140830589
+    2 h      -7.64283869387956      2.94175433702398     -2.38226677569941
+    3 h     -10.63823653947595      1.64254356490826     -3.51618197409147
+    4 h      -9.97038331278749      1.68353260511182     -0.15035171445684
+    5 h      -8.33028034662971     -0.51280456038655     -2.19882171035971
+    6 o      -5.70186345632572      4.41732562127426     -2.78020184506866
+    7 h      -4.38318393212025      3.14833791816806     -2.93310396367592
+  *************************************************************************
+   ATOM                      CARTESIAN GRADIENTS  
+    1 c       0.00000921466825     -0.00002440403591     -0.00001660489768
+    2 h      -0.00000407339664      0.00000751128905      0.00000772492890
+    3 h       0.00000491936293      0.00001020803693      0.00000140886580
+    4 h       0.00000572696709      0.00000223435945      0.00000110785425
+    5 h      -0.00001943352525      0.00000854519968      0.00000068311281
+    6 o      -0.00007421965423     -0.00000742231049      0.00001190868197
+    7 h       0.00006159831010      0.00002079508716     -0.00000327646213
+  *************************************************************************
+
+  norm of actual CARTESIAN gradient:  1.07946E-04
+  norm of actual INTERNAL  gradient:  1.40433E-04
+
+  ENERGY =    -116.2358980931 a.u.; # of cycle =    7
+
+  Approximate Hessian read from $hessapprox data section
+
+  Hessian updated according to Powell formula
+  Number of zero Hessian eigenvalues:   0
+
+   5 first eigenvalues: 
+ -0.02560113 -0.00573229  0.02061218  0.03587355  0.10054632
+
+  Eigenvalue of transition vector: -0.02560113
+
+  Largest and next-largest overlaps:   0.91191089  0.40849871
+
+  Old transition vector    1 has overlap 0.91191089 with the new    1
+
+        ***************  Trust radius update info  *****************
+                Actual energy change:       -1.15000E-08
+                Predicted energy change:    -2.18803E-07
+                Actual step radius:          3.26828E-03
+                Actual trust radius:         0.003268
+                Energy change ratio:         0.052559
+                New trust radius:            0.001362
+        ************************************************************
+
+
+  Results of the TRO shift search
+  Final shift: -1.92543E-02 residual -9.30254E-19
+  Final step radius: 1.36178E-03
+
+  Transforming internal coordinate displacements to Cartesian space
+      Iteration   1 residual norm     1.361782E-03
+      Iteration   2 residual norm     9.527066E-07
+      Iteration   3 residual norm     5.087995E-14
+      Transformation converged
+      Residual norm:    5.087995E-14 after    3 iterations
+
+      ****************************************************************** 
+                          CONVERGENCE INFORMATION
+
+                               Converged?     Value      Criterion
+             Energy change         yes      0.0000000   0.0000010
+             RMS of displacement   yes      0.0003516   0.0005000
+             RMS of gradient       yes      0.0000363   0.0005000
+             MAX displacement      yes      0.0008743   0.0010000
+             MAX gradient          yes      0.0000945   0.0010000
+      ****************************************************************** 
+
+
+    ------------------------------------------------------------------------
+         total  cpu-time :   0.02 seconds
+         total wall-time :   0.02 seconds
+    ------------------------------------------------------------------------
+
+   ****  statpt : all done  ****
+
+
+    2023-06-08 11:40:43.959 
+

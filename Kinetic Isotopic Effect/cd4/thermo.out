@@ -1,0 +1,63 @@
+ 
+        ______________________________________
+       |                                      |
+       |             T H E R M O              |
+       |              S.Grimme                |
+       |          Universitaet Bonn           |
+       |______________________________________|
+ 
+ read from ~/.thermorc:
+ scale factor   1.00000000000000     
+ T              298.150000000000     
+ Sthr          0.000000000000000E+000
+ 
+ reading coord ...
+ # atoms            7
+
+          molecular weight =   33.05
+
+          (10-47 kg m^2)  a =      6.977834   b =     92.020963   c =     93.479369
+          (Mhz         )  a = 120266.276475   b =   9119.640839   c =   8977.361936
+          (cm-1        )  a =      4.011651   b =      0.304198   c =      0.299453
+ lin? F
+ 
+ reading frequencies ...
+ -----------AOFORCE OUTPUT------------
+ 
+ Nvib=          14
+    25.08   257.66   278.79   653.67   809.47   839.88   951.13  1047.09  1048.18  1068.84
+  2183.55  2361.04  2363.13  3728.15
+ symmetry:$symmetry c1
+ RotN=   1.00000000000000     
+ 
+ low-lying modes and their entropy (T*S, in kcal/mol)
+omega= 25.08     Svib=     1.844     Srot=     1.256     Sused=     1.844
+omega=257.66     Svib=     0.500     Srot=     0.570     Sused=     0.500
+omega=278.79     Svib=     0.459     Srot=     0.547     Sused=     0.459
+
+                    CALCULATED THERMODYNAMIC PROPERTIES
+   TEMP. (K)   PARTITION FUNCTION             ENTHALPY   HEAT CAPACITY  ENTROPY
+                                    KCAL/MOL   CAL/MOLE    CAL/K/MOL   CAL/K/MOL
+
+ 298.15  VIB.         18.61                  1394.29121    8.99983   10.48703
+         ROT.    0.875E+04                    888.752      2.981     21.018
+         INT.    0.163E+06                   2283.044     11.981     31.505
+         TRA.    0.184E+27                   1481.254      4.968     36.401
+         TOT.                                3764.2975    16.9489    67.9065   284.1196
+ 
+                    [au]       [kcal/mol]        [kJ/mol]
+
+ZPVE            0.401314E-01     25.1829         105.365    
+H(0)-H(T)+PV    0.599879E-02     3.76430         15.7498    
+ ------------------------------------------------------
+H(T)            0.461302E-01     28.9471         121.114    
+T*S             0.322646E-01     20.2463         84.7103    
+G(T)            0.138657E-01     8.70084         36.4042    
+ ------------------------------------------------------
+ writing .H298 and .G298
+ 
+ ######################################################
+ WARNING! number of read and expected number
+ WARNING! of real vibrations differ          14          15
+ ######################################################
+ 

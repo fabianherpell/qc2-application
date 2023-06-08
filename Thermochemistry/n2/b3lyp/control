@@ -8,9 +8,7 @@ $dft
   functional b3-lyp
 $disp3 -bj
 $rij
-$last step     ridft
-$basis file=basis
-$jbas file=auxbasis
+$last step     force
 $closed shells
  a       1-7                                    ( 2 )
 $scfmo    file=mos
@@ -22,7 +20,17 @@ $subenergy  Etot         E1                  Ej                Ex               
 -109.5216587233    -194.4764617882     72.41136640294    -10.45649356786    -.5716282947750     23.57231108640    -.7525619047379E-03
 $charge from ridft
           0.000 (not to be modified here)
-$dipole from ridft
-  x    -0.00000000000628    y     0.00000000000112    z     0.00000000000015    a.u.
+$dipole from force
+  x    -0.00000000000591    y     0.00000000000109    z     0.00000000000015    a.u.
    | dipole | =    0.0000000000  debye
+$basis file=basis
+$jbas file=auxbasis
+$dipgrad    file=dipgrad
+$hessian (projected)    file=hessian
+$vibrational normal modes    file=vib_normal_modes
+$vibrational reduced masses
+  14.0067000000  14.0067000000  14.0067000000  14.0067000000  14.0067000000
+  14.0067000000
+$nvibro        6
+$vibrational spectrum    file=vibspectrum
 $end
