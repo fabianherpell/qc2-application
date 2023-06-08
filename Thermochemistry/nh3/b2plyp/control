@@ -13,9 +13,7 @@ $denconv 1.0d-7
 $ricc2
   mp2
 $disp3 -bj
-$last step     ricc2
-$basis file=basis
-$jbas file=auxbasis
+$last step     force
 $closed shells
  a       1-5                                    ( 2 )
 $scfmo    file=mos
@@ -27,9 +25,20 @@ $subenergy  Etot         E1                  Ej                Ex               
 -56.46525197943    -99.52420512700     35.03147714240    -3.608479800029    -.2319292117021     11.86838369615    -.4986792547677E-03
 $charge from ridft
           0.000 (not to be modified here)
-$dipole from ridft
-  x     0.21132031029200    y    -0.30138350888957    z    -0.51655902882668    a.u.
+$dipole from force
+  x     0.21132031029137    y    -0.30138350888957    z    -0.51655902882671    a.u.
    | dipole | =    1.6122119831  debye
 $cbas file=auxbasis
 $last MP2 energy change= -.88283701E-01
+$basis file=basis
+$jbas file=auxbasis
+$dipgrad    file=dipgrad
+$hessian (projected)    file=hessian
+$vibrational normal modes    file=vib_normal_modes
+$vibrational reduced masses
+   1.1113710148   1.3119484896   4.5208008861   2.8739450826   1.1472002241
+   1.9745344179   1.1807999081   1.0656734779   1.0656754102   1.0268781671
+   1.0891716817   1.0891670347
+$nvibro       12
+$vibrational spectrum    file=vibspectrum
 $end
