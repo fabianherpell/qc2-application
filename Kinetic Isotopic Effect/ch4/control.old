@@ -1,0 +1,11 @@
+$coord file=coord
+$eht charge=0 unpaired=1
+$symmetry c1
+$atoms
+  basis=def2-TZVP
+$dft
+  functional b3-lyp
+$scfiterlimit 100
+$disp3 -bj
+$rij
+$end
