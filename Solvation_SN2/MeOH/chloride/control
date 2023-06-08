@@ -10,19 +10,21 @@ $energy file=energy
 $grad file=gradient
 $disp3 -bj
 $rij
+$cosmo
+epsilon=32.0
 $last step     ridft
 $basis file=basis
 $jbas file=auxbasis
 $closed shells
- a       1-5                                    ( 2 )
+ a       1-9                                    ( 2 )
 $scfmo    file=mos
-$orbital_max_rnorm 0.25113759759698E-06
-$last SCF energy change = -99.973105
+$orbital_max_rnorm 0.42036427883106E-06
+$last SCF energy change = -460.74030
 $subenergy  Etot         E1                  Ej                Ex                 Ec                 En                 Disp
--99.97310489971    -144.3333998604     52.32040454662    -7.590182815844    -.3699267700410     0.000000000000     0.000000000000
+-460.7403045951    -642.1412458835     202.4896238894    -20.29049953449    -.7981830665738     0.000000000000     0.000000000000
 $charge from ridft
          -1.000 (not to be modified here)
 $dipole from ridft
-  x    13.06469715164572    y    -2.32625285941435    z     0.00000000000003    a.u.
-   | dipole | =   33.7296964040  debye
+  x     1.56314450989376    y   -14.38888435957259    z    -0.00000256904467    a.u.
+   | dipole | =   36.7883519589  debye
 $end
