@@ -22,5 +22,5 @@
     popd>/dev/null
     done
 
-     output_file="$(pwd)/Carbenes_M-energies"
+  
 
