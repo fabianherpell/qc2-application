@@ -6,7 +6,7 @@ for n in "Ar" "Kr" ; do
     for m in  "BLYP" "BLYP_D3" "MP2"; do
         pushd $m >/dev/null
         echo $m
-        bash run_scan.sh &
+        #bash run_scan.sh &
         popd >/dev/null
     done
     popd >/dev/null
