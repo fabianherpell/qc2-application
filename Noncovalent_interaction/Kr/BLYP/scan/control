@@ -1,0 +1,11 @@
+$coord file=coord
+$eht charge=0 unpaired=0
+$symmetry c1
+$atoms
+  basis=def2-QZVP
+$dft
+  functional blyp
+$rij
+$energy file=energy
+$grad file=gradient
+$end
