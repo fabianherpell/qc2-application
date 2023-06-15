@@ -1,6 +1,6 @@
 
-OPTIMIZATION CYCLE 7
-So 4. Jun 11:47:52 CEST 2023
+OPTIMIZATION CYCLE 8
+Do 15. Jun 19:00:49 CEST 2023
 
    OpenMP run-time library returned nthreads =  2
 
@@ -8,7 +8,7 @@ So 4. Jun 11:47:52 CEST 2023
  Copyright (C) 2021 TURBOMOLE GmbH, Karlsruhe
 
 
-    2023-06-04 11:47:53.274 
+    2023-06-15 19:00:49.433 
 
 
 
@@ -142,8 +142,8 @@ So 4. Jun 11:47:52 CEST 2023
  Threshold for integral neglect (rithr1): 1E-10
  Threshold for integral neglect (rithr2): 1E-10
  Contributions to RI integral batches: 
-  neglected integral batches:                    16
-  direct contribution:                          845
+  neglected integral batches:                    13
+  direct contribution:                          848
      
  ****************************************
  Memory allocated for RDGRAD: 1 MiB
@@ -151,14 +151,14 @@ So 4. Jun 11:47:52 CEST 2023
                                             
      
 
- nuclear repulsion energy  :   69.5770568266    
+ nuclear repulsion energy  :   69.7603876354    
 
   MOs are in ASCII format !
 
 
  reading orbital data $scfmo  from file mos
  orbital characterization : scfconv=7
-  Deviation of MOs from orthonormality   5.438990657405632E-011
+  Deviation of MOs from orthonormality   3.721524084333312E-011
 
     ----------------------------------------
      S+T+V CONTRIBUTIONS TO ENERGY GRADIENT 
@@ -200,13 +200,13 @@ Z=  8 CN= 0.993     C6(AA)=   12.82
 Z=  8 CN= 1.989     C6(AA)=   10.37
 
 #           XYZ [au]              R0(AA) [Ang.]  CN          C6(AA)     C8(AA)   C10(AA) [au]
-  1  -1.05207   3.54155   0.19552   c   0.645  3.003        25.7       742.3     26300.0
-  2  -2.85712   4.73619   0.86212   o   0.539  1.020        12.8       258.2      6383.1
-  3  -0.94536   0.97867   0.41144   o   0.539  2.008        10.4       210.0      5191.9
-  4   0.67220   0.38329  -0.23497   h   0.417  1.008         3.1        37.3       552.6
-  5   0.67257   4.37611  -0.64382   h   0.417  0.995         3.1        37.4       553.7
+  1  -9.99006   3.53377   0.08465   c   0.645  3.008        25.7       742.1     26291.1
+  2 -10.52812   5.74763   0.06019   o   0.539  1.018        12.8       258.2      6383.9
+  3  -7.62781   2.58438  -0.19656   o   0.539  2.006        10.4       210.0      5192.2
+  4 -11.32938   1.96461   0.33785   h   0.417  0.996         3.1        37.4       553.5
+  5  -6.49067   4.02653  -0.41583   h   0.417  1.011         3.1        37.3       552.3
 
-molecular C6(AA) [au] =       233.05
+molecular C6(AA) [au] =       233.02
 
            DFT-D V3(BJ)
  DF tpss                                              
@@ -217,15 +217,15 @@ molecular C6(AA) [au] =       233.05
  a2       :    4.4752
  k1-k3    :   16.0000    1.3333   -4.0000
  
- Edisp /kcal,au:    -1.3749 -0.00219097
+ Edisp /kcal,au:    -1.3887 -0.00221309
 
- E6    /kcal :    -0.7196
- E8    /kcal :    -0.6552
- % E8        : 47.66
+ E6    /kcal :    -0.7264
+ E8    /kcal :    -0.6623
+ % E8        : 47.69
  
  doing analytical gradient O(N^2) ...
  
- |G|=  2.814771329630725E-004
+ |G|=  2.262085519748501E-004
 
  setting up bound for integral derivative estimation
 
@@ -233,9 +233,9 @@ molecular C6(AA) [au] =       233.05
 
  biggest AO integral is expected to be     7.998976882
  biggest cartesian 1st derivative AO integral is expected to be    17.678530758
-          Overall gridpoints after grid construction =         26241
+          Overall gridpoints after grid construction =         26243
 
- Integrated ground state density     :   24.00000161322249    
+ Integrated ground state density     :   24.00000449991625    
 
 
           ------------------------------------------------
@@ -243,21 +243,21 @@ molecular C6(AA) [au] =       233.05
           ------------------------------------------------
 
   ATOM      1 c           2 o           3 o           4 h           5 h 
-dE/dx  0.4783164D-04  0.2619135D-03  0.8208832D-04  0.1306594D-03 -0.6899552D-04
-dE/dy  0.1173852D-03 -0.1809584D-03 -0.1434296D-03 -0.7075432D-04 -0.4360487D-04
-dE/dz -0.5104495D-04 -0.6466620D-06  0.3965566D-05 -0.6336969D-04  0.3875311D-04
+dE/dx  0.6410647D-04  0.2051288D-04  0.1138946D-03  0.1080278D-03  0.4392163D-04
+dE/dy -0.5743596D-04 -0.4247074D-04  0.1462593D-05 -0.7579197D-04  0.5504530D-04
+dE/dz -0.4993112D-05 -0.1542695D-04 -0.9777658D-05  0.3885700D-05 -0.1520090D-04
  
- resulting FORCE  (fx,fy,fz) = (0.453D-03,-.321D-03,-.723D-04)
- resulting MOMENT (mx,my,mz) = (0.113D-03,0.247D-03,-.786D-03)
+ resulting FORCE  (fx,fy,fz) = (0.350D-03,-.119D-03,-.415D-04)
+ resulting MOMENT (mx,my,mz) = (-.129D-03,-.339D-03,0.483D-03)
 
 
- exx =      -0.000835 eyy =      -0.000800 ezz =      -0.000019
- eyz =      -0.000091 exz =       0.000159 exy =       0.000845
+ exx =      -0.003234 eyy =      -0.000371 ezz =       0.000008
+ eyz =      -0.000121 exz =       0.000172 exy =       0.001270
 
 
  **********************************************************************
-  |maximum component of gradient| : 0.26191354E-03  (atom  2 o )       
-   gradient norm                  : 0.42614716E-03
+  |maximum component of gradient| : 0.11389461E-03  (atom  3 o )       
+   gradient norm                  : 0.21350737E-03
  **********************************************************************
    ***  cartesian gradients written onto <gradient>  ***
 
@@ -267,14 +267,14 @@ dE/dz -0.5104495D-04 -0.6466620D-06  0.3965566D-05 -0.6336969D-04  0.3875311D-04
 
 
     ------------------------------------------------------------------------
-         total  cpu-time :   1.04 seconds
-         total wall-time :   1.10 seconds
+         total  cpu-time :   0.41 seconds
+         total wall-time :   0.21 seconds
     ------------------------------------------------------------------------
 
    ****  rdgrad : all done  ****
 
 
-    2023-06-04 11:47:54.193 
+    2023-06-15 19:00:49.639 
 
 fine, there is no data group "$actual step"
 next step = relax
@@ -283,7 +283,7 @@ next step = relax
  Copyright (C) 2021 TURBOMOLE GmbH, Karlsruhe
 
 
-    2023-06-04 11:47:54.645 
+    2023-06-15 19:00:49.680 
 
 
 
@@ -308,14 +308,14 @@ next step = relax
               +--------------------------------------------------+
 
                     atomic coordinates            atom    charge  isotop
-         -1.05207106    3.54155474    0.19552052    c      6.000     0
-         -2.85711614    4.73619095    0.86212409    o      8.000     0
-         -0.94535636    0.97867451    0.41144063    o      8.000     0
-          0.67219913    0.38328834   -0.23496748    h      1.000     0
-          0.67257499    4.37610667   -0.64382401    h      1.000     0
+         -9.99006060    3.53377469    0.08465305    c      6.000     0
+        -10.52811935    5.74762842    0.06018633    o      8.000     0
+         -7.62780760    2.58438255   -0.19655587    o      8.000     0
+        -11.32938111    1.96461234    0.33785234    h      1.000     0
+         -6.49066975    4.02653121   -0.41582775    h      1.000     0
  
-       center of nuclear mass  :   -1.56690875    3.01503982    0.47449169
-       center of nuclear charge:   -1.47447634    2.98865196    0.43678539
+       center of nuclear mass  :   -9.30863326    3.94975018   -0.02702060
+       center of nuclear charge:   -9.29199292    3.91041165   -0.02754223
   Keyword $statpt not found - using default options
  
         ***************  Stationary point options ******************
@@ -345,60 +345,60 @@ next step = relax
 
   *************************************************************************
    ATOM                      CARTESIAN COORDINATES
-    1 c      -1.05207105677122      3.54155474169312      0.19552051983089
-    2 o      -2.85711614019179      4.73619094910148      0.86212409098344
-    3 o      -0.94535635908179      0.97867451179478      0.41144063040869
-    4 h       0.67219912871096      0.38328833799317     -0.23496747934118
-    5 h       0.67257499332765      4.37610666684813     -0.64382401233250
+    1 c      -9.99006059598252      3.53377469498796      0.08465304644034
+    2 o     -10.52811935101762      5.74762842255728      0.06018633208875
+    3 o      -7.62780759558505      2.58438254940438     -0.19655587432293
+    4 h     -11.32938111334294      1.96461234287833      0.33785234192260
+    5 h      -6.49066975017153      4.02653121030076     -0.41582775006185
   *************************************************************************
    ATOM                      CARTESIAN GRADIENTS  
-    1 c       0.00004783164408      0.00011738515278     -0.00005104494580
-    2 o       0.00026191354039     -0.00018095838688     -0.00000064666199
-    3 o       0.00008208832222     -0.00014342956954      0.00000396556573
-    4 h       0.00013065944802     -0.00007075431906     -0.00006336968768
-    5 h      -0.00006899551828     -0.00004360487395      0.00003875311179
+    1 c       0.00006410646618     -0.00005743595746     -0.00000499311158
+    2 o       0.00002051287599     -0.00004247073883     -0.00001542695411
+    3 o       0.00011389460975      0.00000146259252     -0.00000977765761
+    4 h       0.00010802775876     -0.00007579197316      0.00000388569952
+    5 h       0.00004392162948      0.00005504529747     -0.00001520089968
   *************************************************************************
 
-  norm of actual CARTESIAN gradient:  4.26147E-04
-  norm of actual INTERNAL  gradient:  2.79145E-04
+  norm of actual CARTESIAN gradient:  2.13507E-04
+  norm of actual INTERNAL  gradient:  4.20492E-05
 
-  ENERGY =    -189.8646923304 a.u.; # of cycle =    7
+  ENERGY =    -189.8713776213 a.u.; # of cycle =    8
 
   Approximate Hessian read from $hessapprox data section
 
   Hessian updated according to BFGS formula
   Number of zero Hessian eigenvalues:   0
   Number of structures for GDIIS interpolation:    5
-  GDIIS step:     0.000722
+  GDIIS step:     0.000235
 
   Transforming internal coordinate displacements to Cartesian space
-      Iteration   1 residual norm     7.224334E-04
-      Iteration   2 residual norm     1.195804E-07
-      Iteration   3 residual norm     4.579711E-14
+      Iteration   1 residual norm     2.347005E-04
+      Iteration   2 residual norm     3.742941E-08
+      Iteration   3 residual norm     3.324493E-14
       Transformation converged
-      Residual norm:    4.579711E-14 after    3 iterations
+      Residual norm:    3.324493E-14 after    3 iterations
 
       ****************************************************************** 
                           CONVERGENCE INFORMATION
 
                                Converged?     Value      Criterion
-             Energy change         yes      0.0000007   0.0000010
-             RMS of displacement   yes      0.0002408   0.0005000
-             RMS of gradient       yes      0.0000930   0.0005000
-             MAX displacement      yes      0.0004732   0.0010000
-             MAX gradient          yes      0.0002003   0.0010000
+             Energy change         yes      0.0000000   0.0000010
+             RMS of displacement   yes      0.0000782   0.0005000
+             RMS of gradient       yes      0.0000140   0.0005000
+             MAX displacement      yes      0.0002157   0.0010000
+             MAX gradient          yes      0.0000325   0.0010000
       ****************************************************************** 
 
 
     ------------------------------------------------------------------------
-         total  cpu-time :   0.04 seconds
-         total wall-time :   1.52 seconds
+         total  cpu-time :   0.01 seconds
+         total wall-time :   0.01 seconds
     ------------------------------------------------------------------------
 
    ****  statpt : all done  ****
 
 
-    2023-06-04 11:47:56.011 
+    2023-06-15 19:00:49.687 
 
 fine, there is no data group "$actual step"
 next step = ridft
@@ -417,7 +417,7 @@ next step = ridft
  Copyright (C) 2021 TURBOMOLE GmbH, Karlsruhe
 
 
-    2023-06-04 11:47:56.717 
+    2023-06-15 19:00:49.855 
 
 
 
@@ -548,14 +548,14 @@ next step = ridft
               +--------------------------------------------------+
 
                     atomic coordinates            atom    charge  isotop
-         -1.05205118    3.54143134    0.19585191    c      6.000     0
-         -2.85736301    4.73620344    0.86202040    o      8.000     0
-         -0.94535797    0.97872590    0.41154590    o      8.000     0
-          0.67215267    0.38363514   -0.23516354    h      1.000     0
-          0.67285005    4.37581939   -0.64396093    h      1.000     0
+         -9.99007888    3.53381119    0.08465484    c      6.000     0
+        -10.52829682    5.74763566    0.06020965    o      8.000     0
+         -7.62786358    2.58447761   -0.19655375    o      8.000     0
+        -11.32935918    1.96461150    0.33784956    h      1.000     0
+         -6.49043994    4.02639327   -0.41585220    h      1.000     0
  
-       center of nuclear mass  :   -1.56698493    3.01503112    0.47457143
-       center of nuclear charge:   -1.47454467    2.98864489    0.43685489
+       center of nuclear mass  :   -9.30871367    3.94979222   -0.02701189
+       center of nuclear charge:   -9.29206482    3.91044908   -0.02753444
 
               +--------------------------------------------------+
               |               basis set information              |
@@ -638,7 +638,7 @@ next step = ridft
  biggest AO integral is expected to be     7.998976882
 
           ------------------------
-          nuclear repulsion energy  :   69.5764401993    
+          nuclear repulsion energy  :   69.7604228050    
           ------------------------
 
   _________________________________
@@ -675,13 +675,13 @@ Z=  8 CN= 0.993     C6(AA)=   12.82
 Z=  8 CN= 1.989     C6(AA)=   10.37
 
 #           XYZ [au]              R0(AA) [Ang.]  CN          C6(AA)     C8(AA)   C10(AA) [au]
-  1  -1.05205   3.54143   0.19585   c   0.645  3.003        25.7       742.3     26300.1
-  2  -2.85736   4.73620   0.86202   o   0.539  1.020        12.8       258.2      6383.1
-  3  -0.94536   0.97873   0.41155   o   0.539  2.008        10.4       210.0      5191.9
-  4   0.67215   0.38364  -0.23516   h   0.417  1.008         3.1        37.3       552.6
-  5   0.67285   4.37582  -0.64396   h   0.417  0.995         3.1        37.4       553.7
+  1  -9.99008   3.53381   0.08465   c   0.645  3.008        25.7       742.1     26291.1
+  2 -10.52830   5.74764   0.06021   o   0.539  1.018        12.8       258.2      6383.9
+  3  -7.62786   2.58448  -0.19655   o   0.539  2.006        10.4       210.0      5192.2
+  4 -11.32936   1.96461   0.33785   h   0.417  0.996         3.1        37.4       553.5
+  5  -6.49044   4.02639  -0.41585   h   0.417  1.011         3.1        37.3       552.3
 
-molecular C6(AA) [au] =       233.05
+molecular C6(AA) [au] =       233.02
 
            DFT-D V3(BJ)
  DF tpss                                              
@@ -692,14 +692,14 @@ molecular C6(AA) [au] =       233.05
  a2       :    4.4752
  k1-k3    :   16.0000    1.3333   -4.0000
  
- Edisp /kcal,au:    -1.3749 -0.00219098
+ Edisp /kcal,au:    -1.3887 -0.00221307
 
- E6    /kcal :    -0.7196
- E8    /kcal :    -0.6552
- % E8        : 47.66
- nuclear repulsion energy                  =      69.576440199
-  DFT-D3 Energy contribution               =      -0.002190983
- nuclear repulsion + dispersion correction =      69.574249217
+ E6    /kcal :    -0.7264
+ E8    /kcal :    -0.6623
+ % E8        : 47.69
+ nuclear repulsion energy                  =      69.760422805
+  DFT-D3 Energy contribution               =      -0.002213073
+ nuclear repulsion + dispersion correction =      69.758209732
 
 
          -----------------
@@ -744,9 +744,9 @@ molecular C6(AA) [au] =       233.05
                RI-J - INFORMATION
            ------------------------
  Contributions to RI integral batches: 
-  neglected integral batches:                    16
+  neglected integral batches:                    13
   direct contribution:                            0
-  memory contribution:                   845
+  memory contribution:                   848
  Memory core needed for (P|Q) and Cholesky      1 MByte
  Memory core minimum needed except of (P|Q)     1 MByte
  Total minimum memory core needed (sum)         1 MByte
@@ -761,40 +761,40 @@ molecular C6(AA) [au] =       233.05
 
  Starting SCF iterations
 
-          Overall gridpoints after grid construction =          7139
+          Overall gridpoints after grid construction =          7158
 
  ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
-   1  -189.86470339792    -397.20957027     137.77061765    0.000D+00 0.278D-10
-                            Exc = -23.3568250895     Coul =  161.127442744    
-                              N = 24.000074346    
+   1  -189.87134399768    -397.55690097     137.92734724    0.000D+00 0.278D-10
+                            Exc = -23.3593653856     Coul =  161.286712627    
+                              N = 24.000085535    
                             current damping = 0.700
  
-          max. resid. norm for Fia-block=  9.367D-05 for orbital      9a         
-          max. resid. fock norm         =  1.214D-03 for orbital    105a         
+          max. resid. norm for Fia-block=  4.541D-05 for orbital      7a         
+          max. resid. fock norm         =  4.169D-04 for orbital     86a         
 
  ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
-   2  -189.86470344290    -397.20948372     137.77053106    0.214D-03 0.176D-10
-                            Exc = -23.3568191246     Coul =  161.127350189    
-                              N = 24.000074325    
+   2  -189.87134400502    -397.55695686     137.92740313    0.995D-04 0.176D-10
+                            Exc = -23.3593649550     Coul =  161.286768083    
+                              N = 24.000085549    
                             current damping = 0.700
  
-          Norm of current diis error: 0.28791E-03
-          max. resid. norm for Fia-block=  3.965D-05 for orbital      9a         
-          max. resid. fock norm         =  5.025D-04 for orbital    105a         
+          Norm of current diis error: 0.17302E-03
+          max. resid. norm for Fia-block=  2.034D-05 for orbital     12a         
+          max. resid. fock norm         =  1.775D-04 for orbital     86a         
 
  ENERGY CONVERGED !
 
-          Overall gridpoints after grid construction =         26241
+          Overall gridpoints after grid construction =         26243
 
  ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     NORM[dD(SAO)]  TOL
-   3  -189.86469240251    -397.20934656     137.77040494    0.713D-04 0.140D-10
-                            Exc = -23.3567828677     Coul =  161.127187807    
-                              N = 24.000001623    
-                            current damping = 0.550
+   3  -189.87137762850    -397.55697762     137.92739026    0.671D-04 0.152D-10
+                            Exc = -23.3594078570     Coul =  161.286798117    
+                              N = 24.000004499    
+                            current damping = 0.750
  
-          Norm of current diis error: 0.19704E-03
-          max. resid. norm for Fia-block=  1.681D-05 for orbital     11a         
-          max. resid. fock norm         =  2.063D-04 for orbital    105a         
+          Norm of current diis error: 0.16149E-03
+          max. resid. norm for Fia-block=  9.184D-06 for orbital     12a         
+          max. resid. fock norm         =  6.951D-05 for orbital     86a         
 
  End of SCF iterations
 
@@ -802,25 +802,25 @@ molecular C6(AA) [au] =       233.05
 
 
                   ------------------------------------------ 
-                 |  total energy      =   -189.86469240251  |
+                 |  total energy      =   -189.87137762850  |
                   ------------------------------------------ 
-                 :  kinetic energy    =    189.14197122387  :
-                 :  potential energy  =   -379.00666362638  :
-                 :  virial theorem    =      1.99619349354  :
-                 :  wavefunction norm =      0.99999999990  :
+                 :  kinetic energy    =    189.14381146193  :
+                 :  potential energy  =   -379.01518909043  :
+                 :  virial theorem    =      1.99616811035  :
+                 :  wavefunction norm =      1.00000000000  :
                   .......................................... 
 
 
  orbitals $scfmo  will be written to file mos
 
     irrep                  8a          9a         10a         11a         12a   
- eigenvalues H         -0.41215    -0.40772    -0.36406    -0.29846    -0.25340
-            eV         -11.2153    -11.0947     -9.9066     -8.1215     -6.8953
+ eigenvalues H         -0.44617    -0.40985    -0.36875    -0.30012    -0.25646
+            eV         -12.1411    -11.1525    -10.0343     -8.1669     -6.9787
  occupation              2.0000      2.0000      2.0000      2.0000      2.0000
 
     irrep                 13a         14a         15a         16a         17a   
- eigenvalues H         -0.04592    -0.00556     0.05780     0.11808     0.17504
-            eV          -1.2494     -0.1512      1.5728      3.2132      4.7631
+ eigenvalues H         -0.04602     0.01434     0.06706     0.11769     0.14835
+            eV          -1.2523      0.3903      1.8249      3.2025      4.0369
  
  
  
@@ -841,49 +841,49 @@ molecular C6(AA) [au] =       233.05
  ------------------------------------------------------------------------------
                        dipole moment  
  ------------------------------------------------------------------------------
-   x     -35.389072      36.721586       1.332514
-   y      71.727477     -72.202375      -0.474897
-   z      10.484517     -11.018342      -0.533824
+   x    -223.009556     223.405217       0.395661
+   y      93.850778     -94.279780      -0.429002
+   z      -0.660826       0.626058      -0.034768
  
-   | dipole moment | =     1.5120 a.u. =     3.8431 debye 
+   | dipole moment | =     0.5846 a.u. =     1.4860 debye 
  
  ------------------------------------------------------------------------------
                      quadrupole moment
  ------------------------------------------------------------------------------
-  xx      80.011187     -95.476564     -15.465377
-  yy     281.661606    -297.771900     -16.110294
-  zz       7.999729     -20.948708     -12.948979
-  xy    -134.818861     139.029408       4.210547
-  xz     -24.644940      25.575975       0.931035
-  yz      37.137460     -38.668688      -1.531228
+  xx    2121.524941   -2140.035478     -18.510537
+  yy     412.717191    -430.848746     -18.131555
+  zz       0.668143     -13.255212     -12.587069
+  xy    -902.024023     910.382451       8.358428
+  xz       0.720235      -0.737838      -0.017603
+  yz      -0.511121       0.094472      -0.416650
  
-     1/3  trace=     -14.841550
-     anisotropy=       8.437513
+     1/3  trace=     -16.409720
+     anisotropy=      15.591597
  
  ==============================================================================
  
 HOMO-LUMO Separation
- HOMO         :   -0.25339579 H =     -6.89525 eV
- LUMO         :   -0.04591582 H =     -1.24943 eV
- HOMO-LUMO gap:    0.20747998 H =     +5.64582 eV
+ HOMO         :   -0.25646232 H =     -6.97870 eV
+ LUMO         :   -0.04602256 H =     -1.25234 eV
+ HOMO-LUMO gap:    0.21043975 H =     +5.72636 eV
  
  ==============================================================================
 
 
     ------------------------------------------------------------------------
-         total  cpu-time :   2.26 seconds
-         total wall-time :   5.25 seconds
+         total  cpu-time :   0.48 seconds
+         total wall-time :   0.25 seconds
     ------------------------------------------------------------------------
 
    ****  ridft : all done  ****
 
 
-    2023-06-04 11:48:01.737 
+    2023-06-15 19:00:50.092 
 
 fine, there is no data group "$actual step"
 next step = rdgrad
- energy change  : actual value =  -0.6602E-06 threshold =   0.1000E-05
- geom. gradient : actual value =   0.2003E-03 threshold =   0.1000E-02
+ energy change  : actual value =  -0.1270E-07 threshold =   0.1000E-05
+ geom. gradient : actual value =   0.3254E-04 threshold =   0.1000E-02
 
-CONVERGENCY CRITERIA FULFILLED IN CYCLE 7
+CONVERGENCY CRITERIA FULFILLED IN CYCLE 8
 

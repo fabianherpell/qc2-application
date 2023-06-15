@@ -6,26 +6,26 @@ $atoms
     jbas  =def2-TZVP
 $dft
   functional tpss
-$disp3 -bj
 $rij
 $energy file=energy
 $grad file=gradient
+$disp3 -bj
 $last step     ridft
 $basis file=basis
 $jbas file=auxbasis
 $closed shells
  a       1-12                                   ( 2 )
 $scfmo    file=mos
-$last SCF energy change = -.72111902E-07
+$last SCF energy change = -.72001569E-08
 $charge from ridft
           0.000 (not to be modified here)
 $dipole from ridft
-  x     1.33251411646902    y    -0.47489734397695    z    -0.53382444983993    a.u.
-   | dipole | =    3.8431042361  debye
+  x     0.39566098958713    y    -0.42900224964042    z    -0.03476821754599    a.u.
+   | dipole | =    1.4860079925  debye
 $redundant    file=coord
 $optinfo       file=optinfo
 $hessapprox   file=hessapprox
-$orbital_max_rnorm 0.20630843339537E-03
+$orbital_max_rnorm 0.69508239887865E-04
 $subenergy  Etot         E1                  Ej                Ex                 Ec                 En                 Disp
--189.8646924025    -397.2093465589     161.1271878074    -22.55042500195    -.8063578657002     69.57644019930    -.2190982713321E-02
+-189.8713776285    -397.5569776198     161.2867981167    -22.55274615834    -.8066616986962     69.76042280498    -.2213073368866E-02
 $end
