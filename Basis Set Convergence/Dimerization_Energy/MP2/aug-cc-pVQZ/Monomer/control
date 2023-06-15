@@ -3,30 +3,27 @@ $eht charge=0 unpaired=0
 $symmetry c1
 $atoms
     basis =aug-cc-pVQZ
-    cbas  =aug-cc-pVQZ
     jbas  =aug-cc-pVQZ
 $scfconv 7
 $denconv 1.0d-7
 $ricc2
   mp2
 $rij
-$last step     ricc2
+$last step     ridft
 $basis file=basis
 $jbas file=auxbasis
 $closed shells
  a       1-12                                   ( 2 )
 $scfmo    file=mos
-$orbital_max_rnorm 0.11680871139034E-04
-$energy      SCF               SCFKIN            SCFPOT            MP2
-     1 -188.8475202189      188.508544     -377.356064     -.7753425155178
-$last SCF energy change = -188.84752
+$orbital_max_rnorm 0.10471097689118E-04
+$energy      SCF               SCFKIN            SCFPOT
+     1 -188.8549270257      188.5152610469     -377.3701880726
+$last SCF energy change = -188.85493
 $subenergy  Etot         E1                  Ej                Ex                 En
--188.8475202189    -396.9129811896     0.000000000000     0.000000000000     69.57644019930
+-188.8549270257    -397.2578231696     0.000000000000     0.000000000000     69.76042280498
 $charge from ridft
          -0.000 (not to be modified here)
 $dipole from ridft
-  x     1.54207883175069    y    -0.46981255659691    z    -0.62594129881292    a.u.
-   | dipole | =    4.3955157966  debye
-$cbas file=auxbasis
-$last MP2 energy change= -.77534252
+  x     0.34917615421594    y    -0.57376592813436    z    -0.02223013174048    a.u.
+   | dipole | =    1.7081450306  debye
 $end

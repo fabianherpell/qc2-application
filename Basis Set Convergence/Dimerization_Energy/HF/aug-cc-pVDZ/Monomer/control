@@ -11,15 +11,15 @@ $jbas file=auxbasis
 $closed shells
  a       1-12                                   ( 2 )
 $scfmo    file=mos
-$orbital_max_rnorm 0.31024514007068E-04
+$orbital_max_rnorm 0.30675254170152E-04
 $energy      SCF               SCFKIN            SCFPOT
-     1 -188.7883908601      188.3985714294     -377.1869622895
-$last SCF energy change = -188.78839
+     1 -188.7960127376      188.4061085696     -377.2021213072
+$last SCF energy change = -188.79601
 $subenergy  Etot         E1                  Ej                Ex                 En
--188.7883908601    -396.6898338809     0.000000000000     0.000000000000     69.57644019930
+-188.7960127376    -397.0363121128     0.000000000000     0.000000000000     69.76042280498
 $charge from ridft
           0.000 (not to be modified here)
 $dipole from ridft
-  x     1.54866552238449    y    -0.46565317143687    z    -0.62924640532182    a.u.
-   | dipole | =    4.4106400948  debye
+  x     0.34722814718987    y    -0.57297014905957    z    -0.02199770526807    a.u.
+   | dipole | =    1.7038289321  debye
 $end

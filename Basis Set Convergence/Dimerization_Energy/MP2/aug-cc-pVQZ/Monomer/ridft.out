@@ -13,7 +13,7 @@
  Copyright (C) 2021 TURBOMOLE GmbH, Karlsruhe
 
 
-    2023-06-04 16:40:44.604 
+    2023-06-15 21:21:52.715 
 
 
 
@@ -145,14 +145,14 @@
               +--------------------------------------------------+
 
                     atomic coordinates            atom    charge  isotop
-         -1.05205118    3.54143134    0.19585191    c      6.000     0
-         -2.85736301    4.73620344    0.86202040    o      8.000     0
-         -0.94535797    0.97872590    0.41154590    o      8.000     0
-          0.67215267    0.38363514   -0.23516354    h      1.000     0
-          0.67285005    4.37581939   -0.64396093    h      1.000     0
+         -9.99007888    3.53381119    0.08465484    c      6.000     0
+        -10.52829682    5.74763566    0.06020965    o      8.000     0
+         -7.62786358    2.58447761   -0.19655375    o      8.000     0
+        -11.32935918    1.96461150    0.33784956    h      1.000     0
+         -6.49043994    4.02639327   -0.41585220    h      1.000     0
  
-       center of nuclear mass  :   -1.56698493    3.01503112    0.47457143
-       center of nuclear charge:   -1.47454467    2.98864489    0.43685489
+       center of nuclear mass  :   -9.30871367    3.94979222   -0.02701189
+       center of nuclear charge:   -9.29206482    3.91044908   -0.02753444
 
   Keyword $basis  missing in file <control>
 
@@ -224,7 +224,7 @@
  biggest AO integral is expected to be     4.785886462
 
           ------------------------
-          nuclear repulsion energy  :   69.5764401993    
+          nuclear repulsion energy  :   69.7604228050    
           ------------------------
 
 
@@ -270,15 +270,15 @@
                RI-J - INFORMATION
            ------------------------
  Contributions to RI integral batches: 
-  neglected integral batches:                    58
+  neglected integral batches:                    44
   direct contribution:                            0
-  memory contribution:                  3858
+  memory contribution:                  3872
  Memory core needed for (P|Q) and Cholesky      1 MByte
  Memory core minimum needed except of (P|Q)     1 MByte
  Total minimum memory core needed (sum)         1 MByte
   
  ****************************************
- Memory allocated for RI-J   143 MByte
+ Memory allocated for RI-J   144 MByte
  ****************************************
                                             
 
@@ -289,113 +289,113 @@
 
 
  ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
-   1  -188.00479599792    -395.98595561     138.40471942    0.000D+00 0.784D-11
-                            exK = -22.4907569370     Coul =  160.895476353    
+   1  -188.02472484963    -396.12736655     138.34221889    0.000D+00 0.784D-11
+                            exK = -22.4868600196     Coul =  160.829078913    
                             current damping = 0.300
  
-          max. resid. norm for Fia-block=  4.378D-01 for orbital     11a         
-          max. resid. fock norm         =  1.297D+01 for orbital    319a         
+          max. resid. norm for Fia-block=  4.078D-01 for orbital     11a         
+          max. resid. fock norm         =  1.190D+01 for orbital    290a         
 
  ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
-   2  -188.78488841631    -396.22683615     137.86550754    0.829D-02 0.615D-11
+   2  -188.79278045550    -396.58205450     138.02885124    0.781D-02 0.608D-11
                             current damping = 0.250
  
-          Norm of current diis error:  1.7772    
-          max. resid. norm for Fia-block=  1.301D-01 for orbital      2a         
-          max. resid. fock norm         =  3.041D-01 for orbital    269a         
+          Norm of current diis error:  1.7734    
+          max. resid. norm for Fia-block=  1.281D-01 for orbital      2a         
+          max. resid. fock norm         =  2.941D-01 for orbital    221a         
 
  ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
-   3  -188.83643026789    -397.10661175     138.69374128    0.223D-02 0.437D-11
+   3  -188.84389365579    -397.43948015     138.83516369    0.204D-02 0.438D-11
                             current damping = 0.200
  
-          Norm of current diis error: 0.63546    
-          max. resid. norm for Fia-block=  3.428D-02 for orbital     10a         
-          max. resid. fock norm         =  3.554D-02 for orbital    221a         
+          Norm of current diis error: 0.63263    
+          max. resid. norm for Fia-block=  3.911D-02 for orbital     10a         
+          max. resid. fock norm         =  3.991D-02 for orbital     10a         
 
  ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
-   4  -188.84612162303    -396.82351909     138.40095726    0.616D-03 0.377D-11
+   4  -188.85357114462    -397.17420429     138.56021034    0.597D-03 0.377D-11
                             current damping = 0.250
  
-          Norm of current diis error: 0.20082    
-          max. resid. norm for Fia-block=  1.403D-02 for orbital      5a         
-          max. resid. fock norm         =  2.005D-02 for orbital    306a         
+          Norm of current diis error: 0.19963    
+          max. resid. norm for Fia-block=  1.499D-02 for orbital     10a         
+          max. resid. fock norm         =  2.051D-02 for orbital    316a         
 
  ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
-   5  -188.84728753609    -396.92005034     138.49632261    0.164D-03 0.349D-11
+   5  -188.85470646603    -397.26278076     138.64765149    0.176D-03 0.347D-11
                             current damping = 0.300
  
-          Norm of current diis error: 0.68282E-01
-          max. resid. norm for Fia-block=  4.951D-03 for orbital     10a         
-          max. resid. fock norm         =  5.348D-03 for orbital     11a         
+          Norm of current diis error: 0.67265E-01
+          max. resid. norm for Fia-block=  5.442D-03 for orbital     10a         
+          max. resid. fock norm         =  5.556D-03 for orbital     10a         
           mo-orthogonalization: Cholesky decomposition
 
  ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
-   6  -188.84746945274    -396.91380440     138.48989475    0.586D-04 0.326D-11
+   6  -188.85487901667    -397.25976552     138.64446370    0.610D-04 0.324D-11
                             current damping = 0.350
  
-          Norm of current diis error: 0.29801E-01
-          max. resid. norm for Fia-block=  2.788D-03 for orbital     10a         
-          max. resid. fock norm         =  3.388D-03 for orbital     10a         
+          Norm of current diis error: 0.29323E-01
+          max. resid. norm for Fia-block=  3.173D-03 for orbital     10a         
+          max. resid. fock norm         =  3.808D-03 for orbital     10a         
 
  ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
-   7  -188.84750740899    -396.91034766     138.48640005    0.288D-04 0.307D-11
+   7  -188.85491449719    -397.25529833     138.63996103    0.278D-04 0.308D-11
                             current damping = 0.200
  
-          Norm of current diis error: 0.13660E-01
-          max. resid. norm for Fia-block=  1.399D-03 for orbital     11a         
-          max. resid. fock norm         =  1.457D-03 for orbital     11a         
+          Norm of current diis error: 0.13288E-01
+          max. resid. norm for Fia-block=  1.421D-03 for orbital     11a         
+          max. resid. fock norm         =  1.465D-03 for orbital     10a         
 
  ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
-   8  -188.84751784449    -396.91336995     138.48941191    0.156D-04 0.290D-11
+   8  -188.85492457256    -397.25806652     138.64271914    0.150D-04 0.290D-11
                             current damping = 0.250
  
-          Norm of current diis error: 0.56650E-02
-          max. resid. norm for Fia-block=  5.989D-04 for orbital     11a         
-          max. resid. fock norm         =  6.741D-04 for orbital      8a         
+          Norm of current diis error: 0.55884E-02
+          max. resid. norm for Fia-block=  6.613D-04 for orbital     11a         
+          max. resid. fock norm         =  7.187D-04 for orbital     10a         
 
  ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
-   9  -188.84751973928    -396.91268583     138.48872589    0.612D-05 0.275D-11
+   9  -188.85492650855    -397.25762743     138.64227812    0.587D-05 0.275D-11
                             current damping = 0.300
  
-          Norm of current diis error: 0.23682E-02
-          max. resid. norm for Fia-block=  3.552D-04 for orbital     11a         
-          max. resid. fock norm         =  3.619D-04 for orbital     11a         
+          Norm of current diis error: 0.24192E-02
+          max. resid. norm for Fia-block=  3.774D-04 for orbital     11a         
+          max. resid. fock norm         =  3.826D-04 for orbital     11a         
 
  ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
-  10  -188.84752011546    -396.91285071     138.48889040    0.233D-05 0.264D-11
+  10  -188.85492691640    -397.25769387     138.64234415    0.240D-05 0.262D-11
                             current damping = 0.350
  
-          Norm of current diis error: 0.11173E-02
-          max. resid. norm for Fia-block=  1.589D-04 for orbital     11a         
-          max. resid. fock norm         =  1.589D-04 for orbital     11a         
+          Norm of current diis error: 0.11414E-02
+          max. resid. norm for Fia-block=  1.745D-04 for orbital     11a         
+          max. resid. fock norm         =  1.746D-04 for orbital     11a         
           mo-orthogonalization: Cholesky decomposition
 
  ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
-  11  -188.84752019766    -396.91298723     138.48902683    0.108D-05 0.252D-11
+  11  -188.85492700516    -397.25783666     138.64248685    0.113D-05 0.250D-11
                             current damping = 0.200
  
-          Norm of current diis error: 0.49387E-03
-          max. resid. norm for Fia-block=  8.523D-05 for orbital     11a         
-          max. resid. fock norm         =  8.618D-05 for orbital     11a         
+          Norm of current diis error: 0.48944E-03
+          max. resid. norm for Fia-block=  8.779D-05 for orbital     11a         
+          max. resid. fock norm         =  8.909D-05 for orbital     11a         
 
  ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
-  12  -188.84752021604    -396.91292909     138.48896868    0.528D-06 0.240D-11
+  12  -188.85492702335    -397.25778383     138.64243400    0.539D-06 0.239D-11
                             current damping = 0.250
  
-          Norm of current diis error: 0.20304E-03
-          max. resid. norm for Fia-block=  2.863D-05 for orbital     12a         
-          max. resid. fock norm         =  3.284D-05 for orbital     12a         
+          Norm of current diis error: 0.19810E-03
+          max. resid. norm for Fia-block=  2.882D-05 for orbital     12a         
+          max. resid. fock norm         =  3.278D-05 for orbital     12a         
 
  ENERGY & DENSITY CONVERGED !
 
 
  ITERATION  ENERGY          1e-ENERGY        2e-ENERGY     RMS[dD(SAO)]   TOL
-  13  -188.84752021889    -396.91298119     138.48902077    0.203D-06 0.232D-11
+  13  -188.85492702572    -397.25782317     138.64247334    0.203D-06 0.231D-11
                             current damping = 0.300
  
-          Norm of current diis error: 0.78691E-04
-          max. resid. norm for Fia-block=  1.150D-05 for orbital     11a         
-          max. resid. fock norm         =  1.168D-05 for orbital     11a         
+          Norm of current diis error: 0.73052E-04
+          max. resid. norm for Fia-block=  1.013D-05 for orbital     11a         
+          max. resid. fock norm         =  1.047D-05 for orbital     11a         
 
  End of SCF iterations
 
@@ -403,11 +403,11 @@
 
 
                   ------------------------------------------ 
-                 |  total energy      =   -188.84752021889  |
+                 |  total energy      =   -188.85492702572  |
                   ------------------------------------------ 
-                 :  kinetic energy    =    188.50854364268  :
-                 :  potential energy  =   -377.35606386156  :
-                 :  virial theorem    =      1.99820502501  :
+                 :  kinetic energy    =    188.51526104688  :
+                 :  potential energy  =   -377.37018807259  :
+                 :  virial theorem    =      1.99820144497  :
                  :  wavefunction norm =      1.00000000000  :
                   .......................................... 
 
@@ -418,13 +418,13 @@
  orbitals $scfmo  will be written to file mos
 
     irrep                  8a          9a         10a         11a         12a   
- eigenvalues H         -0.67108    -0.63326    -0.60227    -0.49524    -0.47111
-            eV         -18.2611    -17.2321    -16.3888    -13.4762    -12.8197
+ eigenvalues H         -0.71289    -0.63548    -0.60597    -0.49837    -0.47582
+            eV         -19.3988    -17.2923    -16.4894    -13.5614    -12.9479
  occupation              2.0000      2.0000      2.0000      2.0000      2.0000
 
     irrep                 13a         14a         15a         16a         17a   
- eigenvalues H          0.01565     0.03661     0.06059     0.07030     0.09272
-            eV           0.4258      0.9961      1.6487      1.9130      2.5231
+ eigenvalues H          0.02648     0.03470     0.06464     0.07019     0.09625
+            eV           0.7207      0.9443      1.7590      1.9099      2.6191
  
  
  
@@ -445,42 +445,42 @@
  ------------------------------------------------------------------------------
                        dipole moment  
  ------------------------------------------------------------------------------
-   x     -35.389072      36.931151       1.542079
-   y      71.727477     -72.197290      -0.469813
-   z      10.484517     -11.110459      -0.625941
+   x    -223.009556     223.358732       0.349176
+   y      93.850778     -94.424544      -0.573766
+   z      -0.660826       0.638596      -0.022230
  
-   | dipole moment | =     1.7293 a.u. =     4.3955 debye 
+   | dipole moment | =     0.6720 a.u. =     1.7081 debye 
  
  ------------------------------------------------------------------------------
                      quadrupole moment
  ------------------------------------------------------------------------------
-  xx      80.011187     -95.952090     -15.940903
-  yy     281.661606    -298.120554     -16.458948
-  zz       7.999729     -21.012085     -13.012356
-  xy    -134.818861     139.927908       5.109047
-  xz     -24.644940      25.695566       1.050626
-  yz      37.137460     -39.029469      -1.892009
+  xx    2121.524941   -2139.221567     -17.696627
+  yy     412.717191    -432.186238     -19.469047
+  zz       0.668143     -13.280203     -12.612060
+  xy    -902.024023     912.031207      10.007184
+  xz       0.720235      -0.870754      -0.150519
+  yz      -0.511121       0.089130      -0.421992
  
-     1/3  trace=     -15.137402
-     anisotropy=      10.135064
+     1/3  trace=     -16.592578
+     anisotropy=      18.413030
  
  ==============================================================================
  
 HOMO-LUMO Separation
- HOMO         :   -0.47111024 H =    -12.81957 eV
- LUMO         :    0.01564793 H =     +0.42580 eV
- HOMO-LUMO gap:    0.48675817 H =    +13.24537 eV
+ HOMO         :   -0.47582194 H =    -12.94778 eV
+ LUMO         :    0.02648367 H =     +0.72066 eV
+ HOMO-LUMO gap:    0.50230561 H =    +13.66844 eV
  
  ==============================================================================
 
 
     ------------------------------------------------------------------------
-         total  cpu-time : 11 minutes and 32 seconds
-         total wall-time : 13 minutes and 13 seconds
+         total  cpu-time :  7 minutes and 48 seconds
+         total wall-time :  4 minutes and 23 seconds
     ------------------------------------------------------------------------
 
    ****  ridft : all done  ****
 
 
-    2023-06-04 16:53:54.385 
+    2023-06-15 21:26:15.948 
 
