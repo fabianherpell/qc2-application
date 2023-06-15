@@ -9,7 +9,7 @@ $rij
 $energy file=energy
 $grad file=gradient
 $scfiterlimit 100
-$last step     tm2molden
+$last step     ridft
 $basis file=basis
 $jbas file=auxbasis
 $closed shells
@@ -18,8 +18,8 @@ $scfmo    file=mos
 $last SCF energy change = -.17537786E-07
 $charge from ridft
           0.000 (not to be modified here)
-$dipole from force
-  x    -0.00007608785728    y     0.00001584223125    z     0.00041921504273    a.u.
+$dipole from ridft
+  x    -0.00007608786666    y     0.00001584223475    z     0.00041921504322    a.u.
    | dipole | =    0.0010837035  debye
 $redundant    file=coord
 $optinfo       file=optinfo
@@ -27,15 +27,4 @@ $hessapprox   file=hessapprox
 $orbital_max_rnorm 0.29576972655773E-04
 $subenergy  Etot         E1                  Ej                Ex                 En
 -376.3895860124    -1071.882216535     0.000000000000     0.000000000000     283.1388796250
-$dipgrad    file=dipgrad
-$hessian (projected)    file=hessian
-$vibrational normal modes    file=vib_normal_modes
-$vibrational reduced masses
-  12.9504644897  13.2305842780  13.0963608472  13.4121389865  13.6226212950
-  13.4347455017  12.0844927401  12.5077510216  14.2349538346  12.0111500845
-  14.3310588836  12.2800798535  13.8454934378  13.0698989187  12.2658429022
-  12.2114783276  12.2556784729  12.6866542882  12.0675737706  12.1411671327
-  13.3084845977  13.2963694861  12.0115973437  12.0132681173
-$nvibro       24
-$vibrational spectrum    file=vibspectrum
 $end
