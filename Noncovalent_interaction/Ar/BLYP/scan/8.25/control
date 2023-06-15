@@ -1,0 +1,30 @@
+$coord file=coord
+$eht charge=0 unpaired=0
+$symmetry c1
+$atoms
+    basis =def2-QZVP
+    jbas  =def2-QZVP
+$dft
+  functional b-lyp
+$rij
+$energy file=energy
+$grad file=gradient
+$last step     ridft
+$basis file=basis
+$jbas file=auxbasis
+$closed shells
+ a       1-14                                   ( 2 )
+$scfmo    file=mos
+$last SCF energy change = -.18323374E-06
+$charge from ridft
+          0.000 (not to be modified here)
+$dipole from ridft
+  x     0.00038402312102    y     0.00000000000199    z     0.00419981876162    a.u.
+   | dipole | =    0.0107194885  debye
+$redundant    file=coord
+$optinfo       file=optinfo
+$hessapprox   file=hessapprox
+$orbital_max_rnorm 0.20897152768815E-02
+$subenergy  Etot         E1                  Ej                Ex                 Ec                 En
+-568.0548440210    -843.0043302362     281.8335695681    -36.70443973569    -1.046044367529     30.86640075030
+$end

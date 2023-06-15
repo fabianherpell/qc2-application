@@ -4,7 +4,7 @@ $symmetry c1
 $atoms
   basis=def2-QZVP
 $dft
-  functional blyp
+  functional b-lyp
 $rij
 $energy file=energy
 $grad file=gradient
