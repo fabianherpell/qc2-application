@@ -1,0 +1,36 @@
+$coord file=coord
+$eht charge=0 unpaired=0
+$symmetry c1
+$atoms
+    basis =def2-QZVP
+    cbas  =def2-QZVP
+    jbas  =def2-QZVP
+$scfconv 7
+$denconv 1.0d-7
+$ricc2
+  mp2
+  geoopt model=mp2
+$energy file=energy
+$grad file=gradient
+$rij
+$last step     ricc2
+$basis file=basis
+$jbas file=auxbasis
+$closed shells
+ a       1-23                                   ( 2 )
+$scfmo    file=mos
+$last SCF energy change = -.19128038E-07
+$charge from ridft
+         -0.000 (not to be modified here)
+$dipole from ricc2
+  x    -0.00000002464880    y     0.00000000016868    z     0.00015023153759    a.u.
+   | dipole | =    0.0003818534  debye
+$cbas file=auxbasis
+$last MP2 energy change= 0.46058159E-07
+$redundant    file=coord
+$optinfo       file=optinfo
+$hessapprox   file=hessapprox
+$orbital_max_rnorm 0.67086433876528E-04
+$subenergy  Etot         E1                  Ej                Ex                 En
+-2792.271231148    -3953.339479087     0.000000000000     0.000000000000     34.98307032650
+$end
