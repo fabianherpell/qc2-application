@@ -14,7 +14,7 @@
                                 for m in "Monomer" ; do
                                 pushd $m >/dev/null
                                 # coord file kopieren und umbenennen
-                                cp ../../../../Monomer/coord 
+                                cp ../../../../Monomer/coord .
                                 touch control
                                 popd >/dev/null
                                 done
