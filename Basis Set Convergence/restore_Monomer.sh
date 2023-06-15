@@ -1,3 +1,5 @@
+#!/bin/bash 
+ 
  for m in "Dimerization_Energy"; do
     pushd $m </dev/null
     echo $m 
@@ -7,15 +9,15 @@
                 for p in "aug-cc-pVDZ" "aug-cc-pVQZ" "aug-cc-pVTZ" "cc-pVDZ" "cc-pVQZ" "cc-pVTZ" ; do
                 pushd $p >/dev/null
                 echo $p
-                        for q in "Monomer"; do 
-                        pushd $q >/dev/null
-                        echo $q
-                                 #if test ! -f ridft.out;
-                                 #then
-                                 #ridft > ridft.out &
-                                 #fi
-                        popd >/dev/null
-                        done
+                        rm -rf Monomer/
+                        mkdir  "Monomer" 
+                                for m in "Monomer" ; do
+                                pushd $m >/dev/null
+                                # coord file kopieren und umbenennen
+                                cp ../../../../Monomer/coord 
+                                touch control
+                                popd >/dev/null
+                                done
                 popd >/dev/null
                 done
             popd>/dev/null

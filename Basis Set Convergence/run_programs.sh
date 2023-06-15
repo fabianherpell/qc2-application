@@ -1,3 +1,5 @@
+ #!/bin/bash
+ 
  for m in "Dimerization_Energy"; do
     pushd $m </dev/null
     echo $m 
