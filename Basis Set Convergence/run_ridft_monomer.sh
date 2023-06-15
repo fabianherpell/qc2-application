@@ -7,13 +7,13 @@
                 for p in "aug-cc-pVDZ" "aug-cc-pVQZ" "aug-cc-pVTZ" "cc-pVDZ" "cc-pVQZ" "cc-pVTZ" ; do
                 pushd $p >/dev/null
                 echo $p
-                        for q in "Monomer"; do 
+                        for q in "Dimer" "Monomer"; do 
                         pushd $q >/dev/null
                         echo $q
-                                 #if test ! -f ridft.out;
-                                 #then
-                                 #ridft > ridft.out &
-                                 #fi
+                                 if test ! -f ridft.out;
+                                 then
+                                 ridft > ridft.out &
+                                 fi
                         popd >/dev/null
                         done
                 popd >/dev/null
