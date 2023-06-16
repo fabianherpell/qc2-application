@@ -72,5 +72,16 @@ $rundimensions
    natoms=30
    nbf(CAO)=350
    nbf(AO)=330
-$last step     define
+$last step     ridft
+$last SCF energy change = -.28556838E-06
+$charge from ridft
+          0.000 (not to be modified here)
+$dipole from ridft
+  x    -0.00000000000005    y     0.00000000000008    z     0.00000000000000    a.u.
+   | dipole | =    0.0000000000  debye
+$optinfo       file=optinfo
+$hessapprox   file=hessapprox
+$orbital_max_rnorm 0.81577533868465E-05
+$subenergy  Etot         E1                  Ej                Ex                 Ec                 En                 Disp
+-875.2974915421    -3912.717313551     1786.288360891    -116.9938873293    -4.624521359179     1372.801282796    -.5141298976348E-01
 $end
