@@ -1,0 +1,11 @@
+$coord file=coord
+$eht charge=0 unpaired=0
+$symmetry c1
+$atoms
+  basis=aug-cc-pVDZ
+$scfconv 7
+$denconv 1.0d-7
+$ricc2
+  mp2
+$rij
+$end
