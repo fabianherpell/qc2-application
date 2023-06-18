@@ -12,10 +12,10 @@
                         for q in "Dimer"; do 
                         pushd $q >/dev/null
                         echo $q
-                                # if test ! -f *.out;
-                                # then
-                                # ridft > ridft.out &
-                                # fi
+                                 if test ! -f *.out;
+                                 then
+                                 ridft > ridft.out &
+                                 fi
                         popd >/dev/null
                         done
                 popd >/dev/null
