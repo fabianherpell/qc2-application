@@ -2,7 +2,7 @@
  
  output_file="$(pwd)/Claisen_singlepoint_E"
 
-        for p in "start" "TS"; do
+        for p in "Start" "TS"; do
         pushd $p >/dev/null
         echo $p
        
