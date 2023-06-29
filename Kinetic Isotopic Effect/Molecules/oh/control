@@ -9,7 +9,7 @@ $dft
 $scfiterlimit 100
 $disp3 -bj
 $rij
-$last step     ridft
+$last step     force
 $basis file=basis
 $jbas file=auxbasis
 $uhf
@@ -30,8 +30,8 @@ $ssquare from ridft
           0.752 (not to be modified here)
 $charge from ridft
           0.000 (not to be modified here)
-$dipole from ridft
-  x     0.66884439795905    y     0.19277113479238    z     0.00002541685985    a.u.
+$dipole from force
+  x     0.66884439795871    y     0.19277113479251    z     0.00002541685985    a.u.
    | dipole | =    1.7692470100  debye
 $grad          cartesian gradients
   cycle =      1    SCF energy =      -75.7350214486   |dE/dxyz| =  0.016485
@@ -60,4 +60,12 @@ $hessapprox   file=hessapprox
 $orbital_max_rnorm 0.22235709040149E-04
 $subenergy  Etot         E1                  Ej                Ex                 Ec                 En                 Disp
 -75.73517054016    -112.6392268155     39.72532072801    -6.796983194095    -.3573746224906     4.333339153127    -.2457892274477E-03
+$dipgrad    file=dipgrad
+$hessian (projected)    file=hessian
+$vibrational normal modes    file=vib_normal_modes
+$vibrational reduced masses
+   1.0123391454  14.9133839972  15.9994000000   8.5232364276   1.0079700000
+   1.0672366735
+$nvibro        6
+$vibrational spectrum    file=vibspectrum
 $end
