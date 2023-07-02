@@ -1,9 +1,10 @@
 #!/bin/bash
 
-for n in "HF" "TPSS_D3" ; do
+for n in "HF_neu" "TPSS_D3_neu" ; do
     pushd $n >/dev/null
     echo $n
-    aoforce > aoforce.out &
+    jobex -ri > jobex.out &
+    #aoforce > aoforce.out &
     popd >/dev/null
 done
 

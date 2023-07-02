@@ -1,0 +1,43 @@
+$coord file=coord
+$eht charge=0 unpaired=0
+$symmetry c1
+$atoms
+    basis =def2-SVP
+    jbas  =def2-SVP
+$dft
+  functional tpss
+$disp3 -bj
+$rij
+$energy file=energy
+$grad file=gradient
+$scfiterlimit 1000
+$last step     tm2molden
+$basis file=basis
+$jbas file=auxbasis
+$closed shells
+ a       1-26                                   ( 2 )
+$scfmo    file=mos
+$last SCF energy change = 0.50695746E-07
+$charge from ridft
+          0.000 (not to be modified here)
+$dipole from force
+  x    -0.00000347463305    y    -0.00004342602796    z     0.00002900743999    a.u.
+   | dipole | =    0.0001330323  debye
+$redundant    file=coord
+$optinfo       file=optinfo
+$hessapprox   file=hessapprox
+$orbital_max_rnorm 0.11644104317620E-04
+$subenergy  Etot         E1                  Ej                Ex                 Ec                 En                 Disp
+-378.5828556497    -1062.475650986     455.7539407643    -47.73199707952    -1.746232223172     277.6282964894    -.1121261443812E-01
+$dipgrad    file=dipgrad
+$hessian (projected)    file=hessian
+$vibrational normal modes    file=vib_normal_modes
+$vibrational reduced masses
+  12.8753420278  12.6986747037  12.7783089856  13.9793709503  13.8589536306
+  13.6739971834  14.2234296997  12.1387872546  12.5333039859  12.0111526629
+  14.2976851102  12.2639802364  13.8145317697  12.8708366680  12.2370196306
+  12.2199724075  12.2755090729  12.1822149119  12.6951651144  12.1646422404
+  13.3180624148  13.3019742923  12.0121646935  12.0130197511
+$nvibro       24
+$vibrational spectrum    file=vibspectrum
+$end
