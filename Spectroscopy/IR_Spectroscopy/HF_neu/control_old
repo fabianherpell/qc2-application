@@ -7,4 +7,5 @@ $disp3 -bj
 $rij
 $energy file=energy
 $grad file=gradient
+$scfiterlimit 100
 $end
