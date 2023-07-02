@@ -1,0 +1,9 @@
+ERROR: your energy calculation did not converge !!
+       Possible reasons:
+       - not enough iterations: increase the max. number of SCF iterations
+         i.e. $scfiterlimit
+         and check your occupation.
+       - because of wrong input like starting an RI calculation
+         without having switched on RI 
+       - missing input (basis set, auxiliary basis set, MOs, ..) 
+    Check job.last and job.<number> for more detailed error output

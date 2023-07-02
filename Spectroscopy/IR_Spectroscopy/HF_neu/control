@@ -2,9 +2,21 @@ $coord file=coord
 $eht charge=0 unpaired=0
 $symmetry c1
 $atoms
-  basis=def2-SVP
+    basis =def2-SVP
+    jbas  =def2-SVP
 $disp3 -bj
 $rij
 $energy file=energy
 $grad file=gradient
+$last step     ridft
+$basis file=basis
+$jbas file=auxbasis
+$closed shells
+ a       1-28                                   ( 2 )
+$scfmo    file=mos
+$charge from ridft
+         -0.000 (not to be modified here)
+$dipole from ridft
+  x     0.00064556247446    y    -0.02653063087720    z    -0.00109031613890    a.u.
+   | dipole | =    0.0675115126  debye
 $end
