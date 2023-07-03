@@ -6,21 +6,33 @@ $ SCF_Energy
    description: The SCF energy
    geom. index: 1
    prop. index: 1
-        SCF Energy:      -76.2574393930
+        SCF Energy:      -76.2686521798
 # -----------------------------------------------------------
 $ DFT_Energy
    description: The DFT energy
    geom. index: 1
    prop. index: 1
-   Number of Alpha Electrons                  5.0000069548 
-   Number of Beta  Electrons                  5.0000069548 
-   Total number of  Electrons                10.0000139096 
-   Exchange energy                           -4.9977567603 
-   Correlation energy                        -0.4398138548 
+   Number of Alpha Electrons                  5.0000067893 
+   Number of Beta  Electrons                  5.0000067893 
+   Total number of  Electrons                10.0000135786 
+   Exchange energy                           -4.9999197083 
+   Correlation energy                        -0.4405294932 
    Correlation energy NL                      0.0000000000 
-   Exchange-Correlation energy               -5.4375706151 
+   Exchange-Correlation energy               -5.4404492015 
    Embedding correction                       0.0000000000 
-   Total DFT Energy (No VdW correction)     -76.2574393930 
+   Total DFT Energy (No VdW correction)     -76.2686521798 
+# -----------------------------------------------------------
+$ Solvation_Details
+   description: Details concerning solvation
+   geom. index: 1
+   prop. index: 1
+     Epsilon:               80.4000000000
+     Refrac:                 1.3300000000
+     RSolv:                  1.3000000000
+     Surface Type:                      2
+     Number of Points:                237
+     Surface Area:         165.2151837675
+     Dielectric Energy:     -0.0123697873
 # -----------------------------------------------------------
 $ VdW_Correction
    description: The Van der Waals Correction
@@ -32,157 +44,179 @@ $ SCF_Energy
    description: The SCF energy
    geom. index: 2
    prop. index: 1
-        SCF Energy:      -76.2591309651
+        SCF Energy:      -76.2701369913
 # -----------------------------------------------------------
 $ DFT_Energy
    description: The DFT energy
    geom. index: 2
    prop. index: 1
-   Number of Alpha Electrons                  5.0000017034 
-   Number of Beta  Electrons                  5.0000017034 
-   Total number of  Electrons                10.0000034067 
-   Exchange energy                           -5.0153249513 
-   Correlation energy                        -0.4413360118 
+   Number of Alpha Electrons                  5.0000015091 
+   Number of Beta  Electrons                  5.0000015091 
+   Total number of  Electrons                10.0000030181 
+   Exchange energy                           -5.0160722094 
+   Correlation energy                        -0.4418767524 
    Correlation energy NL                      0.0000000000 
-   Exchange-Correlation energy               -5.4566609631 
+   Exchange-Correlation energy               -5.4579489619 
    Embedding correction                       0.0000000000 
-   Total DFT Energy (No VdW correction)     -76.2591309651 
+   Total DFT Energy (No VdW correction)     -76.2701369913 
+# -----------------------------------------------------------
+$ Solvation_Details
+   description: Details concerning solvation
+   geom. index: 2
+   prop. index: 1
+     Epsilon:               80.4000000000
+     Refrac:                 1.3300000000
+     RSolv:                  1.3000000000
+     Surface Type:                      2
+     Number of Points:                234
+     Surface Area:         163.5888564441
+     Dielectric Energy:     -0.0120935153
 # -----------------------------------------------------------
 $ VdW_Correction
    description: The Van der Waals Correction
    geom. index: 2
    prop. index: 1
-        Van der Waals Correction:       -0.0002095825
+        Van der Waals Correction:       -0.0002095911
 # -----------------------------------------------------------
 $ SCF_Energy
    description: The SCF energy
    geom. index: 3
    prop. index: 1
-        SCF Energy:      -76.2591780358
+        SCF Energy:      -76.2701728466
 # -----------------------------------------------------------
 $ DFT_Energy
    description: The DFT energy
    geom. index: 3
    prop. index: 1
-   Number of Alpha Electrons                  5.0000022899 
-   Number of Beta  Electrons                  5.0000022899 
-   Total number of  Electrons                10.0000045799 
-   Exchange energy                           -5.0139931542 
-   Correlation energy                        -0.4412296262 
+   Number of Alpha Electrons                  5.0000019987 
+   Number of Beta  Electrons                  5.0000019987 
+   Total number of  Electrons                10.0000039974 
+   Exchange energy                           -5.0146226842 
+   Correlation energy                        -0.4417600714 
    Correlation energy NL                      0.0000000000 
-   Exchange-Correlation energy               -5.4552227804 
+   Exchange-Correlation energy               -5.4563827556 
    Embedding correction                       0.0000000000 
-   Total DFT Energy (No VdW correction)     -76.2591780358 
+   Total DFT Energy (No VdW correction)     -76.2701728466 
+# -----------------------------------------------------------
+$ Solvation_Details
+   description: Details concerning solvation
+   geom. index: 3
+   prop. index: 1
+     Epsilon:               80.4000000000
+     Refrac:                 1.3300000000
+     RSolv:                  1.3000000000
+     Surface Type:                      2
+     Number of Points:                234
+     Surface Area:         163.7201398346
+     Dielectric Energy:     -0.0121097155
 # -----------------------------------------------------------
 $ VdW_Correction
    description: The Van der Waals Correction
    geom. index: 3
    prop. index: 1
-        Van der Waals Correction:       -0.0002095709
+        Van der Waals Correction:       -0.0002095860
 # -----------------------------------------------------------
 $ SCF_Energy
    description: The SCF energy
    geom. index: 4
    prop. index: 1
-        SCF Energy:      -76.2591799250
+        SCF Energy:      -76.2701712053
 # -----------------------------------------------------------
 $ DFT_Energy
    description: The DFT energy
    geom. index: 4
    prop. index: 1
-   Number of Alpha Electrons                  5.0000023992 
-   Number of Beta  Electrons                  5.0000023992 
-   Total number of  Electrons                10.0000047984 
-   Exchange energy                           -5.0141289227 
-   Correlation energy                        -0.4412445541 
+   Number of Alpha Electrons                  5.0000019912 
+   Number of Beta  Electrons                  5.0000019912 
+   Total number of  Electrons                10.0000039824 
+   Exchange energy                           -5.0147687118 
+   Correlation energy                        -0.4417722544 
    Correlation energy NL                      0.0000000000 
-   Exchange-Correlation energy               -5.4553734768 
+   Exchange-Correlation energy               -5.4565409662 
    Embedding correction                       0.0000000000 
-   Total DFT Energy (No VdW correction)     -76.2591799250 
+   Total DFT Energy (No VdW correction)     -76.2701712053 
+# -----------------------------------------------------------
+$ Solvation_Details
+   description: Details concerning solvation
+   geom. index: 4
+   prop. index: 1
+     Epsilon:               80.4000000000
+     Refrac:                 1.3300000000
+     RSolv:                  1.3000000000
+     Surface Type:                      2
+     Number of Points:                234
+     Surface Area:         163.7040050948
+     Dielectric Energy:     -0.0121020772
 # -----------------------------------------------------------
 $ VdW_Correction
    description: The Van der Waals Correction
    geom. index: 4
    prop. index: 1
-        Van der Waals Correction:       -0.0002095650
+        Van der Waals Correction:       -0.0002095850
 # -----------------------------------------------------------
 $ SCF_Energy
    description: The SCF energy
    geom. index: 5
    prop. index: 1
-        SCF Energy:      -76.2591784644
+        SCF Energy:      -76.2701706610
 # -----------------------------------------------------------
 $ DFT_Energy
    description: The DFT energy
    geom. index: 5
    prop. index: 1
-   Number of Alpha Electrons                  5.0000024101 
-   Number of Beta  Electrons                  5.0000024101 
-   Total number of  Electrons                10.0000048201 
-   Exchange energy                           -5.0142570670 
-   Correlation energy                        -0.4412564986 
+   Number of Alpha Electrons                  5.0000020076 
+   Number of Beta  Electrons                  5.0000020076 
+   Total number of  Electrons                10.0000040151 
+   Exchange energy                           -5.0148136839 
+   Correlation energy                        -0.4417763216 
    Correlation energy NL                      0.0000000000 
-   Exchange-Correlation energy               -5.4555135656 
+   Exchange-Correlation energy               -5.4565900055 
    Embedding correction                       0.0000000000 
-   Total DFT Energy (No VdW correction)     -76.2591784644 
+   Total DFT Energy (No VdW correction)     -76.2701706610 
+# -----------------------------------------------------------
+$ Solvation_Details
+   description: Details concerning solvation
+   geom. index: 5
+   prop. index: 1
+     Epsilon:               80.4000000000
+     Refrac:                 1.3300000000
+     RSolv:                  1.3000000000
+     Surface Type:                      2
+     Number of Points:                234
+     Surface Area:         163.6979482698
+     Dielectric Energy:     -0.0120978713
 # -----------------------------------------------------------
 $ VdW_Correction
    description: The Van der Waals Correction
    geom. index: 5
    prop. index: 1
-        Van der Waals Correction:       -0.0002095633
-# -----------------------------------------------------------
-$ SCF_Energy
-   description: The SCF energy
-   geom. index: 6
-   prop. index: 1
-        SCF Energy:      -76.2591783850
-# -----------------------------------------------------------
-$ DFT_Energy
-   description: The DFT energy
-   geom. index: 6
-   prop. index: 1
-   Number of Alpha Electrons                  5.0000024086 
-   Number of Beta  Electrons                  5.0000024086 
-   Total number of  Electrons                10.0000048172 
-   Exchange energy                           -5.0142645807 
-   Correlation energy                        -0.4412570454 
-   Correlation energy NL                      0.0000000000 
-   Exchange-Correlation energy               -5.4555216261 
-   Embedding correction                       0.0000000000 
-   Total DFT Energy (No VdW correction)     -76.2591783850 
-# -----------------------------------------------------------
-$ VdW_Correction
-   description: The Van der Waals Correction
-   geom. index: 6
-   prop. index: 1
-        Van der Waals Correction:       -0.0002095633
+        Van der Waals Correction:       -0.0002095841
 # -----------------------------------------------------------
 $ SCF_Electric_Properties
    description: The SCF Calculated Electric Properties
-   geom. index: 6
+   geom. index: 5
    prop. index: 1
        Filename                          : H2O.scfp 
        Do Dipole Moment Calculation      : true 
        Do Quadrupole Moment Calculation  : false 
        Do Polarizability Calculation     : false 
 ** Dipole moment part of electric properties **
-        Magnitude of dipole moment (Debye) :        2.1479660949
+        Magnitude of dipole moment (Debye) :        2.4254148219
         Electronic Contribution:
                   0    
-      0      -0.072209
-      1      -0.035116
-      2       0.096027
+      0      -0.017520
+      1      -0.008556
+      2       0.023389
         Nuclear Contribution:
                   0    
-      0       0.560096
-      1       0.272081
-      2      -0.744052
+      0       0.568418
+      1       0.276130
+      2      -0.755125
         Total Dipole moment:
                   0    
-      0       0.487887
-      1       0.236965
-      2      -0.648025
+      0       0.550898
+      1       0.267573
+      2      -0.731736
 # -------------------------------------------------------------
 ----------------------- !GEOMETRIES! ------------------------
 # -------------------------------------------------------------
@@ -197,34 +231,27 @@ $ SCF_Electric_Properties
     Number of atoms:    3 
     Geometry Index:     2 
     Coordinates:
-               0 O     -5.361184930885    1.451292970516    0.014507862169
-               1 H     -4.406917700641    1.466649550748   -0.027483144924
-               2 H     -5.637177368474    1.765417478736   -0.844524717245
+               0 O     -5.362915062112    1.450448905797    0.016816104609
+               1 H     -4.406757794552    1.467241798165   -0.029102753805
+               2 H     -5.635607143336    1.765669296039   -0.845213350805
 ------------------------ !GEOMETRY! -------------------------
     Number of atoms:    3 
     Geometry Index:     3 
     Coordinates:
-               0 O     -5.360495848657    1.451624997866    0.013599875409
-               1 H     -4.403500768989    1.465569320063   -0.024529039488
-               2 H     -5.641283382354    1.766165682071   -0.846570835921
+               0 O     -5.363079360663    1.450367429677    0.017038915305
+               1 H     -4.403998343876    1.466631887914   -0.027434829223
+               2 H     -5.638202295461    1.766360682409   -0.847104086082
 ------------------------ !GEOMETRY! -------------------------
     Number of atoms:    3 
     Geometry Index:     4 
     Coordinates:
-               0 O     -5.359685476617    1.452018576926    0.012523564725
-               1 H     -4.402858858054    1.465118220528   -0.023295421793
-               2 H     -5.642735665329    1.766223202546   -0.846728142932
+               0 O     -5.362872505577    1.450467981872    0.016763937764
+               1 H     -4.404059512888    1.466571367193   -0.027269324451
+               2 H     -5.638347981535    1.766320650934   -0.846994613313
 ------------------------ !GEOMETRY! -------------------------
     Number of atoms:    3 
     Geometry Index:     5 
     Coordinates:
-               0 O     -5.359395992827    1.452159254041    0.012138858582
-               1 H     -4.402789538881    1.464995911459   -0.022960944803
-               2 H     -5.643094468291    1.766204834500   -0.846677913778
------------------------- !GEOMETRY! -------------------------
-    Number of atoms:    3 
-    Geometry Index:     6 
-    Coordinates:
-               0 O     -5.359393453534    1.452160502629    0.012135444100
-               1 H     -4.402798299751    1.464997110500   -0.022964223841
-               2 H     -5.643088246715    1.766202386871   -0.846671220259
+               0 O     -5.362726306262    1.450539027026    0.016569652383
+               1 H     -4.403981254207    1.466499093469   -0.027071678283
+               2 H     -5.638572439531    1.766321879506   -0.846997974100
