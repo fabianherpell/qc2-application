@@ -1,0 +1,240 @@
+-------------------------------------------------------------
+----------------------- !PROPERTIES! ------------------------
+-------------------------------------------------------------
+# -----------------------------------------------------------
+$ SCF_Energy
+   description: The SCF energy
+   geom. index: 1
+   prop. index: 1
+        SCF Energy:     -192.9890470694
+# -----------------------------------------------------------
+$ DFT_Energy
+   description: The DFT energy
+   geom. index: 1
+   prop. index: 1
+   Number of Alpha Electrons                 15.9999979737 
+   Number of Beta  Electrons                 15.9999979737 
+   Total number of  Electrons                31.9999959474 
+   Exchange energy                          -25.8179317079 
+   Correlation energy                        -1.0379205809 
+   Correlation energy NL                      0.0000000000 
+   Exchange-Correlation energy              -26.8558522889 
+   Embedding correction                       0.0000000000 
+   Total DFT Energy (No VdW correction)    -192.9890470694 
+# -----------------------------------------------------------
+$ Calculation_Info
+   description: Details of the calculation
+   geom. index: 1
+   prop. index: 1
+     Multiplicity:                          1
+     Charge:                                0
+     number of atoms:                       10
+     number of electrons:                   0
+     number of frozen core electrons:       1
+     number of correlated electrons:        0
+     number of basis functions:             228
+     number of aux C basis functions:       0
+     number of aux J basis functions:       262
+     number of aux JK basis functions:      0
+     number of aux CABS basis functions:    0
+     Total Energy                           -192.989047
+# -----------------------------------------------------------
+$ SCF_Electric_Properties
+   description: The SCF Calculated Electric Properties
+   geom. index: 1
+   prop. index: 1
+       Filename                          : Acetone.scfp 
+       Do Dipole Moment Calculation      : true 
+       Do Quadrupole Moment Calculation  : false 
+       Do Polarizability Calculation     : false 
+** Dipole moment part of electric properties **
+        Magnitude of dipole moment (Debye) :        2.7858651060
+        Electronic Contribution:
+                  0    
+      0      -0.217987
+      1       3.746219
+      2      -0.000027
+        Nuclear Contribution:
+                  0    
+      0       0.281213
+      1      -4.840416
+      2       0.000028
+        Total Dipole moment:
+                  0    
+      0       0.063226
+      1      -1.094196
+      2       0.000001
+# -----------------------------------------------------------
+$ EPRNMR_OrbitalShielding
+   description: Orbital contribution to the NMR Shielding tensor (ppm)
+   geom. index: 1
+   prop. index: 1
+ Number of stored nuclei 10
+ Source density: 1 SCF 
+ Nucleus: 0 C  
+ Shielding tensor (ppm): 
+                  0          1          2    
+      0     172.702729  23.876438  -0.000371
+      1      21.267399 148.102129  -0.000297
+      2      -0.000369  -0.000112 130.284805
+ P Tensor eigenvectors:
+                   0          1          2    
+      0       0.000008  -0.514128  -0.857714
+      1       0.000002   0.857714  -0.514128
+      2       1.000000   0.000003   0.000008
+ P Eigenvalues: 
+                  0          1          2    
+      0     130.284805 134.697465 186.107393
+P(iso)  150.363221
+ Nucleus: 1 C  
+ Shielding tensor (ppm): 
+                  0          1          2    
+      0     -114.523203  -1.637732   0.000048
+      1      -1.628986 -86.718650   0.000044
+      2       0.000166  -0.000678  89.267884
+ P Tensor eigenvectors:
+                   0          1          2    
+      0      -0.058465   0.000007  -0.998289
+      1       0.998289  -0.000139  -0.058465
+      2       0.000140   1.000000  -0.000001
+ P Eigenvalues: 
+                  0          1          2    
+      0     -86.623025  89.267880 -114.618824
+P(iso)  -37.324656
+ Nucleus: 2 C  
+ Shielding tensor (ppm): 
+                  0          1          2    
+      0     177.553930 -20.442986  -0.000060
+      1     -17.839732 143.156091   0.000088
+      2       0.000099  -0.000227 130.221314
+ P Tensor eigenvectors:
+                   0          1          2    
+      0       0.000005   0.410915  -0.911673
+      1       0.000011   0.911673   0.410915
+      2       1.000000  -0.000012  -0.000000
+ P Eigenvalues: 
+                  0          1          2    
+      0     130.221314 134.622719 186.087302
+P(iso)  150.310445
+ Nucleus: 3 O  
+ Shielding tensor (ppm): 
+                  0          1          2    
+      0     -440.125805  29.858555   0.000184
+      1      29.845896 -951.836761  -0.003801
+      2       0.000115  -0.004243 344.647943
+ P Tensor eigenvectors:
+                   0          1          2    
+      0       0.000001  -0.998314   0.058038
+      1      -0.000003  -0.058038  -0.998314
+      2       1.000000   0.000000  -0.000003
+ P Eigenvalues: 
+                  0          1          2    
+      0     344.647943 -438.390170 -953.572395
+P(iso)  -349.104874
+ Nucleus: 4 H  
+ Shielding tensor (ppm): 
+                  0          1          2    
+      0      30.091926   2.059222  -0.000019
+      1      -2.576524  31.354496  -0.000006
+      2      -0.000024  -0.000044  25.834298
+ P Tensor eigenvectors:
+                   0          1          2    
+      0       0.000005   0.973190  -0.230002
+      1       0.000005   0.230002   0.973190
+      2       1.000000  -0.000006  -0.000003
+ P Eigenvalues: 
+                  0          1          2    
+      0      25.834298  30.042926  31.403496
+P(iso)  29.093573
+ Nucleus: 5 H  
+ Shielding tensor (ppm): 
+                  0          1          2    
+      0      30.372648  -0.975297   3.458759
+      1       0.554061  27.902018   0.137996
+      2       2.770455  -0.462206  30.086266
+ P Tensor eigenvectors:
+                   0          1          2    
+      0      -0.695261   0.026885   0.718255
+      1      -0.024515   0.997832  -0.061080
+      2       0.718339   0.060075   0.693094
+ P Eigenvalues: 
+                  0          1          2    
+      0      27.110841  27.891012  33.359079
+P(iso)  29.453644
+ Nucleus: 6 H  
+ Shielding tensor (ppm): 
+                  0          1          2    
+      0      30.372610  -0.975337  -3.458761
+      1       0.554048  27.902005  -0.137975
+      2      -2.770480   0.462250  30.086284
+ P Tensor eigenvectors:
+                   0          1          2    
+      0      -0.695264   0.026894  -0.718251
+      1      -0.024510   0.997831   0.061088
+      2      -0.718336  -0.060076   0.693097
+ P Eigenvalues: 
+                  0          1          2    
+      0      27.110819  27.890995  33.359085
+P(iso)  29.453633
+ Nucleus: 7 H  
+ Shielding tensor (ppm): 
+                  0          1          2    
+      0      30.052084  -2.209926  -0.000019
+      1       2.426362  31.394063   0.000052
+      2       0.000011   0.000032  25.836102
+ P Tensor eigenvectors:
+                   0          1          2    
+      0       0.000001  -0.993092  -0.117336
+      1      -0.000008   0.117336  -0.993092
+      2       1.000000   0.000002  -0.000008
+ P Eigenvalues: 
+                  0          1          2    
+      0      25.836102  30.045340  31.400807
+P(iso)  29.094083
+ Nucleus: 8 H  
+ Shielding tensor (ppm): 
+                  0          1          2    
+      0      30.289952   1.254174   3.447188
+      1      -0.274806  27.988825   0.265007
+      2       2.694864   0.781285  30.088419
+ P Tensor eigenvectors:
+                   0          1          2    
+      0       0.693501   0.142973   0.706127
+      1       0.056751  -0.987907   0.144289
+      2      -0.718217   0.059991   0.693228
+ P Eigenvalues: 
+                  0          1          2    
+      0      27.115222  27.895761  33.356212
+P(iso)  29.455732
+ Nucleus: 9 H  
+ Shielding tensor (ppm): 
+                  0          1          2    
+      0      30.290103   1.254302  -3.447204
+      1      -0.274816  27.988873  -0.265012
+      2      -2.694871  -0.781332  30.088296
+ P Tensor eigenvectors:
+                   0          1          2    
+      0       0.693486   0.142976  -0.706141
+      1       0.056742  -0.987906  -0.144301
+      2       0.718232  -0.060003   0.693211
+ P Eigenvalues: 
+                  0          1          2    
+      0      27.115221  27.895793  33.356258
+P(iso)  29.455757
+# -------------------------------------------------------------
+----------------------- !GEOMETRIES! ------------------------
+# -------------------------------------------------------------
+------------------------ !GEOMETRY! -------------------------
+    Number of atoms:    10 
+    Geometry Index:     1 
+    Coordinates:
+               0 C     -7.105750908104    1.388170924310   -0.000000552233
+               1 C     -5.857263259500    2.235131291479   -0.000009757326
+               2 C     -4.518437557647    1.538758009735   -0.000000050254
+               3 O     -5.927673189075    3.444417875164   -0.000003021512
+               4 H     -6.900424528298    0.320957752878    0.000005450122
+               5 H     -7.711199534173    1.626790243230   -0.876246977142
+               6 H     -7.711195830218    1.626801119758    0.876245586782
+               7 H     -4.598928216844    0.455045415386   -0.000010141068
+               8 H     -3.945358919814    1.846380728362    0.876389211310
+               9 H     -3.945338056327    1.846396639699   -0.876369748679
